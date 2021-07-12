@@ -25,9 +25,9 @@
 <body>
 <header>
         
-        <div class="logo"> <img src="imagens/logo.png" width="200px"></div><!--ficara a logo-->
+        <div class="logo left"> <img src="imagens/logo.png "width="100px"></div><!--ficara a logo-->
        
-        <nav class="desktop">
+        <nav class="desktop right">
             <ul>
                 <li><a href="">JOGOS</a></li>
                 <li><a href="">MEUS CÓDIGOS</a></li>
@@ -37,7 +37,7 @@
                 <li><a href="">REGISTRO</a></li>
             </ul>
         </nav>
-         <nav class="mobile">
+         <nav class="mobile right">
             <ul>
                 <li><a href="">JOGOS</a></li>
                 <li><a href="">MEUS CÓDIGOS</a></li>
@@ -48,8 +48,8 @@
             </ul>
         </nav>    
 </div>  
+<div class="clear"></div>
 </header>
-
 <section class="freewknd">
 <div class="left">
   <div class="mainbanner">
@@ -66,7 +66,7 @@
 </div>
 <div class="clear"></div>
 </section><!--parte da freewknd-->
-<section class="allgames">
+<section class="allgames"><!--outros games-->
   <div class="center">
 <div class="game1 ">
   <img src="imagens/revilage.jpg" width="200px">

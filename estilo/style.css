@@ -21,3 +21,30 @@
 .clear{
     clear:both;
 }
+
+/**estilização do site**/
+header{
+    padding: 10px 0;
+    background: #373435;
+}
+
+.mobile{
+    display: none;
+}
+
+nav.desktop ul{
+    list-style-type:none;
+}
+
+nav.desktop li{
+   
+    padding: 0 15px;
+    font-size: 30px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+nav.desktop a{
+    color:white;
+    text-decoration: none;
+}
