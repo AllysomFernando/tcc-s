@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ruddy Store - Loja de jogos </title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="estilo/style.css" rel="stylesheet"/>
     <!--SEO-->
     <meta name="description" content="Ruddy Store - Todos os tipos de jogos e afins você encontra aqui"/>
     <!--SMO-->
@@ -22,7 +26,7 @@
 <header>
         
         <div class="logo"> <img src="imagens/logo.png" width="200px"></div><!--ficara a logo-->
-        <div class="center">
+       
         <nav class="desktop">
             <ul>
                 <li><a href="">JOGOS</a></li>
@@ -47,10 +51,12 @@
 </header>
 
 <section class="freewknd">
-<div class="center">
+<div class="left">
   <div class="mainbanner">
     <img src="imagens/cyberpunk.jpg" width="200px">
+</div>  
   </div>
+  <div class="center right"> 
   <div class="sales1">
   <img src="imagens/valala.jpg" width="200px">
   </div>
@@ -58,11 +64,11 @@
   <img src="imagens/watchdogs.jpg" width="200px">
   </div>
 </div>
+<div class="clear"></div>
 </section><!--parte da freewknd-->
-
 <section class="allgames">
   <div class="center">
-<div class="game1">
+<div class="game1 ">
   <img src="imagens/revilage.jpg" width="200px">
 </div>
 <div class="game2">

@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/**boot css**/
+
+.center{
+    max-width: 1280px;
+    padding:0 50%;
+}
+.left{
+    float: left;
+}
+
+.right{
+    float:right;
+}
+.clear{
+    clear:both;
+}
