@@ -1,3 +1,4 @@
+  
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,15 +20,59 @@
 </head>
 <body>
 <header>
-     <section>
-        <div>
-            <img src="imagens/logo.png" width=3%>
-               <input type="button" value="JOGOS"/>
-               <input type="button" value="MEUS CÓDIGOS"/>
-               <input type="button" value="MINHA CARTEIRA"/>
-               <input type="button" value="SOBRE NÓS"/>         
-        </div>
-     </section>   
+
+        <div class="logo">LogoMarca</div><!--ficara a logo-->
+        <nav class="desktop">
+            <ul>
+                <li><a href="">JOGOS</a></li>
+                <li><a href="">MEUS CÓDIGOS</a></li>
+                <li><a href="">MINHA CARTEIRA</a></li>
+                <li><a href="">SOBRE NÓS</a></li>
+                <li><a href="">LOGIN</a></li>
+                <li><a href="">REGISTRO</a></li>
+            </ul>
+        </nav>
+         <nav class="mobile">
+            <ul>
+                <li><a href="">JOGOS</a></li>
+                <li><a href="">MEUS CÓDIGOS</a></li>
+                <li><a href="">MINHA CARTEIRA</a></li>
+                <li><a href="">SOBRE NÓS</a></li>
+                <li><a href="">LOGIN</a></li>
+                <li><a href="">REGISTRO</a></li>
+            </ul>
+        </nav>    
 </header>
+
+<section class="freewknd">
+
+  <div class="mainbanner">
+    <img src="imagens/cyberpunk.jpg" width="200px">
+  </div>
+  <div class="sales1">
+  <img src="imagens/valala.jpg" width="200px">
+  </div>
+  <div class="sales2">
+  <img src="imagens/watchdogs.jpg" width="200px">
+  </div>
+</section><!--parte da freewknd-->
+
+<section class="allgames">
+<div class="game1">
+  <img src="imagens/revilage.jpg" width="200px">
+</div>
+<div class="game2">
+<img src="imagens/skyrim.jpg" width="200px">
+</div>
+<div class="game3">
+<img src="imagens/cyberpunk.jpg" width="200px">
+</div>
+<div class="gamer4">
+<img src="imagens/farcry5.jpg" width="200px">
+</div>
+</section>
+<footer>
+o footer
+</footer>
 </body>
 </html>
