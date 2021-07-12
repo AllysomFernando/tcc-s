@@ -20,8 +20,9 @@
 </head>
 <body>
 <header>
-
-        <div class="logo">LogoMarca</div><!--ficara a logo-->
+        
+        <div class="logo"> <img src="imagens/logo.png" width="200px"></div><!--ficara a logo-->
+        <div class="center">
         <nav class="desktop">
             <ul>
                 <li><a href="">JOGOS</a></li>
@@ -42,10 +43,11 @@
                 <li><a href="">REGISTRO</a></li>
             </ul>
         </nav>    
+</div>  
 </header>
 
 <section class="freewknd">
-
+<div class="center">
   <div class="mainbanner">
     <img src="imagens/cyberpunk.jpg" width="200px">
   </div>
@@ -55,9 +57,11 @@
   <div class="sales2">
   <img src="imagens/watchdogs.jpg" width="200px">
   </div>
+</div>
 </section><!--parte da freewknd-->
 
 <section class="allgames">
+  <div class="center">
 <div class="game1">
   <img src="imagens/revilage.jpg" width="200px">
 </div>
@@ -70,9 +74,10 @@
 <div class="gamer4">
 <img src="imagens/farcry5.jpg" width="200px">
 </div>
+</div>
 </section>
 <footer>
-o footer asdas
+
 </footer>
 </body>
 </html>
