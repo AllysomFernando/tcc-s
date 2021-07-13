@@ -58,29 +58,25 @@
   <div class="content">
    <a href="#"> <img src="imagens/cyberpunk.jpg" class="cyber" width="1000px"></a>
   </div>
-</div>   
-<!--
-  </div>
-  <div class="center right"> 
   <div class="sales1">
-  <img src="imagens/valala.jpg" width="200px">
+  <a href="#"><img src="imagens/valala.jpg" width="500px"></a>
   </div>
-  <div class="sales2">
-  <img src="imagens/watchdogs.jpg" width="200px">
-  </div>  
-</div>
-<div class="clear"></div>
-</section><!--parte da freewknd-->
-<!--
+</div>   
+<!--parte da freewknd-->
+
 <section class="allgames"><!--outros games-->
-<!--
-  <div class="center">
+
+  
 <div class="game1 ">
-  <img src="imagens/revilage.jpg" width="200px">
+  <a href="#"><img src="imagens/revilage.jpg" width="200px"></a>
 </div>
-<div class="game2">
-<img src="imagens/skyrim.jpg" width="200px">
+<div class="game2"> 
+  <a href="#"><img src="imagens/skyrim.jpg" width="200px"></a>
 </div>
+
+
+
+<!--
 <div class="game3">
 <img src="imagens/cyberpunk.jpg" width="200px">
 </div>
@@ -90,7 +86,7 @@
 </div>
 </section>
 <footer>
-
+-->
 </footer>
-</body>
+</body> 
 </html>

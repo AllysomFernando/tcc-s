@@ -124,5 +124,21 @@ body{
 }
 
 .content{
-    padding-left: 5%;
+   padding-right: 10%;
+}
+
+.sales1{
+    padding-bottom: 1%;
+}
+
+/**jogos da parte de baixo**/
+
+div{
+    display: inline-block;
+}
+.games1{
+
+}
+.game2{
+
 }
