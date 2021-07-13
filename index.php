@@ -92,8 +92,6 @@
 -->
 </footer>
 <script src="js/jquery.js"></script>
-<script>
-    
-  </script>
+<script src="js/scripts.js"></script>
 </body> 
 </html>
