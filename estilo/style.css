@@ -21,30 +21,108 @@
 .clear{
     clear:both;
 }
+/**logo**/
 
-/**estilização do site**/
-header{
-    padding: 10px 0;
-    background: #373435;
+img .logo{
+    position: relative;
+    
 }
 
+/**estilização o header**/
+header{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding:15px 100px;
+   z-index:10;
+   background:#373435;
+}
+
+/**mobile**/
 .mobile{
     display: none;
 }
 
+/**nagavegação**/
 nav.desktop ul{
-    list-style-type:none;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
 }
 
 nav.desktop li{
-   
-    padding: 0 15px;
-    font-size: 30px;
-    text-transform: uppercase;
-    display: inline-block;
+    list-style: none;
+    margin: 0 10px;
 }
 
-nav.desktop a{
-    color:white;
+nav.desktop li a{
+    color: #fff;
     text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 30px;
+}
+
+nav.desktop li a:hover{
+    color: #EC268F;
+
+}
+
+/**barra de pesquisa**/
+
+nav.search{
+    position: relative;
+    width: 300px;
+    height: 40px;
+}
+nav.search input{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background: transparent;
+    outline: none;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    padding: 0 10px 0 45px;
+}
+nav.search input::placeholder{
+    color: #fff;
+}
+
+nav.search .fa-search{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    left: 10px;
+    color: #fff;
+    border-right: 1px solid #fff;
+    padding-right: 10px;
+}
+
+/**corpo do site**/
+body{
+
+     background-image: url(../imagens/bck.png);
+     padding: 100px;     
+}
+
+.container{
+    padding: 200px 100px 100px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content{
+    padding-left: 5%;
 }
