@@ -43,10 +43,39 @@ header{
 }
 
 /**mobile**/
-.mobile{
+nav.mobile{
     display: none;
 }
 
+/**barra de navefação**/
+@media screen and (max-width:700px){
+    nav.desktop{
+        display: none;
+    }
+    nav.mobile{
+        display:block;
+    }
+    .botao-menu-mobile{
+        font-size: 30px;
+        cursor: pointer;
+        color: #fff;
+    }
+    nav.mobile ul{
+        display: none;
+    }
+    nav.search{
+        display: none;
+    }
+}
+/*imagens **/
+@media screen and (max-width: 768px){
+    img{
+        float:none !important;
+        display: block;
+        margin:0 auto;
+        max-width: 500px;
+    }
+}
 /**nagavegação**/
 nav.desktop ul{
     list-style-type: none;
@@ -135,10 +164,4 @@ body{
 
 div{
     display: inline-block;
-}
-.games1{
-
-}
-.game2{
-
 }

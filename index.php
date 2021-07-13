@@ -44,6 +44,9 @@
         </div> 
         </nav>  
          <nav class="mobile">
+           <div class="botao-menu-mobile">
+           <i class="fas fa-bars"></i><!--botao menu quando diminui a tela -->
+           </div>
             <ul>
                 <li><a href="">JOGOS</a></li>
                 <li><a href="">MEUS CÓDIGOS</a></li>
@@ -88,5 +91,9 @@
 <footer>
 -->
 </footer>
+<script src="js/jquery.js"></script>
+<script>
+    
+  </script>
 </body> 
 </html>
