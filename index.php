@@ -130,7 +130,7 @@
             </li>
             <li> 
             <span><i class="far fa-envelope"></i></span>
-              <p><a href="https://linktr.ee/ruddystore">https://linktr.ee/ruddystore</a></p>
+              <p><a href="https://linktr.ee/rddystore">https://linktr.ee/rddystore</a></p>
             </li>
         </ul>
      </div>
