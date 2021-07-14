@@ -92,7 +92,7 @@ nav.mobile{
     }
 }
 /*imagens **/
-@media screen and (max-width: 900px){
+@media screen and (max-width: 768px){
     img{
         float:none !important;
         display: block;
@@ -165,7 +165,7 @@ nav.search .fa-search{
 body{
 
     background-image: url(../imagens/bck.png);
-    
+    padding: 100px;  
 }
 
 .container{
@@ -173,7 +173,7 @@ body{
    min-height: 100vh;
    max-height: 750px;
    margin-left: -120px;
-  
+   margin-right: -100px;
    margin-top: -140px;
    display: flex;
    justify-content: space-between;
@@ -196,10 +196,7 @@ div{
 
 .cyber{
        width: 100%;
-      max-width: 700px;
-     margin-top: 200px;
-     margin-left: 80px;
-       height: 500px;
+       height: 600px;
        object-fit: cover;
        object-position: bottom;
        border-color: #EC268F;
@@ -211,18 +208,14 @@ div{
 .valha{
 
        width: 100%;
-       margin: auto;
-       max-width: 400px;
-       margin-right:50px;
-       margin-left: 85px;
-       height: 450px;
+       height: 500px;
        object-fit: cover;
        object-position: bottom;
        border-color: #EC268F;
        border-style: double;
        border-radius: 20px;
        border-width: 12px;
-       margin-top: 215px;
+       margin-top: 10px;
 }
 
 
@@ -258,11 +251,9 @@ div{
  footer{
    
     position: relative;
-    bottom:0;
-    left:0;
     width:100%;
     height: auto;
-    padding: 25px 20px  ;
+    padding: 50px 200px;
     background-color: #373435;
     display: flex;
     justify-content: space-between;
@@ -276,7 +267,6 @@ footer .footer{
     flex-wrap: wrap;
     flex-direction: row;
 }
-
 
 
 footer .footer .sec{
@@ -384,28 +374,13 @@ footer p{
 }
 
 /**vitu: linha divisoria (adicionar a cor certa depois que o fundo estiver pronto color: #EC268F;) **/
-
 .linha-horizontal {
    
-    margin-top: 54px;
-    width:60%;
+    width: 1200px;
     border: 2px solid #000;
     border-style:ridge;
-   margin-left: 250px;
+    
 }
-    
-
-
-hr{
-    border-color: black;
-    margin: auto;
-    
-    
-    box-sizing:solid;
-    width:80%; 
-    
-    margin-left: 110px; 
-  }
 
 /**vitu: update do re village **/
 .game1{
