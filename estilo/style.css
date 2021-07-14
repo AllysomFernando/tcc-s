@@ -92,7 +92,7 @@ nav.mobile{
     }
 }
 /*imagens **/
-@media screen and (max-width: 768px){
+@media screen and (max-width: 900px){
     img{
         float:none !important;
         display: block;
@@ -211,10 +211,11 @@ div{
 .valha{
 
        width: 100%;
-       max-width: 350px;
+       margin: auto;
+       max-width: 400px;
        margin-right:50px;
        margin-left: 85px;
-       height: 420px;
+       height: 450px;
        object-fit: cover;
        object-position: bottom;
        border-color: #EC268F;
@@ -261,7 +262,7 @@ div{
     left:0;
     width:100%;
     height: auto;
-    padding: 25px 200px ;
+    padding: 25px 20px  ;
     background-color: #373435;
     display: flex;
     justify-content: space-between;
@@ -383,19 +384,26 @@ footer p{
 }
 
 /**vitu: linha divisoria (adicionar a cor certa depois que o fundo estiver pronto color: #EC268F;) **/
+
 .linha-horizontal {
    
-    margin-top: 50px;
+    margin-top: 54px;
     width:60%;
     border: 2px solid #000;
     border-style:ridge;
    margin-left: 250px;
-    
 }
+    
+
+
 hr{
     border-color: black;
+    margin: auto;
+    
+    
     box-sizing:solid;
     width:80%; 
+    
     margin-left: 110px; 
   }
 
