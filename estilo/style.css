@@ -165,7 +165,7 @@ nav.search .fa-search{
 body{
 
     background-image: url(../imagens/bck.png);
-    padding: 100px;  
+    
 }
 
 .container{
@@ -196,7 +196,10 @@ div{
 
 .cyber{
        width: 100%;
-       height: 600px;
+      max-width: 700px;
+     margin-top: 200px;
+     margin-left: 80px;
+       height: 500px;
        object-fit: cover;
        object-position: bottom;
        border-color: #EC268F;
@@ -208,14 +211,17 @@ div{
 .valha{
 
        width: 100%;
-       height: 500px;
+       max-width: 330px;
+       margin-right:50px;
+    margin-right: 100px;
+       height: 400px;
        object-fit: cover;
        object-position: bottom;
        border-color: #EC268F;
        border-style: double;
        border-radius: 20px;
        border-width: 12px;
-       margin-top: 10px;
+       margin-top: 215px;
 }
 
 
@@ -251,9 +257,11 @@ div{
  footer{
    
     position: relative;
+    bottom:0;
+    left:0;
     width:100%;
     height: auto;
-    padding: 50px 200px;
+    padding: 25px 200px ;
     background-color: #373435;
     display: flex;
     justify-content: space-between;
@@ -267,6 +275,7 @@ footer .footer{
     flex-wrap: wrap;
     flex-direction: row;
 }
+
 
 
 footer .footer .sec{
@@ -380,12 +389,9 @@ footer p{
     border: 2px solid #000;
     border-style:ridge;
     
-<<<<<<< Updated upstream
 }
-=======
-}
+
 /**vitu: update do re village **/
 .game1{
     margin-top: 40px;
 }
->>>>>>> Stashed changes

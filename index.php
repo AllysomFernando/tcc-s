@@ -60,7 +60,7 @@
    <a href="#"> <img src="imagens/cyberpunk.jpg" class="cyber" width="400px"></a>
   </div>
   <div class="sales1">
-  <a href="#"><img src="imagens/valala.jpg" class="valha" width="1000px"></a>
+  <a href="#"><img src="imagens/valala.jpg" class="valha" width="400px"></a>
   </div>
 </div>   
 
@@ -71,7 +71,7 @@
 <section class="allgames"><!--outros games-->
   
 <div class="game1 ">
-  <a href="#"><img src="imagens/revilage.jpg" class="revi" width="700px"></a>
+  <a href="#"><img src="imagens/revilage.jpg" class="revi" width="500px"></a>
 </div>
 
 
