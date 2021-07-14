@@ -1,4 +1,3 @@
-  
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -59,26 +58,21 @@
 </header>
 <div class="container">
   <div class="content">
-   <a href="#"> <img src="imagens/cyberpunk.jpg" class="cyber" width="1000px"></a>
+   <a href="#"> <img src="imagens/cyberpunk.jpg" class="cyber" width="400px"></a>
   </div>
   <div class="sales1">
-  <a href="#"><img src="imagens/valala.jpg" width="500px"></a>
+  <a href="#"><img src="imagens/valala.jpg" class="valha" width="1000px"></a>
   </div>
 </div>   
 <!--parte da freewknd-->
-
 <section class="allgames"><!--outros games-->
-
   
 <div class="game1 ">
-  <a href="#"><img src="imagens/revilage.jpg" width="200px"></a>
+  <a href="#"><img src="imagens/revilage.jpg" class="revi" width="200px"></a>
 </div>
 <div class="game2"> 
-  <a href="#"><img src="imagens/skyrim.jpg" width="200px"></a>
+  <a href="#"><img src="imagens/skyrim.jpg" class="" width="200px"></a>
 </div>
-
-
-
 <!--
 <div class="game3">
 <img src="imagens/cyberpunk.jpg" width="200px">
