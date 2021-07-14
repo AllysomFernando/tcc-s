@@ -320,3 +320,16 @@ footer p{
     position: relative;
     width: 25%;
 }
+.quickLinks ul li{
+    list-style: none;
+}
+.quickLinks ul li a{
+    color:#999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.quickLinks ul li a:hover{
+    color: #fff;
+}

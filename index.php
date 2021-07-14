@@ -104,6 +104,16 @@
             <li><a href="#">Contatos</a></li>
         </ul>
      </div> 
+     <div class="sec contact">
+       <h2>Informações para Contatos</h2>
+       <ul class="info">
+            <li> 
+              <span></span>
+              <span>R. Natal, 2800 - Centro, Cascavel - PR</span>
+            </li>
+        </ul>
+     </div>
+  </div> 
 </footer>
 <script src="js/jquery.js"></script>
 <script src="js/scripts.js"></script>
