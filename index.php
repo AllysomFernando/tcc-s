@@ -33,6 +33,8 @@
                 <li><a href="#">JOGOS</a></li>
                 <li><a href="#">MEUS CÓDIGOS</a></li>
                 <li><a href="#">MINHA CARTEIRA</a></li>
+                <li><a href="#">SOBRE</a></li>
+                <li><a href="#">CONTATOS</a></li>
                 <li><a href="#">LOGIN</a></li>
             </ul>
         </nav>
