@@ -244,10 +244,10 @@ div{
     border-radius: 20px;
     border-width: 12px;
     margin-top: 10px;
-
+}
 /**footer**/
 
-footer{
+ footer{
     position: relative;
     width:100%;
     height: auto;
