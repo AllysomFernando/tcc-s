@@ -131,7 +131,7 @@
             </li>
             <li> 
             <span><i class="far fa-envelope"></i></span>
-              <p><a href="https://linktr.ee/rddystore">https://linktr.ee/rddystore</a></p>
+              <p><a href="mailto:allysom.renczenczen18@gmail.com">allysom.renczenczen18@gmail.com</a></p>
             </li>
         </ul>
      </div>
