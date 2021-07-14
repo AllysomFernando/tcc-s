@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
    <!-- css abaixo-->
-    <link href="estilo/styleteste.css" rel="stylesheet"/>
+    <link href="styleteste.css" rel="stylesheet"/>
     <!--SEO-->
     <meta name="description" content="Ruddy Store - Todos os tipos de jogos e afins você encontra aqui"/>
     <!--SMO-->
@@ -58,7 +58,7 @@
 </header>
 <div class="container">
   <div class="content">
-   <a href="#"> <img src="imagens/cyberpunk.jpg" class="cyber" width="400px" ></a>
+   <a href="#"> <img src="imagens/cyberpunk.jpg" class="cyber" width="400px"></a>
   </div>
   <div class="sales1">
   <a href="#"><img src="imagens/valala.jpg" class="valha" width="1000px"></a>
@@ -68,28 +68,12 @@
 <section class="allgames"><!--outros games-->
   
 <div class="game1 ">
-  <a href="#"><img src="imagens/revilage.jpg" class="revi" width="700px"></a>
+  <a href="#"><img src="imagens/revilage.jpg" class="revi" width="200px"></a>
 </div>
-<div class="descgame1">
-  <ul>
-    <p> Embora pareça simples à primeira vista, o enredo é na realidade bastante  
-        complexo. Sob a premissa da busca de um pai por sua filha, são 
-        guardados vários mistérios que envolvem até mesmo a história da formação da 
-        principal empresa de Resident Evil, a Umbrella Corporation. 
-        Todo o desenrolar da narrativa vai se aprofundando enquanto 
-        avançamos no jogo, e a cereja do bolo é o seu desfecho completamente 
-        surpreendente.</p>
-  </ul>
-<!--
-
 <div class="game2"> 
-  <a href="#"><img src="imagens/skyrim.jpg" class="" width="600px"></a>
+  <a href="#"><img src="imagens/skyrim.jpg" class="" width="200px"></a>
 </div>
-
--->
-
 <!--
-
 <div class="game3">
 <img src="imagens/cyberpunk.jpg" width="200px">
 </div>
@@ -99,7 +83,6 @@
 </div>
 </section>
 <footer>
-
 -->
 </footer>
 <script src="js/jquery.js"></script>

@@ -50,9 +50,7 @@
                 <li><a href="">JOGOS</a></li>
                 <li><a href="">MEUS CÓDIGOS</a></li>
                 <li><a href="">MINHA CARTEIRA</a></li>
-                <li><a href="">SOBRE NÓS</a></li>
-                <li><a href="">LOGIN</a></li>
-                <li><a href="">REGISTRO</a></li>
+                <li><a href="">LOGIN</a></li>        
             </ul>
         </nav>    
 </header>
@@ -82,8 +80,53 @@
 </div>
 </div>
 </section>
-<footer>
 -->
+<footer>
+    <div class="footer">
+      <div class="sec aboutus">
+        <h2> Sobre Nós</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque amet ullam ex dolorum quia officia aliquid cum fuga id eveniet repellendus, quisquam accusamus beatae! Autem pariatur excepturi a est ex!orem ipsum dolor sit amet consectetur adipisicing elit. Doloremque amet ullam ex dolorum quia officia aliquid cum fuga id eveniet repellendus, quisquam accusamus beatae! Autem pariatur excepturi a est ex!orem ipsum dolor sit amet consectetur adipisicing elit. Doloremque amet ullam ex dolorum quia officia aliquid cum fuga id eveniet repellendus, quisquam accusamus beatae! Autem pariatur excepturi a est ex!</p>
+        <ul class="sci">
+        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fab fa-github"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+      </ul>
+      </div>
+      <div class="sec quickLinks">
+        <h2>Quick Links</h2>
+        <ul>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Politicas de Privacidade</a></li>
+            <li><a href="#">Ajuda</a></li>
+            <li><a href="#">Termos de Condições</a></li>
+            <li><a href="#">Contatos</a></li>
+        </ul>
+     </div> 
+     <div class="sec contact">
+       <h2>Informações para Contatos</h2>
+       <ul class="info">
+            <li> 
+              <span><i class="fas fa-map-marker-alt"></i></span>
+              <span>R. Natal, 2800 - Centro <br>
+              Cascavel - PR</span>
+            </li>
+            <li> 
+              <span><i class="fas fa-phone-square-alt"></i>
+              <p><a href="tel: 45 99944-7017">(45) 99944-7017</a>
+              <br>
+              <a href="tel:(45) 99916-1429">(45) 99916-1429</a></p>
+            </li>
+            <li> 
+              <span><i class="far fa-envelope"></i></span>
+              <p><a href="mailto:allysom.renczeczen18@gmail.com">allysom.renczeczen18@gmail.com</a></p>
+              <br>
+              <p><a href="mailto:vhr2806@gmail.com">vhr2806@gmail.com</a></p>
+            </li>
+        </ul>
+     </div>
+  </div> 
 </footer>
 <script src="js/jquery.js"></script>
 <script src="js/scripts.js"></script>
