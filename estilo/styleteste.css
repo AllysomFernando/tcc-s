@@ -100,7 +100,7 @@ nav.mobile{
         max-width: 500px;
     }
 }
-/nagavegação/
+/**nagavegação**/
 nav.desktop ul{
     list-style-type: none;
     display: flex;
@@ -355,6 +355,6 @@ footer p{
 .contact .info li span{
     color: #999;
 }
-.contact .info li a{
+.contact .info li span a{
     color: #999;
 }
