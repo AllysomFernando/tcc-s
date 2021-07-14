@@ -9,3 +9,4 @@ estou iniciando a estilização -12/07
 dia 13/07 - estou arruamdno a minha estilização e começando a fazer o body, o header está perfeito na minha opniao
 
 vitu: dia 13 vo arruma o front kappa
+allysu: vamos usar um unico index, pra n ficar dando conflito de toda vez passar pra outro arquivo
