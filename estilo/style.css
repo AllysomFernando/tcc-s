@@ -30,24 +30,27 @@ img .logo{
 
 /**estilização o header**/
 header{
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   padding:15px 100px;
-   z-index:10;
-   background:#373435;
-}
+   
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:15px 100px;
+    z-index:10;
+    background:#373435;
+    min-height: 60px;
+    position: fixed;
+ }
+ 
 
 /**mobile**/
 nav.mobile{
     display: none;
 }
 
-/**barra de navefação**/
+/**barra de navegação**/
 @media screen and (max-width:700px){
     nav.desktop{
         display: none;
@@ -161,28 +164,197 @@ nav.search .fa-search{
 /**corpo do site**/
 body{
 
-     background-image: url(../imagens/bck.png);
-     padding: 100px;     
+    background-image: url(../imagens/bck.png);
+    padding: 100px;  
 }
 
 .container{
-    padding: 200px 100px 100px;
-    min-height: 100vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+   padding: 200px 100px 100px;
+   min-height: 100vh;
+   margin-left: -120px;
+   margin-right: -100px;
+   margin-top: -140px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
 }
 
 .content{
-   padding-right: 10%;
+  padding-right: 10%;
 }
 
 .sales1{
-    padding-bottom: 1%;
+   padding-bottom: 1%;
 }
 
 /**jogos da parte de baixo**/
 
 div{
+   display: inline-block;
+}
+
+.cyber{
+       width: 100%;
+       height: 600px;
+       object-fit: cover;
+       object-position: bottom;
+       border-color: #EC268F;
+       border-style: double;
+       border-radius: 20px;
+       border-width: 12px;
+      
+}
+.valha{
+
+       width: 100%;
+       height: 500px;
+       object-fit: cover;
+       object-position: bottom;
+       border-color: #EC268F;
+       border-style: double;
+       border-radius: 20px;
+       border-width: 12px;
+       margin-top: 10px;
+}
+
+.revi{
+   
+   
+   height: 450px;
+   object-fit: cover;
+   object-position: bottom;
+   border-color: #EC268F;
+   border-style: double;
+   border-radius: 20px;
+   border-width: 12px;
+   margin-top: 10px;
+}
+
+.sky{
+   
+   
+   height: 750px;
+   object-fit: cover;
+   object-position: bottom;
+   border-color: #EC268F;
+   border-style: double;
+   border-radius: 20px;
+   border-width: 12px;
+   margin-top: 10px;
+}
+
+/**footer**/
+
+footer{
+    position: relative;
+    width:100%;
+    height: auto;
+    padding: 50px 200px;
+    background-color: #373435;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+footer .footer .sec{
+    margin-right: 30px; 
+}
+footer .footer .sec.aboutus{
+    width: 40%;
+}
+footer .footer  h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+footer .footer h2:before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background:#EC268F;
+}
+footer p{
+    color: #fff;
+}
+
+.sci{
+    margin-top:20px;
+    display: flex;
+}
+.sci li{
+    list-style: none;
+}
+.sci li a{
     display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.sci li a:hover{
+    background:#EC268F;
+}
+.sci li a .fab
+{
+    color: #fff;
+    font-size: 20px;
+}
+
+.quickLinks{
+    position: relative;
+    width: 25%;
+}
+.quickLinks ul li{
+    list-style: none;
+}
+.quickLinks ul li a{
+    color:#999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.quickLinks ul li a:hover{
+    color: #fff;
+}
+
+.contact{
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+}
+
+.contact .info{
+    position: relative;
+}
+
+.contact .info li{
+    display: flex;
+    margin-bottom: 16px;
+}
+.contact .info li span:nth-child(1){
+    color:#fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.contact .info li span{
+    color: #999;
+}
+.contact .info li span a{
+    color: #999;
 }

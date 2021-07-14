@@ -7,9 +7,6 @@ $(function(){
             listaMenu.fadeIn();
         else
             listaMenu.fadeOut();
-        
-    
-            
     })
 })
 
