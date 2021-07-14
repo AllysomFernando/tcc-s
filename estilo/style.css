@@ -171,6 +171,7 @@ body{
 .container{
    padding: 200px 100px 100px;
    min-height: 100vh;
+   max-height: 750px;
    margin-left: -120px;
    margin-right: -100px;
    margin-top: -140px;
@@ -248,6 +249,7 @@ div{
 /**footer**/
 
  footer{
+   
     position: relative;
     width:100%;
     height: auto;
@@ -256,6 +258,7 @@ div{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
 }
 
 footer .footer{
@@ -264,6 +267,7 @@ footer .footer{
     flex-wrap: wrap;
     flex-direction: row;
 }
+
 
 footer .footer .sec{
     margin-right: 30px; 
@@ -359,4 +363,13 @@ footer p{
 }
 .contact .info li span a{
     color: #999;
+}
+
+/**vitu: linha divisoria (adicionar a cor certa depois que o fundo estiver pronto color: #EC268F;) **/
+.linha-horizontal {
+   
+    width: 1200px;
+    border: 2px solid #000;
+    border-style:ridge;
+    
 }
