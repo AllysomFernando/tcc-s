@@ -130,13 +130,15 @@
             </li>
             <li> 
             <span><i class="far fa-envelope"></i></span>
-              <p><a href="mailto:allysom.renczeczen18@gmail.com">allysom.renczeczen18@gmail.com</a></p>
-              <p><a href="mailto:vhr2806@gmail.com">vhr2806@gmail.com</a></p>
+              <p><a href="https://linktr.ee/ruddystore">https://linktr.ee/ruddystore</a></p>
             </li>
         </ul>
      </div>
   </div> 
 </footer>
+<div class="copyrightText">
+  <p>Copyright © Ruddy Store. Todos os direitos reservados.</p>
+</div>
 <script src="js/jquery.js"></script>
 <script src="js/scripts.js"></script>
 </body> 
