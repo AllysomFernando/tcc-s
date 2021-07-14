@@ -113,14 +113,16 @@
               Cascavel - PR</span>
             </li>
             <li> 
-              <span><i class="fas fa-phone-square-alt"></i></span>
-              <span>R. Natal, 2800 - Centro <br>
-              Cascavel - PR</span>
+              <span><i class="fas fa-phone-square-alt"></i>
+              <p><a href="tel: 45 99944-7017">(45) 99944-7017</a>
+              <br>
+              <a href="tel:(45) 99916-1429">(45) 99916-1429</a></p>
             </li>
             <li> 
               <span><i class="far fa-envelope"></i></span>
-              <span>R. Natal, 2800 - Centro <br>
-              Cascavel - PR</span>
+              <p><a href="mailto:allysom.renczeczen18@gmail.com">allysom.renczeczen18@gmail.com</a></p>
+              <br>
+              <p><a hrfe="mailto:vhr2806@gmail.com">
             </li>
         </ul>
      </div>
