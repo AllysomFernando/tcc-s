@@ -12,4 +12,4 @@ vitu: dia 13 vo arruma o front kappa
 
 allysu: vamos usar um unico index, pra n ficar dando conflito de toda vez passar pra outro arquivo
 
-allysu: dia 14/07 vou fazer um footer resposivo
+allysu: dia 14/07 vou fazer um footer responsivo
