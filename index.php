@@ -119,9 +119,8 @@
               <a href="tel:(45) 99916-1429">(45) 99916-1429</a></p>
             </li>
             <li> 
-              <span><i class="far fa-envelope"></i></span>
+            <span><i class="far fa-envelope"></i></span>
               <p><a href="mailto:allysom.renczeczen18@gmail.com">allysom.renczeczen18@gmail.com</a></p>
-              <br>
               <p><a href="mailto:vhr2806@gmail.com">vhr2806@gmail.com</a></p>
             </li>
         </ul>
