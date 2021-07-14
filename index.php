@@ -67,6 +67,9 @@
 <!-- linha horizontal-->
 
 <div class="linha-horizontal"></div>
+<hr/>
+
+<hr/>
 
 <section class="allgames"><!--outros games-->
   
