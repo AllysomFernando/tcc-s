@@ -361,3 +361,10 @@ footer p{
     color: #999;
     text-decoration: none;
 }
+.copyrightText{
+  width: 100%;
+  background: #373435;
+  padding: 8px 100px;
+  text-align: center;
+  color:#999;
+}

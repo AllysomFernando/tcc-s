@@ -130,6 +130,9 @@
      </div>
   </div> 
 </footer>
+<div class="copyrightText">
+  <p>Copyright © Ruddy Store. Todos os direitos reservados.</p>
+</div>
 <script src="js/jquery.js"></script>
 <script src="js/scripts.js"></script>
 </body> 
