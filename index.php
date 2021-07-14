@@ -108,8 +108,19 @@
        <h2>Informações para Contatos</h2>
        <ul class="info">
             <li> 
-              <span></span>
-              <span>R. Natal, 2800 - Centro, Cascavel - PR</span>
+              <span><i class="fas fa-map-marker-alt"></i></span>
+              <span>R. Natal, 2800 - Centro <br>
+              Cascavel - PR</span>
+            </li>
+            <li> 
+              <span><i class="fas fa-phone-square-alt"></i></span>
+              <span>R. Natal, 2800 - Centro <br>
+              Cascavel - PR</span>
+            </li>
+            <li> 
+              <span><i class="far fa-envelope"></i></span>
+              <span>R. Natal, 2800 - Centro <br>
+              Cascavel - PR</span>
             </li>
         </ul>
      </div>
