@@ -361,7 +361,15 @@ footer p{
 .contact .info li span{
     color: #999;
 }
-.contact .info li span a{
+.contact .info li a{
+    color: #999;
+    text-decoration: none;
+}
+.copyrightText{
+    width: 100%;
+    background: #373435;
+    padding:8px 100px;
+    text-align: center;
     color: #999;
 }
 
