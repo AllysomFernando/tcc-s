@@ -368,8 +368,13 @@ footer p{
 /**vitu: linha divisoria (adicionar a cor certa depois que o fundo estiver pronto color: #EC268F;) **/
 .linha-horizontal {
    
-    width: 1200px;
+    width: 1000px;
+    margin-left: 100px;
     border: 2px solid #000;
     border-style:ridge;
     
+}
+/**vitu: update do re village **/
+.game1{
+    margin-top: 50px;
 }
