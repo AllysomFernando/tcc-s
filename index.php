@@ -50,9 +50,7 @@
                 <li><a href="">JOGOS</a></li>
                 <li><a href="">MEUS CÓDIGOS</a></li>
                 <li><a href="">MINHA CARTEIRA</a></li>
-                <li><a href="">SOBRE NÓS</a></li>
-                <li><a href="">LOGIN</a></li>
-                <li><a href="">REGISTRO</a></li>
+                <li><a href="">LOGIN</a></li>        
             </ul>
         </nav>    
 </header>
@@ -82,8 +80,13 @@
 </div>
 </div>
 </section>
-<footer>
 -->
+<footer>
+    <div class="footer"></div>
+      <div class="sec aboutus">
+        <h2> Sobre Nós</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque amet ullam ex dolorum quia officia aliquid cum fuga id eveniet repellendus, quisquam accusamus beatae! Autem pariatur excepturi a est ex!</p>
+      </div>
 </footer>
 <script src="js/jquery.js"></script>
 <script src="js/scripts.js"></script>
