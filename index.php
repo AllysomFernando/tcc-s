@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
    <!-- css abaixo-->
-    <link href="estilo/style.css" rel="stylesheet"/>
+    <link href="estilo/styleteste.css" rel="stylesheet"/>
     <!--SEO-->
     <meta name="description" content="Ruddy Store - Todos os tipos de jogos e afins você encontra aqui"/>
     <!--SMO-->
@@ -62,15 +62,19 @@
   <a href="#"><img src="imagens/valala.jpg" class="valha" width="1000px"></a>
   </div>
 </div>   
+
 <!--parte da freewknd-->
+
 <section class="allgames"><!--outros games-->
   
 <div class="game1 ">
   <a href="#"><img src="imagens/revilage.jpg" class="revi" width="200px"></a>
 </div>
+
 <div class="game2"> 
   <a href="#"><img src="imagens/skyrim.jpg" class="" width="200px"></a>
 </div>
+
 <!--
 <div class="game3">
 <img src="imagens/cyberpunk.jpg" width="200px">

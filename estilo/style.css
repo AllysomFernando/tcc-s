@@ -100,7 +100,7 @@ nav.mobile{
         max-width: 500px;
     }
 }
-/nagavegação/
+/**nagavegação**/
 nav.desktop ul{
     list-style-type: none;
     display: flex;
@@ -187,7 +187,7 @@ body{
    padding-bottom: 1%;
 }
 
-/**jogos da parte de baixo**/
+/**freeweeknd**/
 
 div{
    display: inline-block;
@@ -217,31 +217,33 @@ div{
        margin-top: 10px;
 }
 
+
+/**jogos de baixo**/
+
 .revi{
    
    
-   height: 450px;
-   object-fit: cover;
-   object-position: bottom;
-   border-color: #EC268F;
-   border-style: double;
-   border-radius: 20px;
-   border-width: 12px;
-   margin-top: 10px;
-}
+    height: 450px;
+    object-fit: cover;
+    object-position: bottom;
+    border-color: #EC268F;
+    border-style: double;
+    border-radius: 20px;
+    border-width: 12px;
+    margin-top: 10px;
+ }
 
 .sky{
    
    
-   height: 750px;
-   object-fit: cover;
-   object-position: bottom;
-   border-color: #EC268F;
-   border-style: double;
-   border-radius: 20px;
-   border-width: 12px;
-   margin-top: 10px;
-}
+    height: 750px;
+    object-fit: cover;
+    object-position: bottom;
+    border-color: #EC268F;
+    border-style: double;
+    border-radius: 20px;
+    border-width: 12px;
+    margin-top: 10px;
 
 /**footer**/
 
@@ -355,6 +357,6 @@ footer p{
 .contact .info li span{
     color: #999;
 }
-.contact .info li a{
+.contact .info li span a{
     color: #999;
 }
