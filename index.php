@@ -82,11 +82,28 @@
 </section>
 -->
 <footer>
-    <div class="footer"></div>
+    <div class="footer">
       <div class="sec aboutus">
         <h2> Sobre Nós</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque amet ullam ex dolorum quia officia aliquid cum fuga id eveniet repellendus, quisquam accusamus beatae! Autem pariatur excepturi a est ex!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque amet ullam ex dolorum quia officia aliquid cum fuga id eveniet repellendus, quisquam accusamus beatae! Autem pariatur excepturi a est ex!orem ipsum dolor sit amet consectetur adipisicing elit. Doloremque amet ullam ex dolorum quia officia aliquid cum fuga id eveniet repellendus, quisquam accusamus beatae! Autem pariatur excepturi a est ex!orem ipsum dolor sit amet consectetur adipisicing elit. Doloremque amet ullam ex dolorum quia officia aliquid cum fuga id eveniet repellendus, quisquam accusamus beatae! Autem pariatur excepturi a est ex!</p>
+        <ul class="sci">
+        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fab fa-github"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+      </ul>
       </div>
+      <div class="sec quickLinks">
+        <h2>Quick Links</h2>
+        <ul>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Politicas de Privacidade</a></li>
+            <li><a href="#">Ajuda</a></li>
+            <li><a href="#">Termos de Condições</a></li>
+            <li><a href="#">Contatos</a></li>
+        </ul>
+     </div> 
 </footer>
 <script src="js/jquery.js"></script>
 <script src="js/scripts.js"></script>
