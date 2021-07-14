@@ -61,8 +61,29 @@ nav.mobile{
         color: #fff;
     }
     nav.mobile ul{
+        top:120px;
+        z-index: 3;
+        position: absolute;
+        left:0;
+        width: 100%;
         display: none;
+        text-align:center;
     }
+    nav.mobile li{
+        font-weight: 300;
+        width: 100%;
+        display: block;
+        background: white;
+        border-bottom: 1px solid #373435;
+        font-size: 15px;
+        padding:8px 0;
+    }
+    nav.mobile  li a{
+        display: block;
+        color:black;
+        text-decoration: none;
+    }
+    
     nav.search{
         display: none;
     }
