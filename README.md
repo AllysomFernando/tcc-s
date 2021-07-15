@@ -13,3 +13,5 @@ vitu: dia 13 vo arruma o front kappa
 allysu: vamos usar um unico index, pra n ficar dando conflito de toda vez passar pra outro arquivo
 
 allysu: dia 14/07 vou fazer um footer responsivo
+
+allysuu: dia 15 estamos perto de adquirir esquisofrenia, victor está arrumando bugs e eu vou começar a fazer url amigavel :)
