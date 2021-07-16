@@ -1,3 +1,3 @@
 <?php
-        define('INCLUDE_PATH','http://localhost/tcc/tcc-allysu-victor/');
+        define('INCLUDE_PATH','http://localhost/tcc-allysu-victor/');
 ?>
