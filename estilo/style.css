@@ -42,6 +42,10 @@ header{
     background:#373435;
     min-height: 60px;
     position: fixed;
+    margin-bottom: 2.5px;
+    border-color: #EC268F;
+    border-style: solid;
+
  }
  
 
@@ -231,7 +235,10 @@ div{
 .revi{
    
    
-    height: 450px;
+    max-height: 500px;
+    position: relative;
+    width: 100%;
+    max-width: 800px;
     object-fit: cover;
     object-position: bottom;
     border-color: #EC268F;
@@ -239,7 +246,9 @@ div{
     border-radius: 20px;
     border-width: 12px;
     margin-top: 10px;
+    margin-left: 50px;
  }
+ /**descricao do resident village**/
 
 .sky{
    
@@ -260,11 +269,14 @@ div{
     position: relative;
     width:100%;
     height: auto;
-    padding: 50px 200px;
+    padding: 15px 0px 0px 10px;
     background-color: #373435;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    
+    border-color: #EC268F;
+    border-style: solid;
 oi
 }
 
