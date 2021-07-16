@@ -60,97 +60,64 @@
             </ul>
         </nav>    
 </header>
-<!--parte da freewknd-->
-<div class="container">
-  <div class="content">
-   <a href="#"> <img src="<?php echo INCLUDE_PATH; ?>imagens/cyberpunk.jpg" class="cyber" width="400px"></a>
-  </div>
-  <div class="sales1">
-  <a href="#"><img src="<?php echo INCLUDE_PATH; ?>imagens/valala.jpg" class="valha" width="400px"></a>
-  </div>
-</div>   
+<?php
 
-<!-- linha horizontal-->
+      $url = isset($_GET['url']) ? $_GET['url'] : 'home';
 
-<hr class="hr5">
-
-<section class="allgames"><!--outros games-->
-  
+      if(file_exists('pages/'.$url.'.php')){
+        include('pages/'.$url.'.php');
+      }else{
+        //podemos fazer o que quiser, pois a pagina não existe.
+        include('pages/404.php');
+      }
 
 
-<div class="game1 ">
-  <a href="#"><img src="<?php echo INCLUDE_PATH; ?>imagens/revilage.jpg" class="revi" width="800px"></a>
-</div>
+?>
 
-<div class="desc_revi">
-<p class="revi_desc"> Continuando de onde o risco biológico de Resident
-    Evil 7 parou, Resident Evil Village é o oitavo grande episódio da série Resident Evil. Tecnologia de 
-    Próxima Geração RE Engine emparelhado com poder de console de próxima
-    geração fornecerá gráficos fotorrealistas, trazendo a aldeia sombria e seus 
-    residentes assombrados para a vida.<p>
-</div>
-
-<!--
-
-<div class="game2"> 
-  <a href="#"><img src="<?php echo INCLUDE_PATH; ?>imagens/skyrim.jpg" class="" width="200px"></a>
-</div>
-
--->
-<!--
-<div class="game3">
-<img src="<?php echo INCLUDE_PATH; ?>imagens/cyberpunk.jpg" width="200px">
-</div>
-<div class="gamer4">
-<img src="<?php echo INCLUDE_PATH; ?>imagens/farcry5.jpg" width="200px">
-</div>
-</div>
-</section>
--->
 <footer>
-    <div class="footer">
-      <div class="sec aboutus">
-        <h2> Sobre Nós</h2>
-        <p>Somos um projeto fictício para conclusão de curso, uma empresa para vendas de jogos e envios de códigos, somos em dois programadores e um designer gráfico, nosso contato está no topo do site.</p>
-        <ul class="sci">
-        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-        <li><a href="#"><i class="fab fa-github"></i></a></li>
-        <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
-      </ul>
-      </div>
-      <div class="sec quickLinks">
-        <h2>Quick Links</h2>
-        <ul>
-            <li><a href="<?php echo INCLUDE_PATH; ?>#">Sobre</a></li>
-            <li><a href="<?php echo INCLUDE_PATH; ?>#">FAQ</a></li>
-            <li><a href="<?php echo INCLUDE_PATH; ?>#">Politicas de Privacidade</a></li>
-            <li><a href="<?php echo INCLUDE_PATH; ?>#">Ajuda</a></li>
-            <li><a href="<?php echo INCLUDE_PATH; ?>#">Termos de Condições</a></li>
-            <li><a href="<?php echo INCLUDE_PATH; ?>#">Contatos</a></li>
-        </ul>
-     </div> 
-     <div class="sec contact">
-       <h2>Informações para Contatos</h2>
-       <ul class="info">
-            <li> 
-              <span><i class="fas fa-map-marker-alt"></i></span>
-              <span>R. Natal, 2800 - Centro <br>
-              Cascavel - PR</span>
-            </li>
-            <li> 
-              <span><i class="fas fa-phone-square-alt"></i></span>
-              <p><a href="tel: 45 99944-7017">(45) 99944-7017</a>
-              <br>
-              <a href="tel:(45) 99916-1429">(45) 99916-1429</a></p>
-            </li>
-            <li> 
-            <span><i class="far fa-envelope"></i></span>
-              <p><a href="mailto:allysom.renczenczen18@gmail.com">allysom.renczenczen18@gmail.com</a></p>
-            </li>
-        </ul>
-     </div>
-  </div> 
+<div class="footer">
+  <div class="sec aboutus">
+    <h2> Sobre Nós</h2>
+    <p>Somos um projeto fictício para conclusão de curso, uma empresa para vendas de jogos e envios de códigos, somos em dois programadores e um designer gráfico, nosso contato está no topo do site.</p>
+    <ul class="sci">
+    <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+    <li><a href="#"><i class="fab fa-github"></i></a></li>
+    <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+  </ul>
+  </div>
+  <div class="sec quickLinks">
+    <h2>Quick Links</h2>
+    <ul>
+        <li><a href="<?php echo INCLUDE_PATH; ?>#">Sobre</a></li>
+        <li><a href="<?php echo INCLUDE_PATH; ?>#">FAQ</a></li>
+        <li><a href="<?php echo INCLUDE_PATH; ?>#">Politicas de Privacidade</a></li>
+        <li><a href="<?php echo INCLUDE_PATH; ?>#">Ajuda</a></li>
+        <li><a href="<?php echo INCLUDE_PATH; ?>#">Termos de Condições</a></li>
+        <li><a href="<?php echo INCLUDE_PATH; ?>#">Contatos</a></li>
+    </ul>
+ </div> 
+ <div class="sec contact">
+   <h2>Informações para Contatos</h2>
+   <ul class="info">
+        <li> 
+          <span><i class="fas fa-map-marker-alt"></i></span>
+          <span>R. Natal, 2800 - Centro <br>
+          Cascavel - PR</span>
+        </li>
+        <li> 
+          <span><i class="fas fa-phone-square-alt"></i></span>
+          <p><a href="tel: 45 99944-7017">(45) 99944-7017</a>
+          <br>
+          <a href="tel:(45) 99916-1429">(45) 99916-1429</a></p>
+        </li>
+        <li> 
+        <span><i class="far fa-envelope"></i></span>
+          <p><a href="mailto:allysom.renczenczen18@gmail.com">allysom.renczenczen18@gmail.com</a></p>
+        </li>
+    </ul>
+ </div>
+</div> 
 </footer>
 <div class="copyrightText">
   <p>Copyright © Ruddy Store. Todos os direitos reservados.</p>
