@@ -107,7 +107,7 @@
     <div class="footer">
       <div class="sec aboutus">
         <h2> Sobre Nós</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque amet ullam ex dolorum quia officia aliquid cum fuga id eveniet repellendus, quisquam accusamus beatae! Autem pariatur excepturi a est ex!orem ipsum dolor sit amet consectetur adipisicing elit. Doloremque amet ullam ex dolorum quia officia aliquid cum fuga id eveniet repellendus, quisquam accusamus beatae! Autem pariatur excepturi a est ex!orem ipsum dolor sit amet consectetur adipisicing elit. Doloremque amet ullam ex dolorum quia officia aliquid cum fuga id eveniet repellendus, quisquam accusamus beatae! Autem pariatur excepturi a est ex!</p>
+        <p>Somos um projeto fictício para conclusão de curso, uma empresa para vendas de jogos e envios de códigos, somos em dois programadores e um designer gráfico, nosso contato está no topo do site.</p>
         <ul class="sci">
         <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
         <li><a href="#"><i class="fab fa-instagram"></i></a></li>
