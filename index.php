@@ -1,4 +1,4 @@
-<?php include('config.php');?>
+<?php include('config.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ruddy Store - Loja de jogos </title>
-   <!--fontawesom link abaixo-->  
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous"> 
-   <!-- google fonts abaixo -->   
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
-   <!-- css abaixo-->
+    <!--fontawesom link abaixo-->  
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous"> 
+    <!-- google fonts abaixo -->   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- css abaixo-->
     <link href="<?php echo INCLUDE_PATH; ?>estilo/style.css" rel="stylesheet" />
     <!--SEO-->
     <meta name="description" content="Ruddy Store - Todos os tipos de jogos e afins você encontra aqui"/>
@@ -23,8 +23,7 @@
     <meta property="og:url" content="https://ruddystore.com">
     <meta property="og:img" content="RUDDY STORE PNG.png">
     <meta property="og:image:type" content="logo.png">
-    
-    <title>HOME</title>
+<title>HOME</title>
 </head>
 <body>
 <header>   
