@@ -168,8 +168,7 @@ nav.search .fa-search{
 /**corpo do site**/
 body{
 
-    background-image: url(../imagens/bg.png);
-   
+    background-image: url(../imagens/);
 }
 
 .container{
@@ -270,7 +269,7 @@ div{
     width:100%;
     height: auto;
     padding: 15px 0px 0px 10px;
-    background-color: #373435;
+    background-color: #EC268F;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -306,7 +305,7 @@ footer .footer h2:before{
     left: 0;
     width: 50px;
     height: 2px;
-    background:#EC268F;
+    background:#fff;
 }
 footer p{
     color: #fff;
@@ -323,7 +322,7 @@ footer p{
     display: inline-block;
     width: 40px;
     height: 40px;
-    background: #222;
+    background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -336,7 +335,7 @@ footer p{
 }
 .sci li a .fab
 {
-    color: #fff;
+    color: #373435;
     font-size: 20px;
 }
 
@@ -348,14 +347,14 @@ footer p{
     list-style: none;
 }
 .quickLinks ul li a{
-    color:#999;
+    color:#fff;
     text-decoration: none;
     margin-bottom: 10px;
     display: inline-block;
 }
 
 .quickLinks ul li a:hover{
-    color: #fff;
+    color: grey;
 }
 
 .contact{
@@ -377,24 +376,24 @@ footer p{
     margin-right: 10px;
 }
 .contact .info li span{
-    color: #999;
+    color: #fff;
 }
 .contact .info li a{
-    color: #999;
+    color: #fff;
     text-decoration: none;
 }
 .copyrightText{
     width: 100%;
-    background: #373435;
+    background: #EC268F;
     padding:8px 100px;
     text-align: center;
-    color: #999;
+    color: #fff;
 }
 
-/**vitu: linha divisoria (adicionar a cor certa depois que o fundo estiver pronto color: #EC268F;) **/
+/**vitu: linha divisoria (adicionar a cor certa depois que o fundo estiver pronto color: ;) **/
 .hr5 {
     border: 0;
-    border-top: solid black;
+    border-top: solid #EC268F;
     height: 23%;
     overflow: visible;
     padding: 0;
