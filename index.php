@@ -27,15 +27,15 @@
 </head>
 <body>
 <header>   
-        <a href="#" class="logo"><img src="imagens/logo.png" width="100px"></a><!--ficara a logo-->
+        <a href="#" class="logo"><img src="<?php echo INCLUDE_PATH; ?>imagens/logo.png" width="100px"></a><!--ficara a logo-->
         <nav class="desktop">
             <ul>
-                <li><a href="#">JOGOS</a></li>
-                <li><a href="#">MEUS CÓDIGOS</a></li>
-                <li><a href="#">MINHA CARTEIRA</a></li>
-                <li><a href="#">SOBRE</a></li>
-                <li><a href="#">CONTATOS</a></li>
-                <li><a href="#">LOGIN</a></li>
+                <li><a href="<?php echo INCLUDE_PATH; ?>JOGOS">JOGOS</a></li>
+                <li><a href="<?php echo INCLUDE_PATH; ?>MEUS_CODIGOS">MEUS CÓDIGOS</a></li>
+                <li><a href="<?php echo INCLUDE_PATH; ?>MINHA_CARTEIRA">MINHA CARTEIRA</a></li>
+                <li><a href="<?php echo INCLUDE_PATH; ?>SOBRE">SOBRE</a></li>
+                <li><a href="<?php echo INCLUDE_PATH; ?>CONTATOS">CONTATOS</a></li>
+                <li><a href="<?php echo INCLUDE_PATH; ?>LOGIN">LOGIN</a></li>
             </ul>
         </nav>
         <nav class="search">
@@ -49,20 +49,22 @@
            <i class="fas fa-bars"></i><!--botao menu quando diminui a tela -->
            </div>
             <ul>
-                <li><a href="">JOGOS</a></li>
-                <li><a href="">MEUS CÓDIGOS</a></li>
-                <li><a href="">MINHA CARTEIRA</a></li>
-                <li><a href="">LOGIN</a></li>        
+                <li><a href="<?php echo INCLUDE_PATH; ?>JOGOS">JOGOS</a></li>
+                <li><a href="<?php echo INCLUDE_PATH; ?>MEUS_CODIGOS">MEUS CÓDIGOS</a></li>
+                <li><a href="<?php echo INCLUDE_PATH; ?>MINHA_CARTEIRA">MINHA CARTEIRA</a></li>
+                <li><a href="<?php echo INCLUDE_PATH; ?>SOBRE">SOBRE</a></li>
+                <li><a href="<?php echo INCLUDE_PATH; ?>CONTATOS">CONTATOS</a></li>
+                <li><a href="<?php echo INCLUDE_PATH; ?>LOGIN">LOGIN</a></li>     
             </ul>
         </nav>    
 </header>
 <!--parte da freewknd-->
 <div class="container">
   <div class="content">
-   <a href="#"> <img src="imagens/cyberpunk.jpg" class="cyber" width="400px"></a>
+   <a href="#"> <img src="<?php echo INCLUDE_PATH; ?>imagens/cyberpunk.jpg" class="cyber" width="400px"></a>
   </div>
   <div class="sales1">
-  <a href="#"><img src="imagens/valala.jpg" class="valha" width="400px"></a>
+  <a href="#"><img src="<?php echo INCLUDE_PATH; ?>imagens/valala.jpg" class="valha" width="400px"></a>
   </div>
 </div>   
 
@@ -75,7 +77,7 @@
 
 
 <div class="game1 ">
-  <a href="#"><img src="imagens/revilage.jpg" class="revi" width="800px"></a>
+  <a href="#"><img src="<?php echo INCLUDE_PATH; ?>imagens/revilage.jpg" class="revi" width="800px"></a>
 </div>
 
 <div class="desc_revi">
@@ -89,16 +91,16 @@
 <!--
 
 <div class="game2"> 
-  <a href="#"><img src="imagens/skyrim.jpg" class="" width="200px"></a>
+  <a href="#"><img src="<?php echo INCLUDE_PATH; ?>imagens/skyrim.jpg" class="" width="200px"></a>
 </div>
 
 -->
 <!--
 <div class="game3">
-<img src="imagens/cyberpunk.jpg" width="200px">
+<img src="<?php echo INCLUDE_PATH; ?>imagens/cyberpunk.jpg" width="200px">
 </div>
 <div class="gamer4">
-<img src="imagens/farcry5.jpg" width="200px">
+<img src="<?php echo INCLUDE_PATH; ?>imagens/farcry5.jpg" width="200px">
 </div>
 </div>
 </section>
@@ -118,12 +120,12 @@
       <div class="sec quickLinks">
         <h2>Quick Links</h2>
         <ul>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Politicas de Privacidade</a></li>
-            <li><a href="#">Ajuda</a></li>
-            <li><a href="#">Termos de Condições</a></li>
-            <li><a href="#">Contatos</a></li>
+            <li><a href="<?php echo INCLUDE_PATH; ?>#">Sobre</a></li>
+            <li><a href="<?php echo INCLUDE_PATH; ?>#">FAQ</a></li>
+            <li><a href="<?php echo INCLUDE_PATH; ?>#">Politicas de Privacidade</a></li>
+            <li><a href="<?php echo INCLUDE_PATH; ?>#">Ajuda</a></li>
+            <li><a href="<?php echo INCLUDE_PATH; ?>#">Termos de Condições</a></li>
+            <li><a href="<?php echo INCLUDE_PATH; ?>#">Contatos</a></li>
         </ul>
      </div> 
      <div class="sec contact">
@@ -151,7 +153,7 @@
 <div class="copyrightText">
   <p>Copyright © Ruddy Store. Todos os direitos reservados.</p>
 </div>
-<script src="js/jquery.js"></script>
-<script src="js/scripts.js"></script>
+<script src="<?php echo INCLUDE_PATH; ?>js/jquery.js"></script>
+<script src="<?php echo INCLUDE_PATH; ?>js/scripts.js"></script>
 </body> 
 </html>
