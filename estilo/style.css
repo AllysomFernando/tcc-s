@@ -168,7 +168,7 @@ nav.search .fa-search{
 /**corpo do site**/
 body{
 
-    background-image: url(../imagens/bck.png);
+    background-image: url(../imagens/bg.png);
    
 }
 
@@ -277,7 +277,6 @@ div{
     
     border-color: #EC268F;
     border-style: solid;
-oi
 }
 
 footer .footer{
