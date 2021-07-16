@@ -73,10 +73,19 @@
 
 <section class="allgames"><!--outros games-->
   
+
+
 <div class="game1 ">
-  <a href="#"><img src="imagens/revilage.jpg" class="revi" width="500px"></a>
+  <a href="#"><img src="imagens/revilage.jpg" class="revi" width="800px"></a>
 </div>
 
+<div class="desc_revi">
+<p class="revi_desc"> Continuando de onde o risco biológico de Resident
+    Evil 7 parou, Resident Evil Village é o oitavo grande episódio da série Resident Evil. Tecnologia de 
+    Próxima Geração RE Engine emparelhado com poder de console de próxima
+    geração fornecerá gráficos fotorrealistas, trazendo a aldeia sombria e seus 
+    residentes assombrados para a vida.<p>
+</div>
 
 <!--
 
