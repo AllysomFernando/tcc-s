@@ -27,15 +27,16 @@
 </head>
 <body>
 <header>   
-        <a href="#" class="logo"><img src="<?php echo INCLUDE_PATH; ?>imagens/logo.png" width="100px"></a><!--ficara a logo-->
+        <a href="<?php echo INCLUDE_PATH; ?>home" class="logo"><img src="imagens/logo.png" width="100px"></a><!--ficara a logo-->
         <nav class="desktop">
             <ul>
-                <li><a href="<?php echo INCLUDE_PATH; ?>JOGOS">JOGOS</a></li>
-                <li><a href="<?php echo INCLUDE_PATH; ?>MEUS_CODIGOS">MEUS CÓDIGOS</a></li>
-                <li><a href="<?php echo INCLUDE_PATH; ?>MINHA_CARTEIRA">MINHA CARTEIRA</a></li>
-                <li><a href="<?php echo INCLUDE_PATH; ?>SOBRE">SOBRE</a></li>
-                <li><a href="<?php echo INCLUDE_PATH; ?>CONTATOS">CONTATOS</a></li>
-                <li><a href="<?php echo INCLUDE_PATH; ?>LOGIN">LOGIN</a></li>
+                <li><a href="<?php echo INCLUDE_PATH; ?>home">HOME</a></li>
+               <li><a href="<?php echo INCLUDE_PATH; ?>jogos">JOGOS</a></li>
+                <li><a href="<?php echo INCLUDE_PATH; ?>meus_codigos">MEUS CÓDIGOS</a></li>
+                <li><a href="<?php echo INCLUDE_PATH; ?>minha_carteira">MINHA CARTEIRA</a></li>
+                <li><a href="<?php echo INCLUDE_PATH; ?>sobre">SOBRE</a></li>
+                <li><a href="<?php echo INCLUDE_PATH; ?>contato">CONTATOS</a></li>
+                <li><a href="<?php echo INCLUDE_PATH; ?>login">LOGIN</a></li>
             </ul>
         </nav>
         <nav class="search">
@@ -49,12 +50,13 @@
            <i class="fas fa-bars"></i><!--botao menu quando diminui a tela -->
            </div>
             <ul>
-                <li><a href="<?php echo INCLUDE_PATH; ?>JOGOS">JOGOS</a></li>
-                <li><a href="<?php echo INCLUDE_PATH; ?>MEUS_CODIGOS">MEUS CÓDIGOS</a></li>
-                <li><a href="<?php echo INCLUDE_PATH; ?>MINHA_CARTEIRA">MINHA CARTEIRA</a></li>
-                <li><a href="<?php echo INCLUDE_PATH; ?>SOBRE">SOBRE</a></li>
-                <li><a href="<?php echo INCLUDE_PATH; ?>CONTATOS">CONTATOS</a></li>
-                <li><a href="<?php echo INCLUDE_PATH; ?>LOGIN">LOGIN</a></li>     
+                <li><a href="<?php echo INCLUDE_PATH; ?>jogos">JOGOS</a></li>
+                <li><a href="<?php echo INCLUDE_PATH; ?>meus_codigos">MEUS CÓDIGOS</a></li>
+                <li><a href="<?php echo INCLUDE_PATH; ?>minha_carteira">MINHA CARTEIRA</a></li>
+                <li><a href="<?php echo INCLUDE_PATH; ?>sobre">SOBRE</a></li>
+                <li><a href="<?php echo INCLUDE_PATH; ?>contato">CONTATOS</a></li>
+                <li><a href="<?php echo INCLUDE_PATH; ?>login">LOGIN</a></li>
+            </ul>
             </ul>
         </nav>    
 </header>
