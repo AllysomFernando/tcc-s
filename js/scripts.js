@@ -15,10 +15,20 @@ $(function(){
            icone.addClass('fas fa-bars');
            listaMenu.fadeOut();
         }
-    })
+    });
 
     //fas fa-bars abrir 
     //fas fa-window-close fechar
+
+
+    if($('target').length > 0){
+        // O elmento existe portanto vai dar o scroll
+        var elemento = '#'+$('target').attr('target');
+        var divScroll = $(elemento).offset().top;
+        $('html,body').animate({'scrollTop':divScroll},1500);
+    }
+
+
 
 })
 

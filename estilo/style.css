@@ -6,7 +6,9 @@
 }
 
 /**boot css**/
-
+input{
+    border: 0;
+}
 .center{
     max-width: 1280px;
     padding:0 50%;

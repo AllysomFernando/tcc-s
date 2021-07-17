@@ -28,7 +28,7 @@
 <body>
   <?php
       $url = isset($_GET['url']) ? $_GET['url'] : 'home';
-      switch($url){
+      switch($url) {
           case'sobre':
             echo '<target target="sobre" />';
             break;
@@ -70,9 +70,6 @@
         </nav>    
 </header>
 <?php
-
-      
-
       if(file_exists('pages/'.$url.'.php')){
         include('pages/'.$url.'.php');
       }else{
@@ -84,15 +81,12 @@
           include('pages/home.php');
         }  
       }
-
-
 ?>
-
 <footer <?php if(isset($pagina404) && $pagina404 == true) echo 'class="fixed"'; ?>>
 <div class="footer">
-  <div class="sec aboutus">
+  <div id="sobre"class="sec aboutus">
     <h2> Sobre Nós</h2>
-    <p>Somos um projeto fictício para conclusão de curso, uma empresa para vendas de jogos e envios de códigos, somos em dois programadores e um designer gráfico, nosso contato está no topo do site.</p>
+    <p>Somos um projeto fictício para conclusão de curso, uma empresa para vendas de jogos e envios de códigos, somos em dois programadores e um designer gráfico, nosso contato está para tirar a sua duvida está logo abaixo e para enviar basta clicar em contatos.</p>
     <ul class="sci">
     <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
     <li><a href="#"><i class="fab fa-instagram"></i></a></li>
@@ -140,8 +134,7 @@
 <script src="<?php echo INCLUDE_PATH; ?>js/jquery.js"></script>
 <script src="<?php echo INCLUDE_PATH; ?>js/scripts.js"></script>
 <?php
-      if($url == 'contato'){  
-    
+      if($url == 'contato'){   
 ?>
 <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDHPNQxozOzQSZ-djvWGOBUsHkBUoT_qH4'></script>
 <script src="<?php echo INCLUDE_PATH; ?>js/map.js"></script>
