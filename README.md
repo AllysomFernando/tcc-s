@@ -15,3 +15,5 @@ allysu: vamos usar um unico index, pra n ficar dando conflito de toda vez passar
 allysu: dia 14/07 vou fazer um footer responsivo
 
 allysuu: dia 15 estamos perto de adquirir esquizofrenia, victor está arrumando bugs enquanto chora por mulher e eu vou começar a fazer url amigavel :)
+
+allysu: dia 16 estou manipulando as url com o php e fazendo algumas mudanças no css.

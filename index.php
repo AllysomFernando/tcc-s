@@ -68,13 +68,14 @@
         include('pages/'.$url.'.php');
       }else{
         //podemos fazer o que quiser, pois a pagina não existe.
+        $pagina404 = true;
         include('pages/404.php');
       }
 
 
 ?>
 
-<footer>
+<footer <?php if(isset($pagina404) && $pagina404 == true) echo 'class="fixed"'; ?>>
 <div class="footer">
   <div class="sec aboutus">
     <h2> Sobre Nós</h2>
@@ -118,10 +119,11 @@
     </ul>
  </div>
 </div> 
-</footer>
 <div class="copyrightText">
   <p>Copyright © Ruddy Store. Todos os direitos reservados.</p>
 </div>
+</footer>
+
 <script src="<?php echo INCLUDE_PATH; ?>js/jquery.js"></script>
 <script src="<?php echo INCLUDE_PATH; ?>js/scripts.js"></script>
 </body> 
