@@ -39,18 +39,18 @@
         <a href="<?php echo INCLUDE_PATH; ?>home" class="logo"><img src="imagens/logo.png" width="100px"></a><!--ficara a logo-->
         <nav class="desktop">
             <ul>
-                <li><a href="<?php echo INCLUDE_PATH; ?>home">HOME</a></li>
+                <li><a href="<?php echo INCLUDE_PATH; ?>home">INICIO</a></li>
                <li><a href="<?php echo INCLUDE_PATH; ?>jogos">JOGOS</a></li>
                 <li><a href="<?php echo INCLUDE_PATH; ?>meus_codigos">MEUS CÓDIGOS</a></li>
                 <li><a href="<?php echo INCLUDE_PATH; ?>minha_carteira">MINHA CARTEIRA</a></li>
                 <li><a href="<?php echo INCLUDE_PATH; ?>sobre">SOBRE</a></li>
                 <li><a href="<?php echo INCLUDE_PATH; ?>contato">CONTATOS</a></li>
-                <li><a href="<?php echo INCLUDE_PATH; ?>login">LOGIN</a></li>
+                <li><a href="<?php echo INCLUDE_PATH; ?>login">ENTRAR</a></li>
             </ul>
         </nav>
         <nav class="search">
         <div>
-          <input type="text" placeholder="What're ya buying?">
+          <input type="text" placeholder="O que procuras?">
           <i class="fas fa-search"></i><!-- icone de procura-->
         </div> 
         </nav>  
@@ -64,7 +64,7 @@
                 <li><a href="<?php echo INCLUDE_PATH; ?>minha_carteira">MINHA CARTEIRA</a></li>
                 <li><a href="<?php echo INCLUDE_PATH; ?>sobre">SOBRE</a></li>
                 <li><a href="<?php echo INCLUDE_PATH; ?>contato">CONTATOS</a></li>
-                <li><a href="<?php echo INCLUDE_PATH; ?>login">LOGIN</a></li>
+                <li><a href="<?php echo INCLUDE_PATH; ?>login">ENTRAR</a></li>
             </ul>
             </ul>
         </nav>    
