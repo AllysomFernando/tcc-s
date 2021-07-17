@@ -40,7 +40,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding:15px 100px;
-    z-index:10;
+    z-index:1;
     background:#373435;
     min-height: 60px;
     position: fixed;
@@ -70,7 +70,7 @@ nav.mobile{
     }
     nav.mobile ul{
         top:120px;
-        z-index: 3;
+        z-index: 2;
         position: absolute;
         left:0;
         width: 100%;
@@ -495,4 +495,26 @@ footer p{
     color: #373435;
     cursor: pointer;
     border: none !important;
+}
+
+/*bullets**/
+.bullets{
+    position: absolute;
+    padding-top: 37%;
+    padding-left: 25%;
+    z-index: 4;
+
+}
+.bullets span{
+    margin:0 5px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color:#EC268F;
+}
+
+.bullets span.active-sliders{
+    background: white;
 }

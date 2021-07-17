@@ -11,6 +11,9 @@
    <a href="#"> <img src="<?php echo INCLUDE_PATH; ?>imagens/farcry5.jpg" class="cyber" width="400px"></a>
   </div>
   </div>  
+  <div class="bullets">
+      
+  </div>
   </section>
   <section class="valhala">
   <div class="sales1">
