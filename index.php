@@ -26,6 +26,15 @@
 <title>HOME</title>
 </head>
 <body>
+  <?php
+      $url = isset($_GET['url']) ? $_GET['url'] : 'home';
+      switch($url){
+          case'sobre':
+            echo '<target target="sobre" />';
+            break;
+      }
+
+  ?>
 <header>   
         <a href="<?php echo INCLUDE_PATH; ?>home" class="logo"><img src="imagens/logo.png" width="100px"></a><!--ficara a logo-->
         <nav class="desktop">
@@ -62,14 +71,18 @@
 </header>
 <?php
 
-      $url = isset($_GET['url']) ? $_GET['url'] : 'home';
+      
 
       if(file_exists('pages/'.$url.'.php')){
         include('pages/'.$url.'.php');
       }else{
         //podemos fazer o que quiser, pois a pagina não existe.
-        $pagina404 = true;
-        include('pages/404.php');
+        if($url != 'sobre'){
+          $pagina404 = true;
+          include('pages/404.php');
+        }else{
+          include('pages/home.php');
+        }  
       }
 
 
