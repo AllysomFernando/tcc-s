@@ -126,5 +126,12 @@
 
 <script src="<?php echo INCLUDE_PATH; ?>js/jquery.js"></script>
 <script src="<?php echo INCLUDE_PATH; ?>js/scripts.js"></script>
+<?php
+      if($url == 'contato'){  
+    
+?>
+<script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDHPNQxozOzQSZ-djvWGOBUsHkBUoT_qH4'></script>
+<script src="<?php echo INCLUDE_PATH; ?>js/map.js"></script>
+<?php    }  ?>
 </body> 
 </html>

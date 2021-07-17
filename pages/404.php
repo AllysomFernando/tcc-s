@@ -1,11 +1,4 @@
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
 <section class="erro-404">
     <div class="error">
       <div class="wraper-404">
