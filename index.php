@@ -39,13 +39,13 @@
         <a href="<?php echo INCLUDE_PATH; ?>home" class="logo"><img src="imagens/logo.png" width="100px"></a><!--ficara a logo-->
         <nav class="desktop">
             <ul>
-                <li><a href="<?php echo INCLUDE_PATH; ?>home">INICIO</a></li>
+                <li><a href="<?php echo INCLUDE_PATH; ?>home">HOME</a></li>
                <li><a href="<?php echo INCLUDE_PATH; ?>jogos">JOGOS</a></li>
                 <li><a href="<?php echo INCLUDE_PATH; ?>meus_codigos">MEUS CÓDIGOS</a></li>
                 <li><a href="<?php echo INCLUDE_PATH; ?>minha_carteira">MINHA CARTEIRA</a></li>
                 <li><a href="<?php echo INCLUDE_PATH; ?>sobre">SOBRE</a></li>
                 <li><a href="<?php echo INCLUDE_PATH; ?>contato">CONTATOS</a></li>
-                <li><a href="<?php echo INCLUDE_PATH; ?>login">ENTRAR</a></li>
+                <li><a href="<?php echo INCLUDE_PATH; ?>login">LOGIN</a></li>
             </ul>
         </nav>
         <nav class="search">
@@ -59,12 +59,13 @@
            <i class="fas fa-bars"></i><!--botao menu quando diminui a tela -->
            </div>
             <ul>
+                <li><a href="<?php echo INCLUDE_PATH; ?>home">HOME</a></li>
                 <li><a href="<?php echo INCLUDE_PATH; ?>jogos">JOGOS</a></li>
                 <li><a href="<?php echo INCLUDE_PATH; ?>meus_codigos">MEUS CÓDIGOS</a></li>
                 <li><a href="<?php echo INCLUDE_PATH; ?>minha_carteira">MINHA CARTEIRA</a></li>
                 <li><a href="<?php echo INCLUDE_PATH; ?>sobre">SOBRE</a></li>
                 <li><a href="<?php echo INCLUDE_PATH; ?>contato">CONTATOS</a></li>
-                <li><a href="<?php echo INCLUDE_PATH; ?>login">ENTRAR</a></li>
+                <li><a href="<?php echo INCLUDE_PATH; ?>login">LOGIN</a></li>
             </ul>
             </ul>
         </nav>    
@@ -133,6 +134,11 @@
 
 <script src="<?php echo INCLUDE_PATH; ?>js/jquery.js"></script>
 <script src="<?php echo INCLUDE_PATH; ?>js/scripts.js"></script>
+<?php
+      if($url == 'home' || $url ==''){   
+?>
+<script src="<?php echo INCLUDE_PATH; ?>js/slider.js"></script>
+<?php } ?>
 <?php
       if($url == 'contato'){   
 ?>

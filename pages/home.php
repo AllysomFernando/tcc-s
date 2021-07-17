@@ -1,13 +1,23 @@
 <!--parte da freewknd-->
+<setion class="freewnkd">
 <div class="container">
   <div class="content">
    <a href="#"> <img src="<?php echo INCLUDE_PATH; ?>imagens/cyberpunk.jpg" class="cyber" width="400px"></a>
   </div>
+  <div class="content">
+  <a href="#"> <img src="<?php echo INCLUDE_PATH; ?>imagens/skyrim.jpg" class="cyber" width="400px"></a>
+  </div>
+  <div class="content">
+   <a href="#"> <img src="<?php echo INCLUDE_PATH; ?>imagens/farcry5.jpg" class="cyber" width="400px"></a>
+  </div>
+  </div>  
+  </section>
+  <section class="valhala">
   <div class="sales1">
   <a href="#"><img src="<?php echo INCLUDE_PATH; ?>imagens/valala.jpg" class="valha" width="400px"></a>
   </div>
-</div>   
-
+  </section> 
+<!-- free wknd-->
 <!-- linha horizontal-->
 
 <hr class="hr5">

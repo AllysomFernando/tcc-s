@@ -50,7 +50,6 @@ header{
 
  }
  
-
 /**mobile**/
 nav.mobile{
     display: none;
@@ -206,25 +205,40 @@ body{
     background-image: url(../imagens/background.jpg);
 }
 
-.container{
-   padding: 200px 100px 100px;
-   min-height: 100vh;
-   max-height: 750px;
-   margin-left: -120px;
-   margin-top: -140px;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-}
 
-.content{
-  padding-right: 10%;
+section.freewnkd{
+    padding:10px;
 }
+.content{
+    padding-right: 10%;
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;  
+    padding: 200px 100px 100px;
+    min-height: 100vh;
+    max-height: 750px;
+    margin-left: -120px;
+    margin-top: -140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
 .sales1{
-   padding-bottom: 1%;
+    padding-left: 60%;
+    padding-top: 2%;
 }
-
+section.valhala{
+    min-height: 100vh;
+    max-height: 750px;
+    margin-left: -120px;
+    margin-top: -140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 /**freeweeknd**/
 
 div{
