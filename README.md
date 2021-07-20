@@ -19,3 +19,5 @@ allysuu: dia 15 estamos perto de adquirir esquizofrenia, victor está arrumando 
 allysu: dia 16 estou manipulando as url com o php e fazendo algumas mudanças no css.
 
 allysu: dia 17 começei a fazer o slide em js
+
+vitu: dia 20 tornei responsivo boa parte do front, mas com alguns erros.
