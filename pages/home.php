@@ -1,4 +1,9 @@
 <!--parte da freewknd-->
+<hr class="hr7">
+<p class="destaque">DESTAQUES</p>
+<hr class="hr6" >
+
+
 <setion class="freewnkd">
 <div class="container">
   <div class="content">
@@ -17,7 +22,7 @@
   </section>
   <section class="valhala">
   <div class="sales1">
-  <a href="#"><img src="<?php echo INCLUDE_PATH; ?>imagens/valala.jpg" class="valha" width="400px"></a>
+ 
   </div>
   </section> 
 <!-- free wknd-->
