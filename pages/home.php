@@ -19,11 +19,6 @@
   <div class="bullets">
       
   </div>
-  </section>
-  <section class="valhala">
-  <div class="sales1">
- 
-  </div>
   </section> 
 <!-- free wknd-->
 <!-- linha horizontal-->

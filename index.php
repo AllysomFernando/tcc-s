@@ -40,7 +40,7 @@
         <nav class="desktop">
             <ul>
                 <li><a href="<?php echo INCLUDE_PATH; ?>home">HOME</a></li>
-               <li><a href="<?php echo INCLUDE_PATH; ?>jogos">JOGOS</a></li>
+                <li><a href="<?php echo INCLUDE_PATH; ?>jogos">JOGOS</a></li>
                 <li><a href="<?php echo INCLUDE_PATH; ?>meus_codigos">MEUS CÓDIGOS</a></li>
                 <li><a href="<?php echo INCLUDE_PATH; ?>minha_carteira">MINHA CARTEIRA</a></li>
                 <li><a href="<?php echo INCLUDE_PATH; ?>sobre">SOBRE</a></li>
@@ -89,16 +89,15 @@
     <h2> Sobre Nós</h2>
     <p>Somos um projeto fictício para conclusão de curso, uma empresa para vendas de jogos e envios de códigos, somos em dois programadores e um designer gráfico, nosso contato está para tirar a sua duvida está logo abaixo e para enviar basta clicar em contatos.</p>
     <ul class="sci">
-    <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-    <li><a href="#"><i class="fab fa-github"></i></a></li>
-    <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+    <li><a href="https://linktr.ee/rddystore"><i class="fab fa-facebook-square"></i></a></li>
+    <li><a href="https://linktr.ee/rddystore"><i class="fab fa-instagram"></i></a></li>
+    <li><a href="https://linktr.ee/rddystore"><i class="fab fa-github"></i></a></li>
+    <li><a href="https://linktr.ee/rddystore"><i class="fab fa-twitter-square"></i></a></li>
   </ul>
   </div>
   <div class="sec quickLinks">
     <h2>Quick Links</h2>
     <ul>
-        <li><a href="<?php echo INCLUDE_PATH; ?>#">Sobre</a></li>
         <li><a href="<?php echo INCLUDE_PATH; ?>#">FAQ</a></li>
         <li><a href="<?php echo INCLUDE_PATH; ?>#">Politicas de Privacidade</a></li>
         <li><a href="<?php echo INCLUDE_PATH; ?>#">Ajuda</a></li>
