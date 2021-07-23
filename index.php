@@ -102,7 +102,6 @@
         <li><a href="<?php echo INCLUDE_PATH; ?>#">Politicas de Privacidade</a></li>
         <li><a href="<?php echo INCLUDE_PATH; ?>#">Ajuda</a></li>
         <li><a href="<?php echo INCLUDE_PATH; ?>#">Termos de Condições</a></li>
-        <li><a href="<?php echo INCLUDE_PATH; ?>#">Contatos</a></li>
     </ul>
  </div> 
  <div class="sec contact">
