@@ -256,8 +256,10 @@ div{
        border-style: double;
        border-radius: 25px;
        border-width: 12px;
-       margin-left: 100px;
-       margin-top: 530px;
+       margin-left: 200px;
+       margin-top: 300px;
+      
+       
       
 }
 .sales1{
@@ -531,3 +533,6 @@ footer p{
 .bullets span.active-sliders{
     background: white;
 }
+
+
+

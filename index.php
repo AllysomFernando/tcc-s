@@ -26,6 +26,7 @@
 <title>HOME</title>
 </head>
 <body>
+  <base base="<?php echo INCLUDE_PATH; ?>"/>
   <?php
       $url = isset($_GET['url']) ? $_GET['url'] : 'home';
       switch($url) {
@@ -35,6 +36,7 @@
       }
 
   ?>
+
 <header>   
         <a href="<?php echo INCLUDE_PATH; ?>home" class="logo"><img src="imagens/logo.png" width="100px"></a><!--ficara a logo-->
         <nav class="desktop">
@@ -44,7 +46,7 @@
                 <li><a href="<?php echo INCLUDE_PATH; ?>meus_codigos">MEUS CÓDIGOS</a></li>
                 <li><a href="<?php echo INCLUDE_PATH; ?>minha_carteira">MINHA CARTEIRA</a></li>
                 <li><a href="<?php echo INCLUDE_PATH; ?>sobre">SOBRE</a></li>
-                <li><a href="<?php echo INCLUDE_PATH; ?>contato">CONTATOS</a></li>
+                <li><a realtime="contato" href=" <?php echo INCLUDE_PATH; ?>contato">CONTATOS</a></li>
                 <li><a href="<?php echo INCLUDE_PATH; ?>login">LOGIN</a></li>
             </ul>
         </nav>
@@ -64,12 +66,15 @@
                 <li><a href="<?php echo INCLUDE_PATH; ?>meus_codigos">MEUS CÓDIGOS</a></li>
                 <li><a href="<?php echo INCLUDE_PATH; ?>minha_carteira">MINHA CARTEIRA</a></li>
                 <li><a href="<?php echo INCLUDE_PATH; ?>sobre">SOBRE</a></li>
-                <li><a href="<?php echo INCLUDE_PATH; ?>contato">CONTATOS</a></li>
+                <li><a realtime="contato" href="<?php echo INCLUDE_PATH; ?>contato">CONTATOS</a></li>
                 <li><a href="<?php echo INCLUDE_PATH; ?>login">LOGIN</a></li>
             </ul>
             </ul>
         </nav>    
+        <div class="clear">
+        </div>
 </header>
+<div class="container-maps">
 <?php
       if(file_exists('pages/'.$url.'.php')){
         include('pages/'.$url.'.php');
@@ -83,6 +88,9 @@
         }  
       }
 ?>
+ </div>   
+    
+
 <footer <?php if(isset($pagina404) && $pagina404 == true) echo 'class="fixed"'; ?>>
 <div class="footer">
   <div id="sobre"class="sec aboutus">
@@ -131,6 +139,7 @@
 </footer>
 
 <script src="<?php echo INCLUDE_PATH; ?>js/jquery.js"></script>
+<script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDHPNQxozOzQSZ-djvWGOBUsHkBUoT_qH4'></script>
 <script src="<?php echo INCLUDE_PATH; ?>js/scripts.js"></script>
 <?php
       if($url == 'home' || $url ==''){   
@@ -140,7 +149,7 @@
 <?php
       if($url == 'contato'){   
 ?>
-<script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDHPNQxozOzQSZ-djvWGOBUsHkBUoT_qH4'></script>
+
 <script src="<?php echo INCLUDE_PATH; ?>js/map.js"></script>
 <?php    }  ?>
 </body> 

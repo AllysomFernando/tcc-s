@@ -1,7 +1,4 @@
-$(function(){
-
-	var map;
-	
+var map;
 	function initialize() {
 
 	  var mapProp = {
@@ -73,6 +70,7 @@ $(function(){
 	    		infoWindow.open(map, marker);
 	    	}
 	}
+	$(function(){	
 		initialize();
-			addMarker(-24.9480783,-53.4681957,'',"Aonde nós estudamos",undefined,false);
-})
+		addMarker(-24.9480783,-53.4681957,'',"Aonde nós estudamos",undefined,false);
+	})
