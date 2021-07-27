@@ -23,3 +23,5 @@ allysu: dia 17 começei a fazer o slide em js
 vitu: dia 20 tornei responsivo boa parte do front, mas com alguns erros.
 
 allysu: coloquei os links no footer.
+
+allysu: dia 27 estou fazendo as classes em php

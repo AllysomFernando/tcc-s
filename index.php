@@ -5,6 +5,8 @@
 <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- icone -->
+    <link rel="icon" href="<?php echo INCLUDE_PATH; ?>logo.ico" type="image/x-icon" />
     <title>Ruddy Store - Loja de jogos </title>
     <!--fontawesom link abaixo-->  
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous"> 
@@ -26,7 +28,7 @@
 <title>HOME</title>
 </head>
 <body>
-  <base base="<?php echo INCLUDE_PATH; ?>"/>
+  <base base="<?php echo INCLUDE_PATH; ?>" />
   <?php
       $url = isset($_GET['url']) ? $_GET['url'] : 'home';
       switch($url) {
@@ -42,12 +44,12 @@
         <nav class="desktop">
             <ul>
                 <li><a href="<?php echo INCLUDE_PATH; ?>home">HOME</a></li>
-                <li><a href="<?php echo INCLUDE_PATH; ?>jogos">JOGOS</a></li>
-                <li><a href="<?php echo INCLUDE_PATH; ?>meus_codigos">MEUS CÓDIGOS</a></li>
-                <li><a href="<?php echo INCLUDE_PATH; ?>minha_carteira">MINHA CARTEIRA</a></li>
+                <li><a realtime="jogos" href="<?php echo INCLUDE_PATH; ?>jogos">JOGOS</a></li>
+                <li><a realtime="meus_codigos" href="<?php echo INCLUDE_PATH; ?>meus_codigos">MEUS CÓDIGOS</a></li>
+                <li><a realtime="minha_carteira" href="<?php echo INCLUDE_PATH; ?>minha_carteira">MINHA CARTEIRA</a></li>
                 <li><a href="<?php echo INCLUDE_PATH; ?>sobre">SOBRE</a></li>
                 <li><a realtime="contato" href=" <?php echo INCLUDE_PATH; ?>contato">CONTATOS</a></li>
-                <li><a href="<?php echo INCLUDE_PATH; ?>login">LOGIN</a></li>
+                <li><a realtime="login"href="<?php echo INCLUDE_PATH; ?>login">LOGIN</a></li>
             </ul>
         </nav>
         <nav class="search">
@@ -62,19 +64,19 @@
            </div>
             <ul>
                 <li><a href="<?php echo INCLUDE_PATH; ?>home">HOME</a></li>
-                <li><a href="<?php echo INCLUDE_PATH; ?>jogos">JOGOS</a></li>
-                <li><a href="<?php echo INCLUDE_PATH; ?>meus_codigos">MEUS CÓDIGOS</a></li>
-                <li><a href="<?php echo INCLUDE_PATH; ?>minha_carteira">MINHA CARTEIRA</a></li>
+                <li><a realtime="jogos" href="<?php echo INCLUDE_PATH; ?>jogos">JOGOS</a></li>
+                <li><a realtime="meus_codigos" href="<?php echo INCLUDE_PATH; ?>meus_codigos">MEUS CÓDIGOS</a></li>
+                <li><a realtime="minha_carteira" href="<?php echo INCLUDE_PATH; ?>minha_carteira">MINHA CARTEIRA</a></li>
                 <li><a href="<?php echo INCLUDE_PATH; ?>sobre">SOBRE</a></li>
                 <li><a realtime="contato" href="<?php echo INCLUDE_PATH; ?>contato">CONTATOS</a></li>
-                <li><a href="<?php echo INCLUDE_PATH; ?>login">LOGIN</a></li>
+                <li><a realtime="login"href="<?php echo INCLUDE_PATH; ?>login">LOGIN</a></li>
             </ul>
             </ul>
         </nav>    
         <div class="clear">
         </div>
 </header>
-<div class="container-maps">
+<div class="container-principal">
 <?php
       if(file_exists('pages/'.$url.'.php')){
         include('pages/'.$url.'.php');
@@ -89,8 +91,6 @@
       }
 ?>
  </div>   
-    
-
 <footer <?php if(isset($pagina404) && $pagina404 == true) echo 'class="fixed"'; ?>>
 <div class="footer">
   <div id="sobre"class="sec aboutus">
