@@ -4,18 +4,22 @@
 <hr class="hr6" >
 
 
-<setion class="freewnkd">
+<section class="freewnkd">
 <div class="container">
   <div class="content">
    <a href="#"> <img src="<?php echo INCLUDE_PATH; ?>imagens/cyberpunk.jpg" class="cyber" width="400px"></a>
   </div>
+
   <div class="content">
   <a href="#"> <img src="<?php echo INCLUDE_PATH; ?>imagens/skyrim.jpg" class="cyber" width="400px"></a>
   </div>
+
   <div class="content">
    <a href="#"> <img src="<?php echo INCLUDE_PATH; ?>imagens/farcry5.jpg" class="cyber" width="400px"></a>
   </div>
+
   </div>  
+
   <div class="bullets">
       
   </div>
