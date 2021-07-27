@@ -478,8 +478,8 @@ footer p{
 /**estilização do contato **/
 .contato-container{
     padding: 40px 0;;
-    padding-left: 30%;
     text-align: center;
+    width: 100%;
 }
 .contato-container input[type=text]{
     margin: 2px 0;

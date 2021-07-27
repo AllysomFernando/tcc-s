@@ -28,25 +28,23 @@ $(function(){
         $('html,body').animate({'scrollTop':divScroll},1500);
     }
 
-    dinamicLoad();
-        function dinamicLoad(){
+    carregarDinamico();
+        function carregarDinamico(){
             $('[realtime]').click( function(){
                 var pagina = $(this).attr('realtime');
-                $('container-maps').hide();
-                $('.container-maps').load(include_path+'pages/'+pagina+'.php');
-
+                $('.container-principal').hide();
+                $('.container-principal').load(include_path+'pages/'+pagina+'.php');
                 setTimeout( function(){
                     initialize();
                     addMarker(-24.9480783,-53.4681957,'',"Aonde nós estudamos",undefined,false); 
                 },1000);
-
-               $('.container-maps').fadeIn(9000);
+               $('.container-principal').fadeIn(1000);
 
                 return false;
             }) 
         }
     
     
-})
+}) 
 
  
