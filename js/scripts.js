@@ -34,6 +34,7 @@ $(function(){
                 var pagina = $(this).attr('realtime');
                 $('.container-principal').hide();
                 $('.container-principal').load(include_path+'pages/'+pagina+'.php');
+
                 setTimeout( function(){
                     initialize();
                     addMarker(-24.9480783,-53.4681957,'',"Aonde nós estudamos",undefined,false); 
@@ -43,8 +44,6 @@ $(function(){
                 return false;
             }) 
         }
-    
-    
 }) 
 
  
