@@ -62,6 +62,3 @@ create table envio_produto(
     id_envio int,
     codigo_jogo int  AUTO_INCREMENT,
     primary key (codigo_jogo));
-
-
-
