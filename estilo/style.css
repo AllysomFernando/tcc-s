@@ -301,7 +301,7 @@ div{
 }
 /**footer**/
 footer.fixed{
-    position: fixed;
+    position: relative;
     bottom: 0;
 }
 
