@@ -29,10 +29,10 @@ create table venda(
 
   ALTER TABLE venda
   ADD FOREIGN KEY (cpf) REFERENCES cliente (cpf);
+
     ALTER TABLE venda
   ADD FOREIGN KEY (email) REFERENCES cliente (email);
-    ALTER TABLE venda
-  ADD FOREIGN KEY (valor_produto) REFERENCES produto (valor_produto);
+
 
    foreigns keys de VENDA **/
 
