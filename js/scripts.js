@@ -40,7 +40,6 @@ $(function(){
                     addMarker(-24.9480783,-53.4681957,'',"Aonde nós estudamos",undefined,false); 
                 },1000);
                $('.container-principal').fadeIn(1000);
-
                 return false;
             }) 
         }
