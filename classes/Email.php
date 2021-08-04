@@ -1,6 +1,6 @@
 <?php
 
-        class Email {
+      class Email {
             function __construct(){
                 $mail = new PHPMailer;
                             try {
@@ -37,5 +37,5 @@
                             }
             }
         }
-       
+      
 ?>
