@@ -25,3 +25,5 @@ vitu: dia 20 tornei responsivo boa parte do front, mas com alguns erros.
 allysu: coloquei os links no footer.
 
 allysu: dia 27 estou fazendo as classes em php
+
+allysu: dia 03 arrumei os bugs e estou indo pro php mailer.
