@@ -1,4 +1,4 @@
-  create database tcc;
+create database tcc;
   use tcc;
 
   create table cliente(

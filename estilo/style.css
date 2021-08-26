@@ -266,23 +266,24 @@ section.freewnkd{
 /**jogos de baixo**/
 
 .revi{
-   
-   
     max-height: 500px;
-    position: relative;
     width: 100%;
     max-width: 800px;
-    object-fit: cover;
-    object-position: bottom;
     border-color: #EC268F;
     border-style: double;
     border-radius: 20px;
     border-width: 12px;
     margin-top: 30px;
     margin-left: 80px;
+    
  }
  /**descricao do resident village**/
-
+.revi_desc{
+color: white;
+}
+.game1{
+    display: inline-block;
+}
 .sky{
    
    

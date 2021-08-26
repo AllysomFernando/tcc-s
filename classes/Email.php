@@ -1,32 +1,45 @@
 <?php
-
-	class Email{
-
-		 function __construct(){
+	
+	class Email
+	{
 		
-			$mail= new PHPMailer;
-			$this->mailer->isSMTP();                                      // Set mailer to use SMTP
-			$this->define->host=localhost;				  // Specify main and backup SMTP servers
-			$this->mailer->SMTPAuth = true;                               // Enable SMTP authentication
-			$this->mailer->Username = 'ruddystore666@gmail.com';                 // SMTP username
-			$this->mailer->Password = 'allyvito123';                           // SMTP password
-			$this->mailer->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
-			$this->mailer->Port = 465;                                    // TCP port to connect to
+		private $mailer;
 
-			$mail->setFrom('ruddystore666@gmail.com', 'RuddyStore');
-            $mail->addAddress('allysomted12@gmail.com', 'Allysom');
+		public function __construct($host,$cpf,$senha,$nome_cliente){
+			
+			$this->mailer = new PHPMailer;
 
-			$mail->isHTML(true);                                  //Set email format to HTML
-			$mail->Subject = 'Parabéns pela sua compra aqui está seu código';
-			$mail->Body    = '<b>código aleatorio</b>';
-			$mail->AltBody = 'código aleatorio';
-			if(!mail->send()){
-				echo'Message could not be sent.';
-				echo 'Mailer Error ' . $mail->ErrorInfo;
+			$this->mailer->isSMTP();                      // Set mailer to use SMTP
+			$this->mailer->Host = $host;  				  // Specify main and backup SMTP servers
+			$this->mailer->SMTPAuth = true;               // Enable SMTP authentication
+			$this->mailer->Username = $cpf;               // SMTP username
+			$this->mailer->Password = $senha;             // SMTP password
+			$this->mailer->SMTPSecure = 'ssl';            // Enable TLS encryption, `ssl` also accepted
+			$this->mailer->Port = 587;                    // TCP port to connect to
+
+			$this->mailer->setFrom($cpf,$nome_cliente);
+			$this->mailer->isHTML(true);                  // Set email format to HTML
+			$this->mailer->CharSet = 'UTF-8';
+
+		}
+
+		public function addAdress($email,$nome_cliente){
+			$this->mailer->addAddress($email,$nome_cliente);
+		}
+
+		public function formatarEmail($info){
+			$this->mailer->Subject = $info['assunto'];
+			$this->mailer->Body    = $info['corpo'];
+			$this->mailer->AltBody = strip_tags($info['corpo']);
+		}
+
+		public function enviarEmail(){
+			if($this->mailer->send()){
+				return true;
 			}else{
-				echo'Message has been sent';
+				return false;
 			}
 		}
- 	 }
 
-?>  
+	}
+?>
