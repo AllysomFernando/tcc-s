@@ -29,7 +29,7 @@
     </div>
 </div>
 </div>
-<script src="<?php echo INCLUDE_PATH; ?>js/main.js"></script>
+<script src="<?php echo INCLUDE_PATH; ?>js/scripts.js"></script>
 <br>
 <br>
 <br>
