@@ -30,16 +30,16 @@
 <body>
   <?php
     if(isset($_POST['acao']))
-    //Enviei o Formulario
+//Enviei o Formulario
     if($_POST['email'] != ''){
         $email = $_POST['email'];
         if(filter_var($email, FILTER_VALIDATE_EMAIl)){
-            //tudo certo, é um email, só enviar
-            $mail = new Email('smtp.gmail.com','ruddystore666@gmail.com','29012003Ac','Ruddy Store');
+//tudo certo, é um email, só enviar
+            $mail = new Email('vps.dankicode.com','testes@dankicode.com','gui123456','Guilherme');
             $mail->addAdress('allysomted12@gmail.com', 'Lyo');
             $corpo = "Sua duvida foi enviada:<hr>$email";
             $info = array('assunto'=>'Sua dúvida', 'corpo'=>$email);
-            //$info = ['assunto'=>'Sua dúvida', 'corpo'=>$email];
+//$info = ['assunto'=>'Sua dúvida', 'corpo'=>$email];
             $mail->formatarEmail($info);
             if($email->enviarEmail()){
                 echo '<script>alert("enviado com sucesso!")</script>';
@@ -64,7 +64,7 @@
       }
 
   ?>
-<?php new Email(); ?>
+<?php //new Email(); ?>
 <header>   
         <a href="<?php echo INCLUDE_PATH; ?>home" class="logo"><img src="imagens/logo.png" width="100px"></a><!--ficara a logo-->
         <nav class="desktop">
@@ -107,7 +107,7 @@
       if(file_exists('pages/'.$url.'.php')){
         include('pages/'.$url.'.php');
       }else{
-        //podemos fazer o que quiser, pois a pagina não existe.
+//podemos fazer o que quiser, pois a pagina não existe.
         if($url != 'sobre'){
           $pagina404 = true;
           include('pages/404.php');
@@ -167,14 +167,7 @@
 <script src="<?php echo INCLUDE_PATH; ?>js/jquery.js"></script> 
 <script src="<?php echo INCLUDE_PATH; ?>js/map.js"></script>
 <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDHPNQxozOzQSZ-djvWGOBUsHkBUoT_qH4'></script>
-<script type="<?php echo INCLUDE_PATH; ?>text/javascript" src="js/jquery-3.3.1.min.js"></script>
-<script type="<?php echo INCLUDE_PATH; ?>text/javascript" src="js/jquery.mask.js"></script>
-<script type="text/javascript">
-   $(document).ready(function(){
-   $("#cnpj").mask("00.000.000/0000-00")
-   $("#cpf").mask("000.000.000-00") 
-   })
-</script>
+
 <script src="<?php echo INCLUDE_PATH; ?>js/constants.js"></script>
 <script src="<?php echo INCLUDE_PATH; ?>js/scripts.js"></script>
 <?php

@@ -1,7 +1,7 @@
 $(function(){
-    //Aqui vou colocar todo o nosso codigo de javascript
+ //Aqui vou colocar todo o nosso codigo de javascript
     $('nav.mobile').click(function(){
-        //o que vai acontecer quando clicar na nav mobile
+//aqui vai ser para o mobile funcionar
         var listaMenu = $('nav.mobile ul');
         if(listaMenu.is(':hidden') == true){
                 var icone = $('.botao-menu-mobile').find('i');
@@ -17,17 +17,14 @@ $(function(){
         }
     });
 
-    //fas fa-bars abrir 
-    //fas fa-window-close fechar
-
-
+// aqui vai ser o scroll da pagina, quando você clica no sobre ele desce para sessão sobre.
     if($('target').length > 0){
         // O elmento existe portanto vai dar o scroll
         var elemento = '#'+$('target').attr('target');
         var divScroll = $(elemento).offset().top;
         $('html,body').animate({'scrollTop':divScroll},1500);
     }
-
+// aqui vai ser onde o site vai carregar dinamicamente
     carregarDinamico();
         function carregarDinamico(){
             $('[realtime]').click( function(){
