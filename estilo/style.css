@@ -598,13 +598,14 @@ footer p{
     padding: 8px 10px;
     border-bottom: 3px solid #EC268F;
 }
-.input-div::after,.input-div::before{
+.input-div:after, .input-div:before{
     content: '';
     position: absolute;
     bottom: -2px;
     width: 0;
     height: 2px;
     background-color:white;
+    transition: .3s;
 }
 .input-div::after{
     right: 50%;
@@ -620,6 +621,9 @@ footer p{
     font-size: 15px;
 }
 
+.input-div.focus:after,.input-div.focus:before{
+    width: 50%;
+}
 .input-div.one{
     margin-top: 0;
 }
@@ -635,6 +639,7 @@ footer p{
 
 .i i{
     color: #fff;
+    transition: .3s;
 }
 .input-div > div{
     position: relative;
@@ -693,4 +698,30 @@ footer p{
 
 .btn:hover{
     background-position: right;
+}
+
+@media screen and (max-width:1050px){
+    .container-1{
+        grid-gap: 5rem;
+    }
+}
+@media screen and (max-width:1000px){
+    form{
+        width: 290px;
+    }
+    .h2{
+        font-size: 2.4rem;
+        margin: 8px 0;
+    }
+}
+@media screen and (max-width:900px){
+    .container-1{
+        grid-template-columns:1fr;
+    }
+    .unlock{
+        display: none;
+    }
+    .container-login{
+        justify-content: center;
+    }
 }

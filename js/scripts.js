@@ -38,5 +38,5 @@ $(function(){
                $('.container-principal').fadeIn(1000);
                 return false;
             }) 
-        }
+        } 
 }) 
