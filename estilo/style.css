@@ -298,6 +298,7 @@ color: white;
 }
 /**footer**/
 footer.fixed{
+    position: fixed;
     bottom: 0;
 }
 
@@ -383,6 +384,7 @@ footer p{
 }
 .quickLinks ul li{
     list-style: none;
+    
 }
 .quickLinks ul li a{
     color:#fff;
@@ -402,23 +404,28 @@ footer p{
 
 .contact .info{
     position: relative;
+    list-style: none;
 }d
 
 .contact .info li{
     display: flex;
     margin-bottom: 16px;
+    list-style: none;
 }
 .contact .info li span:nth-child(1){
     color:#fff;
     font-size: 20px;
     margin-right: 10px;
+    list-style: none;
 }
 .contact .info li span{
     color: #fff;
+    list-style: none;
 }
 .contact .info li a{
     color: #fff;
     text-decoration: none;
+    list-style: none;
 }
 .copyrightText{
     width: 100%;
@@ -621,7 +628,7 @@ footer p{
     font-size: 15px;
 }
 
-.input-div.focus:after,.input-div.focus:before{
+.input-div.focus:after, .input-div.focus:before{
     width: 50%;
 }
 .input-div.one{
@@ -717,6 +724,7 @@ footer p{
 @media screen and (max-width:900px){
     .container-1{
         grid-template-columns:1fr;
+        padding-left: 20%;
     }
     .unlock{
         display: none;
@@ -724,4 +732,8 @@ footer p{
     .container-login{
         justify-content: right;
     }
+}
+
+.input::placeholder{
+    color: white;
 }

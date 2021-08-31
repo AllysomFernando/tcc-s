@@ -5,26 +5,27 @@
 		
 		private $mailer;
 
-		public function __construct($host,$cpf,$senha,$nome_cliente){
+		public function __construct($host,$username,$senha,$name)
+		{
 			
 			$this->mailer = new PHPMailer;
 
-			$this->mailer->isSMTP();                      // Set mailer to use SMTP
+			$this->mailer->isSMTP();                                      // Set mailer to use SMTP
 			$this->mailer->Host = $host;  				  // Specify main and backup SMTP servers
-			$this->mailer->SMTPAuth = true;               // Enable SMTP authentication
-			$this->mailer->Username = $cpf;               // SMTP username
-			$this->mailer->Password = $senha;             // SMTP password
-			$this->mailer->SMTPSecure = 'ssl';            // Enable TLS encryption, `ssl` also accepted
-			$this->mailer->Port = 587;                    // TCP port to connect to
+			$this->mailer->SMTPAuth = true;                               // Enable SMTP authentication
+			$this->mailer->Username = $username;                 // SMTP username
+			$this->mailer->Password = $senha;                           // SMTP password
+			$this->mailer->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
+			$this->mailer->Port = 465;                                    // TCP port to connect to
 
-			$this->mailer->setFrom($cpf,$nome_cliente);
-			$this->mailer->isHTML(true);                  // Set email format to HTML
+			$this->mailer->setFrom($username,$name);
+			$this->mailer->isHTML(true);                                  // Set email format to HTML
 			$this->mailer->CharSet = 'UTF-8';
 
 		}
 
-		public function addAdress($email,$nome_cliente){
-			$this->mailer->addAddress($email,$nome_cliente);
+		public function addAdress($email,$nome){
+			$this->mailer->addAddress($email,$nome);
 		}
 
 		public function formatarEmail($info){
