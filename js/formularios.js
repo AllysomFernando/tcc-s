@@ -1,6 +1,6 @@
 $(function(){
 
-    $('form').submit(function(){
+    $('body').on('submit','form',function(){
         var form = $(this);
         $.ajax({
             url:include_path+'ajax/formularios.php',
@@ -8,10 +8,14 @@ $(function(){
             dataType: 'json',
             data:form.serialize()
         }).done(function(data){
-            console.log(data.retorno);
-            //console.log("Retorno feito com sucesso");
+            if(data.sucesso){
+                //console.log("email enviado com sucesso");
+            }else{
+               //console.log("Ocorreu um erro ao enviar o email  ");
+            }
         });
         return false;
     })
-
 })
+       
+

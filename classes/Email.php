@@ -1,8 +1,7 @@
 <?php
 	
 	class Email
-	{
-		
+	{	
 		private $mailer;
 
 		public function __construct($host,$username,$senha,$name)
