@@ -28,55 +28,6 @@
 <title>HOME</title>
 </head>
 <body>
-  <?php
-    if(isset($_POST['acao']) && $_POST['identificador'] == 'form_contato'){
-    //Enviei o Formulario
-      if($_POST['email'] != ''){
-        $email = $_POST['email'];
-      if(filter_var($email, FILTER_VALIDATE_EMAIL)){
-      //tudo certo, é um email, só enviar
-        $mail = new Email('vps.dankicode.com','testes@dankicode.com','gui123456','Guilherme');
-        $mail->addAdress('allysomted12@gmail.com', 'Lyo');
-
-        $corpo = "Sua duvida foi enviada:<hr>$email";
-        $info = array('assunto'=>'Sua dúvida', 'corpo'=>$corpo);
-        //$info = ['assunto'=>'Sua dúvida', 'corpo'=>$email];
-        $mail->formatarEmail($info);
-        if($mail->enviarEmail()){
-          echo '<script>alert("enviado com sucesso!")</script>';
-      }else{
-          echo '<script>alert("algo deu errado")</script>';
-      }
-       }else{
-           echo '<script>alert("Não é um email válido!")</script>';
-  }
-}else{
-  echo '<script>alert("Campos vázios não são permitidos!")</script>';
-        }
-    }else if(isset($_POST['acao']) && $_POST['identificador'] == 'form_login'){
-      /*
-        $cpf = $_POST['cpf'];
-        $senha = $_POST['senha'];
-        */
-        $assunto ='Teve um acesso com a sua conta!';
-        $corpo = '';
-        foreach ($_POST as $key => $value){
-          $corpo.=ucfirst($key).": ".$value;
-          $corpo.="<hr>";
-        }
-
-        $info = array('assunto'=>$assunto,'corpo'=>$corpo);
-        $mail = new Email('vps.dankicode.com','testes@dankicode.com','gui123456','Guilherme');
-        $mail->addAdress('allysomted12@gmail.com', 'Lyo');
-        $mail->formatarEmail($info);
-        if($mail->enviarEmail()){
-           echo '<script>alert("enviado com sucesso!")</script>';
-         }else{
-           echo '<script>alert("algo deu errado")</script>';
-      }
-    }
-
-?>
   <base base="<?php echo INCLUDE_PATH; ?>" />
   <?php
       $url = isset($_GET['url']) ? $_GET['url'] : 'home';
@@ -85,10 +36,8 @@
             echo '<target target="sobre" />';
             break;
       }
-
   ?>
-<?php //new Email();
- ?>
+  
 <header>   
         <a href="<?php echo INCLUDE_PATH; ?>home" class="logo"><img src="imagens/logo.png" width="100px"></a><!--ficara a logo-->
         <nav class="desktop">

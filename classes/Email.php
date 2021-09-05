@@ -15,8 +15,8 @@
 			$this->mailer->SMTPAuth = true;                               // Enable SMTP authentication
 			$this->mailer->Username = $username;                 // SMTP username
 			$this->mailer->Password = $senha;                           // SMTP password
-			$this->mailer->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
-			$this->mailer->Port = 465;                                    // TCP port to connect to
+			$this->mailer->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+			$this->mailer->Port = 587;                                    // TCP port to connect to
 
 			$this->mailer->setFrom($username,$name);
 			$this->mailer->isHTML(true);                                  // Set email format to HTML
