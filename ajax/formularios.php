@@ -8,7 +8,7 @@
 		$corpo.="<hr>";
 	}
 	$info = array('assunto'=>$assunto,'corpo'=>$corpo);
-	$mail = new Email('smtp-relay.gmail.com','ruddystore666@gmail.com','29012003Ab','Ruddy Store');
+	$mail = new Email('smtp.gmail.com','ruddystore666@gmail.com','29012003Ab','Ruddy Store');
     $mail->addAdress('ruddystore666@gmail.com', 'Ruddy Store');
 	$mail->formatarEmail($info);
 	if($mail->enviarEmail()){
