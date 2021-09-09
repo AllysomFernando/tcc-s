@@ -37,6 +37,10 @@
             break;
       }
   ?>
+ <div class="sucesso">Formulário enviado com sucesso</div> 
+<div class="overlay-loading">
+      <img src="<?php echo INCLUDE_PATH; ?>imagens/ajax-loader.gif">
+    </div>
 <header>   
         <a href="<?php echo INCLUDE_PATH; ?>home" class="logo"><img src="imagens/logo.png" width="100px"></a><!--ficara a logo-->
         <nav class="desktop">

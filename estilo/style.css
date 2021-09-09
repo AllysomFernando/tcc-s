@@ -754,3 +754,37 @@ footer p{
 .senha::placeholder{
     color: white;
 }
+
+/*overlay loading ajax **/
+
+.overlay-loading{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background: rgba(0,0,0,0.4);
+}
+
+.overlay-loading img{
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.sucesso{
+    display: none;
+    z-index: 88;
+    position: fixed;
+    right: 20px;
+    top: 150px;
+    padding: 15px 2%;
+    width: 300px;
+    font-size: 17px;
+    color: white;
+    font-weight: bold;
+    background: #EC268F;
+}
