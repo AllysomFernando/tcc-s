@@ -16,6 +16,5 @@
 	}else{
 		$data['erro'] = true;
 	}
-
 	die(json_encode($data));
 ?>

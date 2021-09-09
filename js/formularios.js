@@ -21,6 +21,7 @@ $(function(){
             }else{
                //console.log("Ocorreu um erro ao enviar o email  ");
                $('.overlay-loading').fadeOut();
+               
             }
         });
         return false;
