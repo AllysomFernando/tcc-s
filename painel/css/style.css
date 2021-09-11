@@ -209,3 +209,13 @@ body{
 #senha::placeholder{
     color: white;
 }
+
+/* box error */
+.error-box{
+    width: 100%;
+    padding: 4px 2%;
+    text-align: center;
+    background: #EC268F;
+    color: white;
+    font-size: 15px;
+}

@@ -1,1 +1,1 @@
-<h2>BEM VINDO ao painel <?php echo $_SESSION['user']?></h2>
+<h2>BEM VINDO ao painel <?php echo $_SESSION['user']; ?></h2>
