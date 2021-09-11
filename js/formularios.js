@@ -1,5 +1,4 @@
 $(function(){
-
     $('body').on('submit','form',function(){
         var form = $(this);
         $.ajax({
@@ -21,7 +20,6 @@ $(function(){
             }else{
                //console.log("Ocorreu um erro ao enviar o email  ");
                $('.overlay-loading').fadeOut();
-               
             }
         });
         return false;

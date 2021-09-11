@@ -11,6 +11,24 @@
 <img class="unlock" src="<?php echo INCLUDE_PATH; ?>imagens/unlock.svg">
 <div class="container-1">
 <div class="container-login">
+    <?php
+        if(isset($_POST['acao'])){
+            $user = $_POST['user'];
+            $password = $_POST['password'];
+            $sql = mysql::conectar()->prepare("SELECT * FROM `tb_admin.usuarios` WHERE user = ? AND password = ?");
+            $sql->execute(array($user,$password));
+            if($sql-rowCount() == 1){
+                //logamos com sucesso;
+                $_SESSION['login'] = true;
+                $_SESSION['user'] = $user;
+                $_SESSION['password'] = $password;
+                header('location: 'INCLUDE_PATH_PAINEL);
+            }else{
+                //falhou
+                echo '<div class="erro-box">Usuário ou senha incorretos</div>';
+            }
+        }
+    ?>
     <form method="post" action="">
         <img  class="avatar" src="<?php echo INCLUDE_PATH; ?>imagens/avatar.svg">
         <h2 class="h2"> Bem Vindo</h2>
