@@ -42,7 +42,7 @@
                 <i class ="fas fa-user"></i>
             </div>
         <div> 
-            <input id="cpf" required type="text"  placeholder="LOGIN" >
+            <input name="user" required type="text"  placeholder="LOGIN" >
         </div>
     </div>   
         <div class="input-div two">
@@ -50,7 +50,7 @@
                 <i class="fas fa-lock"></i>
             </div>
         <div>  
-            <input id="senha" required type="password" placeholder="SENHA">
+            <input name="senha" required type="password" placeholder="SENHA">
         </div>
     </div> 
         <input type="submit" name="acao" class="btn"  value="login">
