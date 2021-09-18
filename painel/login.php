@@ -42,7 +42,7 @@
                 <i class ="fas fa-user"></i>
             </div>
         <div> 
-            <input name="user" required type="text"  placeholder="LOGIN" >
+            <input name="user"  type="text"  placeholder="LOGIN">
         </div>
     </div>   
         <div class="input-div two">
