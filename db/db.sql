@@ -104,3 +104,10 @@ create table pagamento(
 
 ALTER TABLE pagamento
 ADD CONSTRAINT id_venda FOREIGN KEY (id_venda) REFERENCES venda (id_venda);
+
+CREATE TABLE `tb_admin.usuarios` (
+  `id` int(11) NOT NULL,
+  `user` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+
+)
