@@ -2,10 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 html,body{
     height: 100%;
     background-image: url(../image/background.jpg);
+}
+body{
+    overflow-x: hidden;
 }
 .unlock{
     position: fixed;
@@ -188,7 +192,10 @@ header{
     font-size: 23px;
     color: white;
 }
+.menu-wraper{width: 300px;}
+
 div.menu{
+    overflow-x: hidden;
     overflow-y: auto;
     height: 100%;
     padding: 10px;
@@ -248,23 +255,88 @@ div.box-usuario{
 .content{
     width: calc(100% - 300px);
     position: relative;
-    left: 300px;
-    padding: 10px;
+    left: 255px;
+    padding: 2%;
+}
+/*itens menu*/
+
+.items-menu{
+    margin-top: 30px;
 }
 
-.box-content{
-    background: white;
-    padding: 10px;
-    margin-bottom: 10px;
+.items-menu h2{
+    text-align: left;
+    font-size: 17px;
+    font-weight: bold;
+    background: #373435;
+    color: white;
+    padding: 8px;
+}
+
+.items-menu a{
+    display: block;
+    padding: block;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid #EC268f;
+}
+/*box metricas*/
+.box-metricas{
+	margin-top:16px;
+	padding:0 15px;
+}
+
+.box-metrica-single{
+	float: left;
+	position: relative;
+	width: 33.3%;
+	background: #373435;
+	border: 5px solid white;
+}
+
+.box-metricas .box-metrica-single:nth-of-type(2){
+	background:#373435 ;
+}
+
+.box-metricas .box-metrica-single:nth-of-type(3){
+	background: #373435;
+}
+
+.box-metrica-wraper{
+	padding: 10px 20px;
+	text-align: left;
+	color: white;
+}
+
+.box-metrica-wraper h2{
+	font-size: 28px;
+}
+
+.box-metrica-wraper p{
+	padding: 10px 0;
+	font-size: 26px;
 }
 
 @media screen and (max-width: 768px){
     .menu{
         display: none;
+    
     }
+   
     .content{
         width: 100%;
         left: 0;
     }
- 
+    header{
+        left: 0;
+        width: 100%;
+    }
 }
+
+@media screen and (max-width: 400px){
+    .menu-wraper{
+        width:200px;
+    }
+}
+
