@@ -228,8 +228,46 @@ div.box-usuario{
     font-size: 15px;
     font-weight: normal;
 }
+/**conteudo do painel**/
+.w100{
+    width: 100%;
+}
+
+.w50{
+    width: 49%;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
 .content{
     width: calc(100% - 300px);
     position: relative;
     left: 300px;
+    padding: 10px;
+}
+
+.box-content{
+    background: white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px){
+    .menu{
+        display: none;
+    }
+    .content{
+        width: 100%;
+        left: 0;
+    }
+    header{
+        left 0;
+        
+    }
 }

@@ -46,5 +46,13 @@
             <div class="clear"></div>
         </div><!-- center-->
 </header>
+
+<div class="content">
+
+        <div class="box-content" left w100>
+            
+        </div><!--box-content-->
+
+</div><!--content-->
 </body>
 </html>
