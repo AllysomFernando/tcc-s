@@ -6,11 +6,14 @@
             $sql = MySql::conectar()->prepare("SELECT * FROM `tb_admin.usuarios` WHERE user = ? AND senha = ?");
             $sql->execute(array($user,$senha));
             if($sql->rowCount() == 1){
-
+                $info = $sql->fetch();
                 //logamos com sucesso
                 $_SESSION['login'] = true;
                 $_SESSION['user'] = $user;
                 $_SESSION['senha'] = $senha;
+                $_SESSION['cargo'] = $info['cargo'];
+                $_SESSION['nome'] = $info['nome'];
+                $_SESSION['img'] = $info['img'];
                 header('Location: '.INCLUDE_PATH_PAINEL);
                 die();
             }else{

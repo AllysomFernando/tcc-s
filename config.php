@@ -16,4 +16,15 @@
         define('DATABASE','tcc');
 	define('USER','root');
 	define('PASSWORD','');
+
+        //funções
+
+        function pegaCargo($cargo){
+                $arr = [
+                 '0' => 'Normal',
+                 '1' => 'Mod',
+                 '2' => 'Adm'
+                ];
+                return $arr[$cargo];
+        }
 ?>

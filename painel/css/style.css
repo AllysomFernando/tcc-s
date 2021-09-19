@@ -3,7 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+html,body{
+    height: 100%;
     background-image: url(../image/background.jpg);
 }
 .unlock{
@@ -160,15 +161,9 @@ body{
 
 .center{padding: 0 2%; margin:0 auto;}
 
-div.menu{
-    overflow-y: auto;
-    height: 1000px;
-    background: #373435;
-    float: left;
-    width: 300px;
-}
 header{
-    float: left;
+    position: relative;
+    left: 300px;
     padding: 10px 0;
     background: #EC268F;
     width: calc(100% - 300px);
@@ -179,6 +174,62 @@ header{
 }
 
 .loggout a{
+    text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 23px;
+}
+.loggout a > span{
+    font-size: 19px;
+    text-decoration: none;
+}
+.menu-btn{
+    float: left;
+    cursor: pointer;
+    font-size: 23px;
+    color: white;
+}
+div.menu{
+    overflow-y: auto;
+    height: 100%;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #373435;
+    float: left;
+    width: 300px;
+}
+div.box-usuario{
+    text-align: center;
+}
+.avatar-usuario{  
+    text-align: left;
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 3px solid #EC268F;
+}
+.avatar-usuario i{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    font-size: 50px;
+    color: white;
+}
+.nome-usuario{
+    text-align: center;
+    margin-top: 10px;
+}
+.nome-usuario p{
+    color: white;
+    font-size: 15px;
+    font-weight: normal;
+}
+.content{
+    width: calc(100% - 300px);
+    position: relative;
+    left: 300px;
 }
