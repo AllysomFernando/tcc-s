@@ -44,7 +44,7 @@
     </div><!--box-usuario-->
     <div class="items-menu">
         <h2>Cadastro</h2>
-        <a href="">Cadastrar Produtos</a>
+        <a href="<?php echo INCLUDE_PATH_PAINEL?>cadastrar-produtos">Cadastrar Produtos</a>
         <a href="">Cadastrar Promoções</a>
         <a href="">Cadastrar Generos</a>
         <a href="">Cadastrar Clientes</a>
@@ -66,8 +66,10 @@
                 <i class="fas fa-bars"></i>
             </div><!--menu-btn-->
         <div class="loggout">
-        <a href="<?php echo INCLUDE_PATH_PAINEL ?>?loggout"><i class="fas fa-sign-out-alt"></i> <span>Sair</span> </a>
-            </div><!--loggout-->
+         <a href="<?php echo INCLUDE_PATH_PAINEL ?>"><i class="fas fa-home"></i> <span> Página Inicial</span></a>
+         <div style="padding: 0 20px;display:inline;"></div>
+         <a href="<?php echo INCLUDE_PATH_PAINEL ?>?loggout"><i class="fas fa-sign-out-alt"></i> <span>Sair</span> </a>
+        </div><!--loggout-->
 
             <div class="clear"></div>
         </div><!-- center-->
@@ -75,30 +77,7 @@
 
 <div class="content">
 
-        <div class="box-content" left w100>
-            <h2><i class="fas fa-home"></i> Painel de Controle - Ruddy Store</h2>
-            
-            <div class="box-metricas">
-                <div class="box-metrica-single">
-                    <div class="box-metrica-wraper">
-                        <h2>Usuários Online</h2>
-                        <p>3000</p>
-                     </div><!--box-metrica-wrapper-->
-                </div><!--box metrica single-->
-                <div class="box-metrica-single">
-                    <div class="box-metrica-wraper">
-                        <h2>Visitas Hoje</h2>
-                        <p>3000</p>
-                     </div><!--box-metrica-wrapper-->
-                </div><!--box metrica single-->
-                <div class="box-metrica-single">
-                    <div class="box-metrica-wraper">
-                        <h2>total de visitas</h2>
-                        <p>3000</p>
-                     </div><!--box-metrica-wrapper-->
-                </div><!--box metrica single-->
-                <div class="clear"></div>
-        </div><!--box-content-->
+       <?php Painel::loadPage(); ?>
 
 </div><!--content-->
 <script src="<?php echo INCLUDE_PATH?>js/jquery.js"></script>
