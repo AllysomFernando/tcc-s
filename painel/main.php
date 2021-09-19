@@ -17,7 +17,8 @@
     <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;1,100;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
     <link href="<?php echo INCLUDE_PATH_PAINEL; ?>css/style.css" rel="stylesheet">
 </head>    
 <body>
@@ -72,7 +73,7 @@
 <div class="content">
 
         <div class="box-content" left w100>
-            <h2><i class="fas fa-home"></i> Painel de Controle - <?php echo $nomeEmpresa ?></h2>
+            <h2><i class="fas fa-home"></i> Painel de Controle - Ruddy Store</h2>
             
             <div class="box-metricas">
                 <div class="box-metrica-single">
@@ -84,6 +85,12 @@
                 <div class="box-metrica-single">
                     <div class="box-metrica-wraper">
                         <h2>Visitas Hoje</h2>
+                        <p>3000</p>
+                     </div><!--box-metrica-wrapper-->
+                </div><!--box metrica single-->
+                <div class="box-metrica-single">
+                    <div class="box-metrica-wraper">
+                        <h2>total de visitas</h2>
                         <p>3000</p>
                      </div><!--box-metrica-wrapper-->
                 </div><!--box metrica single-->

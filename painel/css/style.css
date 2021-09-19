@@ -16,7 +16,7 @@ body{
     height: 80%;
     left: 0%;
     bottom: 0%;
-    z-index: -1;
+  
 }
 .container-1{
     width: 100vh;
@@ -69,7 +69,7 @@ body{
     font-size: 1.2rem;
     color: white;
 }
-.avatar{
+.mulher{
     width: 250px;
 }
 .h2{
@@ -226,6 +226,23 @@ div.box-usuario{
     font-size: 50px;
     color: white;
 }
+.imagem-usuario{
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+    position: relative;
+    border-radius: 50%;
+    border: 3px solid #EC268f;
+}
+
+.imagem-usuario img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
 .nome-usuario{
     text-align: center;
     margin-top: 10px;
@@ -268,7 +285,7 @@ div.box-usuario{
     text-align: left;
     font-size: 17px;
     font-weight: bold;
-    background: #373435;
+    background: #EC268f;
     color: white;
     padding: 8px;
 }
@@ -279,12 +296,18 @@ div.box-usuario{
     font-size: 16px;
     text-decoration: none;
     color: white;
+    padding:6px;
     border-bottom: 2px solid #EC268f;
+    padding-top: 10px;
 }
 /*box metricas*/
+.box-content{
+    color: white;
+}
 .box-metricas{
 	margin-top:16px;
 	padding:0 15px;
+    
 }
 
 .box-metrica-single{
@@ -292,7 +315,8 @@ div.box-usuario{
 	position: relative;
 	width: 33.3%;
 	background: #373435;
-	border: 5px solid white;
+	border: 2px solid #535353;
+   
 }
 
 .box-metricas .box-metrica-single:nth-of-type(2){

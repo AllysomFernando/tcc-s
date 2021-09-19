@@ -33,12 +33,11 @@
     <link href="<?php echo INCLUDE_PATH_PAINEL; ?>css/style.css" rel="stylesheet">
 </head>    
 <body>
-<img class="unlock" src="<?php echo INCLUDE_PATH; ?>imagens/unlock.svg" />
+<img class="unlock" src="<?php echo INCLUDE_PATH; ?>imagens/unlock.svg">
 <div class="container-1">
 <div class="container-login">
-
     <form method="post">
-        <img  class="avatar" src="<?php echo INCLUDE_PATH; ?>imagens/avatar.svg">
+        <img  class="mulher" src="<?php echo INCLUDE_PATH; ?>imagens/mulher.svg">
         <h2 class="h2"> Bem Vindo</h2>
         <div class="input-div one">
             <div class="i">

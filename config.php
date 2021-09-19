@@ -27,4 +27,6 @@
                 ];
                 return $arr[$cargo];
         }
+        //Constantes para o painel de controle
+	define('NOME_EMPRESA','Ruddy Store');
 ?>
