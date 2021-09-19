@@ -44,11 +44,14 @@
     </div><!--box-usuario-->
     <div class="items-menu">
         <h2>Cadastro</h2>
-        <a href="">Cadastrar Jogos</a>
+        <a href="">Cadastrar Produtos</a>
         <a href="">Cadastrar Promoções</a>
+        <a href="">Cadastrar Generos</a>
+        <a href="">Cadastrar Clientes</a>
         <h2>Gestão</h2>
         <a href="">Listar Jogos</a>
         <a href="">Listar Promoções</a>
+        <a href="">Listar Generos</a>
         <h2>Administração do Painel</h2>
         <a href="">Editar Usuário</a>
         <a href="">Adicionar Usuários</a>
