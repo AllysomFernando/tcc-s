@@ -1,4 +1,7 @@
 <?php include('config.php'); ?>
+<?php Site::updateUsuarioOnline(); ?>
+<?php Site::contador(); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,6 +49,7 @@
         <nav class="desktop">
             <ul>
                 <li><a href="<?php echo INCLUDE_PATH; ?>home">HOME</a></li>
+                <li><a href="<?php echo INCLUDE_PATH; ?>generos">GENEROS</a></li>
                 <li><a realtime="jogos" href="<?php echo INCLUDE_PATH; ?>jogos">JOGOS</a></li>
                 <li><a href="<?php echo INCLUDE_PATH; ?>sobre">SOBRE</a></li>
                 <li><a realtime="contato" href=" <?php echo INCLUDE_PATH; ?>contato">CONTATOS</a></li>
@@ -65,6 +69,7 @@
            </div>
             <ul>
                 <li><a href="<?php echo INCLUDE_PATH; ?>home">HOME</a></li>
+                <li><a href="<?php echo INCLUDE_PATH; ?>home">GENEROS</a></li>
                 <li><a realtime="jogos" href="<?php echo INCLUDE_PATH; ?>jogos">JOGOS</a></li>
                 <li><a href="<?php echo INCLUDE_PATH; ?>sobre">SOBRE</a></li>
                 <li><a realtime="contato" href="<?php echo INCLUDE_PATH; ?>contato">CONTATOS</a></li>
