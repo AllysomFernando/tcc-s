@@ -435,8 +435,16 @@ div.box-usuario{
     color: white;
 }
 
+.menu-active{
+    background: #8b3564;
+    border: 1px solid #8b3564;
+}
 
-/*medias carryss*/
+.menu-active::before{
+    content:'> ';
+}
+
+/*medias carry*/
 @media screen and (max-width: 1200px){
     .box-metrica-single{
 		height: 100%;

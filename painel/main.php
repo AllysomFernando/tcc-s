@@ -43,20 +43,37 @@
             </div><!--nome-usuario-->
     </div><!--box-usuario-->
     <div class="items-menu">
-        <h2>Cadastro</h2>
-        <a href="<?php echo INCLUDE_PATH_PAINEL?>cadastrar-produtos">Cadastrar Produtos</a>
-        <a href="">Cadastrar Promoções</a>
-        <a href="">Cadastrar Generos</a>
-        <a href="">Cadastrar Clientes</a>
-        <h2>Gestão</h2>
-        <a href="">Listar Jogos</a>
-        <a href="">Listar Promoções</a>
-        <a href="">Listar Generos</a>
-        <h2>Administração do Painel</h2>
-        <a href="<?php echo INCLUDE_PATH_PAINEL ?>editar-usuario">Editar Usuário</a>
-        <a href="">Adicionar Usuários</a>
-        <h2>Configuração Geral</h2>
-        <a href="">Editar</a>
+        <!--pessoas autorizadas-->
+        <h2 <?php  verificaPermissaoMenu(2);('')?>>Cadastro </h2>
+
+        <!--usuarios-->
+        <h2 <?php  verificarPermissaoPagina(0);('seu-perfil')?>>Seu Perfil</h2>
+        <!--usuarios--> 
+        <a <?php  selecionadoMenu('historico-de-compra'); ?>  <?php  verificarPermissaoPagina(0);('historico-de-compra')?>  href="">Históricos de Compra</a>
+        <a <?php  selecionadoMenu('cadastrar-jogos'); ?> <?php  verificaPermissaoMenu(1);('cadastar-jogos')?>href="<?php echo INCLUDE_PATH_PAINEL?>cadastrar-jogos">Cadastrar Jogos</a>
+        <a <?php  selecionadoMenu('cadastrar-promocoes'); ?><?php  verificaPermissaoMenu(1);('cadastrar-promocoes')?>href="<?php echo INCLUDE_PATH_PAINEL ?>cadastrar-promocoes">Cadastrar Promoções</a>
+        <a <?php  selecionadoMenu('cadastrar-generos'); ?><?php  verificaPermissaoMenu(1);('cadastrar-generos')?>href="<?php echo INCLUDE_PATH_PAINEL ?>cadastrar-generos">Cadastrar Generos</a>
+        <a <?php  selecionadoMenu('cadastrar-clientes'); ?><?php  verificaPermissaoMenu(1);('cadastrar-clientes')?>href="<?php echo INCLUDE_PATH_PAINEL ?>cadastrar-clientes">Cadastrar Clientes</a>
+
+        <h2 <?php  verificaPermissaoMenu(1);('')?>>Gestão</h2>
+
+        <a <?php  selecionadoMenu('listar-jogos'); ?> <?php  verificaPermissaoMenu(2);('')?>href="">Listar Jogos</a>
+        <a <?php  selecionadoMenu('listar-promocoes'); ?> <?php  verificaPermissaoMenu(2);('listar-promocoes')?>href="<?php echo INCLUDE_PATH_PAINEL ?>listar-promocoes">Listar Promoções</a>
+        <a <?php  selecionadoMenu('listar-generos'); ?> <?php  verificaPermissaoMenu(2);('listar-generos')?> href="<?php echo INCLUDE_PATH_PAINEL ?>ligar-generos">Listar Generos</a>
+
+        <h2 <?php  verificaPermissaoMenu(1);('')?>>Administração do Painel</h2>
+
+        <a <?php  selecionadoMenu('editar-usuario')?><?php  verificaPermissaoMenu(0);('editar-usuario')?>href="<?php echo INCLUDE_PATH_PAINEL ?>editar-usuario">Editar Usuário</a>
+        <a <?php  selecionadoMenu('adicionar-usuario')?> <?php  verificaPermissaoMenu(2);('adicionar-usuario')?> href="<?php echo INCLUDE_PATH_PAINEL ?>adicionar-usuario">Adicionar Usuários</a>
+
+        <h2 <?php  verificaPermissaoMenu(2);('')?>>Configuração Geral</h2>
+        <a <?php  selecionadoMenu('editar-site')?> <?php  verificaPermissaoMenu(2);('')?>href="">Editar Site</a>
+        <!--pessoas autorizadas-->
+
+        <!--usuarios-->
+        
+        <!--usuarios-->
+
     </div><!--items-menu-->
     </div><!--wraper-->
 </div><!--menu-->
@@ -66,7 +83,7 @@
                 <i class="fas fa-bars"></i>
             </div><!--menu-btn-->
         <div class="loggout">
-         <a href="<?php echo INCLUDE_PATH_PAINEL ?>"><i class="fas fa-home"></i> <span> Página Inicial</span></a>
+         <a href="<?php echo INCLUDE_PATH_PAINEL ?>" ><i class="fas fa-home"></i> <span> Página Inicial</span></a>
          <div style="padding: 0 20px;display:inline;"></div>
          <a href="<?php echo INCLUDE_PATH_PAINEL ?>?loggout"><i class="fas fa-sign-out-alt"></i> <span>Sair</span> </a>
         </div><!--loggout-->

@@ -51,7 +51,7 @@
             <input type="hidden" name="img_atual" value="<?php echo $_SESSION['img']; ?>">
         </div><!--form-group-->
         <div class="form-group">
-            <input type="submit" name="acao" value="Atualizar!"></input>
+            <input type="submit" name="acao" value="Atualizar"></input>
         </div><!--form-group-->
     </form>
 

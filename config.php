@@ -22,16 +22,39 @@
 
       
 
-        //funções
+        //funções do painel
 
         function pegaCargo($cargo){
                 $arr = [
-                 '0' => 'Normal',
+                 '0' => 'Usuário',
                  '1' => 'Mod',
                  '2' => 'Adm'
                 ];
                 return $arr[$cargo];
         }
+
+        function selecionadoMenu($par){
+                $url = explode('/',@$_GET['url'])[0];
+                if($url == $par){
+                        echo 'class="menu-active"';
+                }
+        }
         //Constantes para o painel de controle
 	define('NOME_EMPRESA','Ruddy Store');
+
+       function verificaPermissaoMenu($permissao){
+               if($_SESSION['cargo'] >= $permissao){
+                        return;    
+               }else{
+                        echo 'style="display:none; "'; 
+               }
+       }
+
+       function verificarPermissaoPagina($permissao){
+                if($_SESSION['cargo'] <= $permissao){
+                        return;    
+                 }else{
+                        echo 'style="display:none; "'; 
+         }
+       }
 ?>
