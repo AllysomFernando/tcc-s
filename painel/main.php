@@ -49,6 +49,7 @@
         <!--usuarios-->
         <h2 <?php  verificarPermissaoPagina(0);('seu-perfil')?>>Seu Perfil</h2>
         <!--usuarios--> 
+        
         <a <?php  selecionadoMenu('historico-de-compra'); ?>  <?php  verificarPermissaoPagina(0);('historico-de-compra')?>  href="">Históricos de Compra</a>
         <a <?php  selecionadoMenu('cadastrar-jogos'); ?> <?php  verificaPermissaoMenu(1);('cadastar-jogos')?>href="<?php echo INCLUDE_PATH_PAINEL?>cadastrar-jogos">Cadastrar Jogos</a>
         <a <?php  selecionadoMenu('cadastrar-promocoes'); ?><?php  verificaPermissaoMenu(1);('cadastrar-promocoes')?>href="<?php echo INCLUDE_PATH_PAINEL ?>cadastrar-promocoes">Cadastrar Promoções</a>
@@ -64,7 +65,7 @@
         <h2 <?php  verificaPermissaoMenu(1);('')?>>Administração do Painel</h2>
 
         <a <?php  selecionadoMenu('editar-usuario')?><?php  verificaPermissaoMenu(0);('editar-usuario')?>href="<?php echo INCLUDE_PATH_PAINEL ?>editar-usuario">Editar Usuário</a>
-        <a <?php  selecionadoMenu('adicionar-usuario')?> <?php  verificaPermissaoMenu(2);('adicionar-usuario')?> href="<?php echo INCLUDE_PATH_PAINEL ?>adicionar-usuario">Adicionar Usuários</a>
+
 
         <h2 <?php  verificaPermissaoMenu(2);('')?>>Configuração Geral</h2>
         <a <?php  selecionadoMenu('editar-site')?> <?php  verificaPermissaoMenu(2);('')?>href="">Editar Site</a>

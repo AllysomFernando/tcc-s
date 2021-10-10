@@ -11,6 +11,12 @@ html,body{
 body{
     overflow-x: hidden;
 }
+.cadastro{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    padding-left: 12%;
+}
 .unlock{
     position: fixed;
     height: 80%;
@@ -395,6 +401,15 @@ div.box-usuario{
 .box-content form input[type=text],
 .box-content form input[type=password]
 {
+    border: 1px solid #EC268F;
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: normal;
+    width: 100%;
+    height: 40px;
+    padding-left: 8px;
+}
+.box-content form select{
     border: 1px solid #EC268F;
     margin-top: 8px;
     font-size: 16px;

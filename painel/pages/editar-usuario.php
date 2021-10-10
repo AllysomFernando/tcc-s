@@ -1,3 +1,8 @@
+<?php
+
+    verificarPermissaoPagina(2);
+  
+?>
 <div class="box-content">
     <h2><i class="fas fa-pen"> Editar Usuário</i></h2>
 
@@ -46,12 +51,21 @@
             <input type="password" name="senha" required "></input>
         </div><!--form-group-->
         <div class="form-group">
+            <label>Cargo: </label>
+            <select name="cargo">
+                <?php
+                    foreach (Painel::$cargos as $key => $value) {
+                        echo '<option value="'.$key.'">'.$value.'</option>';
+                    }
+                ?>
+            </select>
+        <div class="form-group">
             <label>Imagem </label>
             <input type="file" name="img"></input>
             <input type="hidden" name="img_atual" value="<?php echo $_SESSION['img']; ?>">
         </div><!--form-group-->
         <div class="form-group">
-            <input type="submit" name="acao" value="Atualizar"></input>
+            <input type="submit" name="acao" value="Editar"></input>
         </div><!--form-group-->
     </form>
 

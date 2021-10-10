@@ -1,4 +1,9 @@
 <?php
+
+/*
+        to do: variavel global com os cargos;
+*/
+
        session_start();
        date_default_timezone_set('America/Sao_Paulo');
        $autoload = function($class){
@@ -19,8 +24,6 @@
         define('DATABASE','tcc');
 	define('USER','root');
 	define('PASSWORD','');
-
-      
 
         //funções do painel
 
