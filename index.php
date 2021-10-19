@@ -2,6 +2,7 @@
 <?php Site::updateUsuarioOnline(); ?>
 <?php Site::contador(); ?>
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,7 +44,7 @@
  <div class="sucesso">Formulário enviado com sucesso</div> 
 <div class="overlay-loading">
       <img src="<?php echo INCLUDE_PATH; ?>imagens/ajax-loader.gif">
-    </div>
+</div>
 <header>   
         <a href="<?php echo INCLUDE_PATH; ?>home" class="logo"><img src="imagens/logo.png" width="100px"></a><!--ficara a logo-->
         <nav class="desktop">
@@ -53,7 +54,7 @@
                 <li><a realtime="jogos" href="<?php echo INCLUDE_PATH; ?>jogos">JOGOS</a></li>
                 <li><a href="<?php echo INCLUDE_PATH; ?>sobre">SOBRE</a></li>
                 <li><a realtime="contato" href=" <?php echo INCLUDE_PATH; ?>contato">CONTATOS</a></li>
-                <li><a href="<?php echo INCLUDE_PATH; ?>login">LOGIN</a></li>
+                <li><a  href="<?php echo INCLUDE_PATH; ?>login">LOGIN</a></li>
                 <li><a realtime="registro" href="<?php echo INCLUDE_PATH; ?>registro">REGISTRO</a></li>
             </ul>
         </nav>

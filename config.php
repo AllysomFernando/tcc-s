@@ -26,14 +26,10 @@
 	define('PASSWORD','');
 
         //funções do painel
-
-        function pegaCargo($cargo){
-                $arr = [
-                 '0' => 'Usuário',
-                 '1' => 'Mod',
-                 '2' => 'Adm'
-                ];
-                return $arr[$cargo];
+        
+        function pegaCargo($indice){
+             
+                return Painel::$cargos[$indice];
         }
 
         function selecionadoMenu($par){

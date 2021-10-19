@@ -65,6 +65,7 @@
         <h2 <?php  verificaPermissaoMenu(1);('')?>>Administração do Painel</h2>
 
         <a <?php  selecionadoMenu('editar-usuario')?><?php  verificaPermissaoMenu(0);('editar-usuario')?>href="<?php echo INCLUDE_PATH_PAINEL ?>editar-usuario">Editar Usuário</a>
+        <a <?php  selecionadoMenu('adicionar-usuario')?><?php  verificaPermissaoMenu(0);('adicionar-usuario')?>href="<?php echo INCLUDE_PATH_PAINEL ?>adicionar-usuario">Adicionar Usuário</a>
 
 
         <h2 <?php  verificaPermissaoMenu(2);('')?>>Configuração Geral</h2>

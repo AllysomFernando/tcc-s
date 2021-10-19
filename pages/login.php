@@ -22,16 +22,7 @@
         }
 
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Login</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="<?php echo INCLUDE_PATH_PAINEL; ?>css/style.css" rel="stylesheet">
-</head>    
-<body>
+
 <img class="unlock" src="<?php echo INCLUDE_PATH; ?>imagens/unlock.svg">
 <div class="container-1">
 <div class="container-login">
