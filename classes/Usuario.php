@@ -12,7 +12,7 @@
             }
 
             public static function userExist($user){
-                $sql = Mysql::conectar()->prepare("SELECT `id` FROM `tb_admin.usuarios` WHERE user = ?");
+                $sql = MySql::conectar()->prepare("SELECT `id` FROM `tb_admin.usuarios` WHERE user = ?");
                 $sql->execute(array($user));
                 if($sql->rowCount() == 1)
                 return true;
@@ -21,8 +21,8 @@
             } 
 
             public static function cadastrarUsuario($user,$senha,$img,$cargo,$nome){
-                $sql = Mysql::conectar()->prepare("INSERT INTO `tb_admin.usuarios` VALUES (null,?,?,?,?,?) ");
-                $sql->execute(array($user,$senha,$img,$cargo,$nome));
+                $sql = MySql::conectar()->prepare("INSERT INTO `tb_admin.usuarios` VALUES (null,?,?,?,?,?) ");
+                $sql->execute($array = array($user,$senha,$img,$cargo,$nome));
             }
         }
 
