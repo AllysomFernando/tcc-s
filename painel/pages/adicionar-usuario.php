@@ -30,14 +30,14 @@
                 if($cargo >= $_SESSION['cargo']){
                     Painel::alert('erro','Voce precisa selecionar um cargo menor que o seu');
                 }else if(Painel::imagemValida($img) == false){
-                    Painel::alert('erro','O formato espeficifado está correto');
+                    Painel::alert('erro','O formato espeficado está incorreto');
                 }else if(Usuario::userExist($login)){
                     Painel::alert('erro','O login já existe!');
                 }else{
                     //apenas cadastrar no banco de dados
                     $usuario = new Usuario();
                     $imagem = Painel::uploadFile($img);
-                    $usuario->cadastrarUsuario($login,$senha,$img,$cargo,$nome);
+                    $usuario->cadastrarUsuarios($login,$senha,$img,$nome,$cargo);
 
 
                     Painel::alert('sucesso','O cadastro do usuário ' .$login . ' foi feito com sucesso');
@@ -81,7 +81,7 @@
             <input type="hidden" name="img_atual" value="<?php echo $_SESSION['img']; ?>">
         </div><!--form-group-->
         <div class="form-group">
-            <input type="submit" name="acao" value="Editar"></input>
+            <input type="submit" name="acao" value="Adicionar"></input>
         </div><!--form-group-->
     </form>
 

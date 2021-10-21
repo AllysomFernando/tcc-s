@@ -1,12 +1,3 @@
-<?php
-
-verificaPermissaoMenu(2);
-$cargos = [
-   '0' => 'Usuário',
-   '1' => 'Moderador',
-   '2' => 'Administrador',
-];  
-?>
 
 <div class="box-content">
 <h2><i class="fas fa-pen"> Editar Usuário</i></h2>
