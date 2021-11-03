@@ -200,11 +200,12 @@ nav.search .fa-search{
 }
 
 .destaque{
-    color: white;
-    margin-top: 160px;
-    text-align: left;
+    color: lightgray;
+    margin-top: 170px;
+    text-align: center;
+   margin-left: -17%;
     padding-left: 15%;
-    font-size: 25px;
+    font-size: 35px;
     font-family: 'Roboto Condensed', sans-serif;
 }
 /**corpo do site**/
@@ -243,8 +244,8 @@ section.freewnkd{
 /**freeweeknd**/
 
 .cyber{
-       width: 100%;
-       height: 60%;
+       width: 80%;
+       height: 20%;
        max-height: 600px;
        max-width: 1600px;
        object-fit: cover;
@@ -253,8 +254,8 @@ section.freewnkd{
        border-style: double;
        border-radius: 25px;
        border-width: 12px;
-       margin-left: 200px;
-       margin-top: 300px;
+       margin-left: 230px;
+       margin-top: 450px;
       
        
       
@@ -267,23 +268,41 @@ section.freewnkd{
 /**jogos de baixo**/
 
 .revi{
-    max-height: 500px;
+    max-height: 600px;
     width: 100%;
     max-width: 800px;
     border-color: #EC268F;
     border-style: double;
     border-radius: 20px;
     border-width: 12px;
-    margin-top: 30px;
-    margin-left: 80px;
+    margin-top: 4%;
+    margin-left: 4%;
+    margin-bottom: 5%;
     
  }
+ .linha_vertical {
+    height: 350px;
+    padding-right: 60px;
+    margin-top: 6%;
+    border-right: 3px solid #EC268F;
+}
+.valorvillage{
+    margin-top: 20%;
+    margin-left: -23%;
+    font-size: 25px;
+    color: white;
+}
  /**descricao do resident village**/
 .revi_desc{
-color: white;
+color:  #EC268F;
+margin-left: -42px;
+font-size: 46px;
+padding-top: 12%;
+
+padding-left: 5%;
 }
 .game1{
-    display: inline-block;
+    display: flex;
 }
 .sky{
    
@@ -446,9 +465,9 @@ footer p{
     padding: 0;
     color: black;
     text-align: center;
-    width: 70%;
-    margin-left: 13%;
-    margin-top: 2px;
+    width: 85%;
+    margin-left: 6%;
+    margin-top: -0,5%;
   }
 
 .hr5 { /** linha debaixo do cyber **/
@@ -459,10 +478,11 @@ footer p{
     padding: 0;
     color: black;
     text-align: center;
-    width: 70%;
-    margin-left: 13%;
-    margin-top: 650px;
+    width: 85%;
+    margin-left: 6%;
+    margin-top: 41%;
   }
+
 /**vitu: update do re village **/
 .game1{
     margin-top: 40px;
