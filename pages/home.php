@@ -44,21 +44,4 @@
   <p class="valorvillage"> Agora para PC por apenas R$20.00 REAIS </p>
 </div>
 
-<!--
-
-<div class="game2"> 
-  <a href="#"><img src="<?php echo INCLUDE_PATH; ?>imagens/skyrim.jpg" class="" width="200px"></a>
-</div>
-
--->
-<!--
-<div class="game3">
-<img src="<?php echo INCLUDE_PATH; ?>imagens/cyberpunk.jpg" width="200px">
-</div>
-<div class="gamer4">
-<img src="<?php echo INCLUDE_PATH; ?>imagens/farcry5.jpg" width="200px">
-</div>
-</div>
-</section>
--->
 </html>
