@@ -237,8 +237,8 @@ section.freewnkd {
 /**freeweeknd**/
 
 .cyber {
-  width: 100%;
-  height: 60%;
+  width: 80%;
+  height: 20%;
   max-height: 600px;
   max-width: 1600px;
   object-fit: cover;
@@ -247,8 +247,8 @@ section.freewnkd {
   border-style: double;
   border-radius: 25px;
   border-width: 12px;
-  margin-left: 200px;
-  margin-top: 300px;
+  margin-left: 230px;
+  margin-top: 450px;
 }
 .sales1 {
   margin-right: 50px;
@@ -273,6 +273,52 @@ section.freewnkd {
 }
 .game1 {
   display: inline-block;
+}
+.sky {
+  height: 750px;
+  object-fit: cover;
+  object-position: bottom;
+  border-color: #ec268f;
+  border-style: double;
+  border-radius: 20px;
+  border-width: 12px;
+  margin-top: 10px;
+}
+.revi {
+  max-height: 600px;
+  width: 100%;
+  max-width: 800px;
+  border-color: #ec268f;
+  border-style: double;
+  border-radius: 20px;
+  border-width: 12px;
+  margin-top: 1%;
+  margin-left: 4%;
+  margin-bottom: 5%;
+}
+.linha_vertical {
+  height: 350px;
+  padding-right: 60px;
+  margin-top: 5%;
+  border-right: 3px solid #ec268f;
+}
+.valorvillage {
+  margin-top: 20%;
+  margin-left: -23%;
+  font-size: 25px;
+  color: white;
+}
+/**descricao do resident village**/
+.revi_desc {
+  color: #ec268f;
+  margin-left: -42px;
+  font-size: 46px;
+  padding-top: 12%;
+
+  padding-left: 5%;
+}
+.game1 {
+  display: flex;
 }
 .sky {
   height: 750px;
@@ -446,6 +492,34 @@ d .contact .info li {
   margin-left: 13%;
   margin-top: 650px;
 }
+.hr6 {
+  /** linha cima do cyber **/
+  border: 0;
+  border-top: solid #ec268f;
+  height: 23%;
+  overflow: visible;
+  padding: 0;
+  color: black;
+  text-align: center;
+  width: 85%;
+  margin-left: 6%;
+  margin-top: -0, 5%;
+}
+
+.hr5 {
+  /** linha debaixo do cyber **/
+  border: 0;
+  border-top: solid #ec268f;
+  height: 23%;
+  overflow: visible;
+  padding: 0;
+  color: black;
+  text-align: center;
+  width: 85%;
+  margin-left: 6%;
+  margin-top: 43%;
+}
+
 /**vitu: update do re village **/
 .game1 {
   margin-top: 40px;

@@ -1,3 +1,5 @@
+<html>
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
 <!--parte da freewknd-->
 <hr class="hr7">
 <p class="destaque">DESTAQUES</p>
@@ -60,3 +62,17 @@
 </div>
 </section>
 -->
+
+
+<section class="allgames"><!--outros games-->
+  
+
+
+<div class="game1 ">
+  <a href="#"><img src="<?php echo INCLUDE_PATH; ?>imagens/revilage.jpg" class="revi" width="800px"></a>
+  <div class="linha_vertical"></div>
+  <p class="revi_desc">Resident Evil Village </p><br>
+  <p class="valorvillage"> Agora para PC por apenas R$20.00 REAIS </p>
+</div>
+
+</html>
