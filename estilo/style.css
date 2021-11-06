@@ -257,34 +257,6 @@ section.freewnkd {
 /**jogos de baixo**/
 
 .revi {
-  max-height: 500px;
-  width: 100%;
-  max-width: 800px;
-  border-color: #ec268f;
-  border-style: double;
-  border-radius: 20px;
-  border-width: 12px;
-  margin-top: 30px;
-  margin-left: 80px;
-}
-/**descricao do resident village**/
-.revi_desc {
-  color: white;
-}
-.game1 {
-  display: inline-block;
-}
-.sky {
-  height: 750px;
-  object-fit: cover;
-  object-position: bottom;
-  border-color: #ec268f;
-  border-style: double;
-  border-radius: 20px;
-  border-width: 12px;
-  margin-top: 10px;
-}
-.revi {
   max-height: 600px;
   width: 100%;
   max-width: 800px;
@@ -465,33 +437,6 @@ d .contact .info li {
 }
 
 /**vitu: linha divisoria (adicionar a cor certa depois que o fundo estiver pronto color: ;) **/
-.hr6 {
-  /** linha cima do cyber **/
-  border: 0;
-  border-top: solid #ec268f;
-  height: 23%;
-  overflow: visible;
-  padding: 0;
-  color: black;
-  text-align: center;
-  width: 70%;
-  margin-left: 13%;
-  margin-top: 2px;
-}
-
-.hr5 {
-  /** linha debaixo do cyber **/
-  border: 0;
-  border-top: solid #ec268f;
-  height: 23%;
-  overflow: visible;
-  padding: 0;
-  color: black;
-  text-align: center;
-  width: 70%;
-  margin-left: 13%;
-  margin-top: 650px;
-}
 .hr6 {
   /** linha cima do cyber **/
   border: 0;
