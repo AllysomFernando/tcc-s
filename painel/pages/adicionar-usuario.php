@@ -40,7 +40,7 @@ verificarPermissaoPagina(2);
           //apenas cadastrar no banco de dados
           $usuario = new Usuario();
           $imagem = Painel::uploadFile($img);
-          $usuario->cadastrarUsuario($login, $senha, $img, $nome, $cargo);
+          $usuario->cadastrarUsuario($login, $senha, $img['name'], $nome, $cargo);
 
 
           Painel::alert('sucesso', 'O cadastro do usuário ' . $login . ' foi feito com sucesso');

@@ -1,3 +1,4 @@
+
 <?php
 if (isset($_COOKIE['lembrar'])) {
     $user = $_COOKIE['user'];
@@ -59,7 +60,10 @@ if (isset($_POST['acao'])) {
   <link href="<?php echo INCLUDE_PATH_PAINEL; ?>css/style.css" rel="stylesheet">
 </head>
 
+
+
 <body>
+
   <img class="unlock" src="<?php echo INCLUDE_PATH; ?>imagens/unlock.svg">
   <div class="container-1">
     <div class="container-login">
@@ -86,6 +90,11 @@ if (isset($_POST['acao'])) {
         <div class="form-group-login">
           <label>Lembrar-me</label>
           <input type="checkbox" name="lembrar">
+        </div>
+        <br>
+        <div class="form-group-login">
+          
+        <a class="volte-painel" href="<?php echo INCLUDE_PATH ?>login">Página Inicial</a>
         </div>
       </form>
     </div>

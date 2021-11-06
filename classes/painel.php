@@ -84,4 +84,5 @@ class Painel
     {
         @unlink('uploads/' . $file);
     }
+  
 }

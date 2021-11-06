@@ -34,7 +34,7 @@ if (isset($_POST['acao'])) {
 </head>
 
 <body>
-  <img class="unlock" src="<?php echo INCLUDE_PATH; ?>imagens/unlock.svg">
+<img class="unlock" src="<?php echo INCLUDE_PATH; ?>imagens/unlock.svg">
   <div class="container-1">
     <div class="container-login">
       <form method="post">
@@ -51,7 +51,14 @@ if (isset($_POST['acao'])) {
             <input name="senha" required type="password" placeholder="SENHA">
           </div>
         </div>
+     
         <input type="submit" name="acao" class="btn" value="login">
+        <div class="form-group-login">
+          <label>Lembrar-me</label>
+          <input type="checkbox" name="lembrar">
+        </div>
+        <br>
+        <a class="a-login"href="<?php echo INCLUDE_PATH_PAINEL; ?>"`>É administrador ou moderador clique aqui!</a>
       </form>
     </div>
   </div>

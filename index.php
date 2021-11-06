@@ -2,7 +2,6 @@
 <?php Site::updateUsuarioOnline(); ?>
 <?php Site::contador(); ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 

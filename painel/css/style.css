@@ -20,9 +20,9 @@ body {
 }
 .unlock {
   position: fixed;
-  height: 80%;
-  left: 0%;
-  bottom: 0%;
+  height: 100%;
+  right: 50%;
+  padding-top: 10%;
 }
 .container-1 {
   width: 100vh;
@@ -516,4 +516,11 @@ div.box-usuario {
   .items-menu a {
     font-size: 15px;
   }
+}
+
+.volte-painel {
+  text-decoration: none;
+  color: #fff;
+
+  padding-left: 10%;
 }

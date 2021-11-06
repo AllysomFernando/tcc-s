@@ -97,6 +97,9 @@ if (isset($_GET['loggout'])) {
                                                                 ('adicionar-usuario') ?>href="<?php echo INCLUDE_PATH_PAINEL ?>adicionar-usuario">Adicionar
           Usuário</a>
 
+          <a
+          <?php selecionadoMenu('deletar-usuario') ?><?php verificaPermissaoMenu(2);
+                                                                ('deletar-usuari') ?>href="<?php echo INCLUDE_PATH_PAINEL ?>deletar-usuari">Deletar usuario</a>
 
         <h2 <?php verificaPermissaoMenu(2);
                     ('') ?>>Configuração Geral</h2>
@@ -127,7 +130,7 @@ if (isset($_GET['loggout'])) {
       </div>
       <!--loggout-->
 
-      <div class="clear"></div>
+      <div class="clear"></div> 
     </div><!-- center-->
   </header>
 

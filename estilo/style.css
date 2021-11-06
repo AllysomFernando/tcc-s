@@ -699,9 +699,9 @@ d .contact .info li {
 }
 .unlock {
   position: fixed;
-  height: 80%;
-  left: 0%;
-  bottom: 0%;
+  height: 90%;
+  left: -1%;
+  padding-top: 10%;
 }
 .container-1 {
   width: 100vh;
@@ -723,6 +723,7 @@ d .contact .info li {
   display: flex;
   align-items: center;
   text-align: center;
+  padding-right: 30px;
 }
 .container-login input[type='text'] {
   width: 250px;
@@ -770,7 +771,9 @@ d .contact .info li {
   color: white;
 }
 .mulher {
+  padding-right: 10%;
   width: 250px;
+  margin-right: 10px;
 }
 .h2 {
   font-size: 2.9rem;
@@ -820,7 +823,7 @@ d .contact .info li {
   background-position: right;
 }
 /* box error */
-.error-box {
+.erro-box {
   width: 100%;
   padding: 4px 2%;
   text-align: center;
@@ -828,7 +831,11 @@ d .contact .info li {
   color: white;
   font-size: 15px;
 }
-
+.box-site {
+  text-align: center;
+  width: 100%;
+  padding: 8px 0;
+}
 .box-alert {
   text-align: center;
   width: 100%;
@@ -930,4 +937,15 @@ d .contact .info li {
 .mulher-cadastro {
   padding-top: 200px;
   width: 250px;
+}
+
+.a-login {
+  font-size: 15px;
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+}
+.form-group-login {
+  padding-left: 50%;
+  color: white;
 }

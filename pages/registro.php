@@ -8,20 +8,22 @@
     $senha = $_POST['senha'];
 
     if ($login == '') {
-      Painel::alert('erro', 'O login está vázio');
+      Painel::alertSite('erro', 'O login está vázio');
     } else if ($nome == '') {
-      Painel::alert('erro', 'O nome está vázio');
+      Painel::alertSite('erro', 'O nome está vázio');
     } else if ($senha == '') {
-      Painel::alert('erro', 'A senha está vázia');
+      Painel::alertSite('erro', 'A senha está vázia');
     } else {
       //podemos cadastrar!
       if (Usuario::userExist($login)) {
-        Painel::alert('erro', 'O login já existe!');
+        Painel::alertSite('erro', 'O login já existe!');
       } else {
         //apenas cadastrar no banco de dados
         $usuario = new Usuario();
         $usuario->cadastrarUsuarios($login, $nome, $senha);
        
+     
+        header("Location: login");
       }
     }
   }
