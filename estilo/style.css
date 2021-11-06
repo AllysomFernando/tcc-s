@@ -276,7 +276,7 @@ section.freewnkd {
 }
 .valorvillage {
   margin-top: 20%;
-  margin-left: -23%;
+  margin-left: -20%;
   font-size: 25px;
   color: white;
 }
@@ -523,9 +523,9 @@ d .contact .info li {
 /*bullets**/
 .bullets {
   position: absolute;
-  bottom: 50px;
+  bottom: 0%;
   transform: translateY(50%);
-  left: 40%;
+  left: 35%;
 }
 .bullets span {
   margin: 0 5px;
