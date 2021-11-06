@@ -519,7 +519,14 @@ d .contact .info li {
   border: none !important;
   margin: 0 auto; /*deixando centralizado*/
 }
-
+.error-box {
+  width: 100%;
+  padding: 4px 2%;
+  text-align: center;
+  background: red;
+  color: white;
+  font-size: 15px;
+}
 /*bullets**/
 .bullets {
   position: absolute;
@@ -555,7 +562,7 @@ d .contact .info li {
   left: 0%;
   bottom: 0%;
 }
-.container-1 {
+/*.container-1 {
   width: 100vh;
   height: 100vh;
   display: grid;
@@ -683,7 +690,135 @@ d .contact .info li {
     justify-content: right;
   }
 }
+*/
+.cadastro {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  padding-left: 12%;
+}
+.unlock {
+  position: fixed;
+  height: 80%;
+  left: 0%;
+  bottom: 0%;
+}
+.container-1 {
+  width: 100vh;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 7rem;
+  padding: 0 55rem;
+  margin-top: 80px;
+}
 
+.img {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.container-login {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.container-login input[type='text'] {
+  width: 250px;
+  height: 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0.5rem 0.7 rem;
+  font-size: 1.2rem;
+  color: white;
+}
+.container-login input[type='number'] {
+  width: 250px;
+  height: 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0.5rem 0.7 rem;
+  font-size: 1.2rem;
+  color: white;
+}
+.container-login input[type='password'] {
+  width: 250px;
+  height: 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0.5rem 0.7 rem;
+  font-size: 1.2rem;
+  color: white;
+}
+.mulher {
+  width: 250px;
+}
+.h2 {
+  font-size: 2.9rem;
+  text-transform: uppercase;
+  margin: 15px 0;
+  color: white;
+}
+
+.input-div {
+  position: relative;
+  display: grid;
+  grid-template-columns: 10% 93%;
+  margin: 25px 0;
+  padding: 8px 10px;
+  border-bottom: 3px solid #ec268f;
+}
+
+.a {
+  display: block;
+  text-align: right;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+.a:hover {
+  color: #ec268f;
+}
+.btn {
+  display: block;
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  outline: none;
+  border: none;
+  background-image: linear-gradient(to right, #b80866, #ec268f);
+  cursor: pointer;
+  color: #fff;
+  text-transform: uppercase;
+  background-size: 200%;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  background-position: right;
+}
 /* box error */
 .error-box {
   width: 100%;
@@ -692,6 +827,22 @@ d .contact .info li {
   background: red;
   color: white;
   font-size: 15px;
+}
+
+.box-alert {
+  text-align: center;
+  width: 100%;
+  padding-top: 50px 0;
+}
+
+.sucesso {
+  background: #ec268f;
+  color: white;
+}
+
+.erro {
+  background: red;
+  color: white;
 }
 
 /*overlay loading ajax **/
@@ -726,4 +877,57 @@ d .contact .info li {
   color: white;
   font-weight: bold;
   background: #ec268f;
+}
+
+/*registro*/
+.container-cadastro input[type='number'] {
+  width: 250px;
+  height: 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0.5rem 0.7 rem;
+  font-size: 1.2rem;
+  color: white;
+}
+.container-cadastro input[type='text'] {
+  width: 250px;
+  height: 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0.5rem 0.7 rem;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.container-cadastro input[type='password'] {
+  width: 250px;
+  height: 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0.5rem 0.7 rem;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.mulher-cadastro {
+  padding-top: 200px;
+  width: 250px;
 }

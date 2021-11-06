@@ -59,7 +59,7 @@
         <li><a href="<?php echo INCLUDE_PATH; ?>sobre">SOBRE</a></li>
         <li><a realtime="contato" href=" <?php echo INCLUDE_PATH; ?>contato">CONTATOS</a></li>
         <li><a href="<?php echo INCLUDE_PATH; ?>login">LOGIN</a></li>
-        <li><a realtime="registro" href="<?php echo INCLUDE_PATH; ?>registro">REGISTRO</a></li>
+        <li><a href="<?php echo INCLUDE_PATH; ?>registro">REGISTRO</a></li>
       </ul>
     </nav>
     <nav class="search">

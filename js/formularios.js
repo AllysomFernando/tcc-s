@@ -1,4 +1,4 @@
-$(function () {
+/*$(function () {
   $('body').on('submit', 'form', function () {
     var form = $(this)
     $.ajax({
@@ -25,3 +25,4 @@ $(function () {
     return false
   })
 })
+*/

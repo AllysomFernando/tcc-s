@@ -29,7 +29,7 @@ class Usuario
     }
     public static function cadastrarUsuarios($cpf, $nome, $senha)
     {
-        $sql = MySql::conectar()->prepare("INSERT INTO clientes VALUES (?,?,?)");
+        $sql = MySql::conectar()->prepare("INSERT INTO cliente VALUES (?,?,?)");
         $sql->execute(array($cpf, $nome, $senha));
     }
 }

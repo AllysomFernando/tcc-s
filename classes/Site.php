@@ -36,6 +36,7 @@
                 $sql->execute(array($_SERVER['REMOTE_ADDR'],date('Y-m-d')));
             }
         }
+        
     }
-
+    
 ?>

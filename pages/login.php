@@ -10,12 +10,13 @@ if (isset($_POST['acao'])) {
     $_SESSION['login'] = true;
     $_SESSION['cpf'] = $cpf;
     $_SESSION['senha'] = $senha;
-    header('Location: http://localhost/tcc/tcc-allysu-victor/main.php');
+    header('Location: http://localhost/tcc/tcc-allysu-victor/');
 
     die();
   } else {
-    //falhou
+    header('Location: http://localhost/tcc/tcc-allysu-victor/login');
     echo '<div class="error-box">CPF ou senha incorretos</div>';
+    
   }
 }
 
@@ -40,17 +41,12 @@ if (isset($_POST['acao'])) {
         <img class="mulher" src="<?php echo INCLUDE_PATH; ?>imagens/mulher.svg">
         <h2 class="h2"> Bem Vindo</h2>
         <div class="input-div one">
-          <div class="i">
-            <i class="fas fa-user"></i>
-          </div>
           <div>
-            <input name="cpf" type="text" placeholder="CPF">
+            <input name="cpf" type="number" placeholder="CPF">
           </div>
         </div>
+
         <div class="input-div two">
-          <div class="i">
-            <i class="fas fa-lock"></i>
-          </div>
           <div>
             <input name="senha" required type="password" placeholder="SENHA">
           </div>

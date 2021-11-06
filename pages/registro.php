@@ -1,39 +1,4 @@
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
 <form method="post" enctype="multipart/form-data">
   <?php
   if (isset($_POST['acao'])) {
@@ -56,34 +21,34 @@
         //apenas cadastrar no banco de dados
         $usuario = new Usuario();
         $usuario->cadastrarUsuarios($login, $nome, $senha);
-        Painel::alert('sucesso', 'O cadastro do usuário ' . $login . ' foi feito com sucesso');
+       
       }
     }
   }
 
-
   ?>
-  <div class="form-group">
-    <label>Login: </label>
-    <input type="number" name="cpf"></input>
+<img class="unlock" src="<?php echo INCLUDE_PATH; ?>imagens/unlock.svg">
+  <div class="container-1">
+    <div class="container-cadastro">
+        <img class="mulher-cadastro" src="<?php echo INCLUDE_PATH; ?>imagens/mulher.svg">
+        <h2 class="h2"> Bem Vindo</h2>
+        <div class="input-div one">
+          <div>
+            <input name="cpf" type="text" placeholder="CPF">
+          </div>
+        </div>
+        <div>
+          <div class="input-div three">
+          <input name="nome_cliente" type="text" placeholder="NOME">
+          </div>
+        </div>
+        <div class="input-div two">
+          <div>
+            <input name="senha" required type="password" placeholder="SENHA">
+          </div>
+        </div>
+        <input type="submit" name="acao" class="btn" value="cadastrar-se">
+    </div>
   </div>
-  <!--form-group-->
-
-  <div class="form-group">
-    <label>Nome: </label>
-    <input type="text" name="nome_cliente"></input>
   </div>
-  <!--form-group-->
-
-  <div class="form-group">
-    <label>Senha: </label>
-    <input type="password" name="senha"></input>
-  </div>
-  <!--form-group-->
-
-  <!--form-group-->
-  <div class="form-group">
-    <input type="submit" name="acao" value="Cadastrar"></input>
-  </div>
-  <!--form-group-->
 </form>
