@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 09-Out-2021 às 01:42
+-- Tempo de geração: 04-Nov-2021 às 02:39
 -- Versão do servidor: 10.4.21-MariaDB
 -- versão do PHP: 8.0.10
 
@@ -28,14 +28,17 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `cliente` (
-  `cpf` int(11) NOT NULL,
+  `cpf` int(15) NOT NULL,
   `nome_cliente` varchar(45) NOT NULL,
-  `data_nascimento` date DEFAULT NULL,
-  `email` varchar(30) NOT NULL,
-  `celular` varchar(11) DEFAULT NULL,
-  `usuario` varchar(30) NOT NULL,
   `senha` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Extraindo dados da tabela `cliente`
+--
+
+INSERT INTO `cliente` (`cpf`, `nome_cliente`, `senha`) VALUES
+(123, '', 'teste');
 
 -- --------------------------------------------------------
 
@@ -83,24 +86,10 @@ CREATE TABLE `pagamento` (
 
 CREATE TABLE `produto` (
   `id_produto` int(11) NOT NULL,
-  `nome_produto` varchar(45) DEFAULT NULL,
-  `valor_produto` varchar(45) DEFAULT NULL,
-  `foto` blob DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
--- --------------------------------------------------------
-
---
--- Estrutura da tabela `promocoes`
---
-
-CREATE TABLE `promocoes` (
-  `id_promocoes` int(11) NOT NULL,
-  `descricao` text DEFAULT NULL,
-  `id_produto` int(11) DEFAULT NULL,
-  `valor_promocao` float DEFAULT NULL,
-  `data_inicio` date DEFAULT NULL,
-  `data_final` date DEFAULT NULL
+  `nome` varchar(45) DEFAULT NULL,
+  `valor` varchar(45) DEFAULT NULL,
+  `img` varchar(255) DEFAULT NULL,
+  `descricao` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -136,7 +125,8 @@ CREATE TABLE `tb_admin.usuarios` (
 --
 
 INSERT INTO `tb_admin.usuarios` (`id`, `user`, `senha`, `img`, `nome`, `cargo`) VALUES
-(1, 'admin', '29012003Ab', '200698211_995390867926391_5894743780393534105_n.jpg', 'Allysom', 2);
+(1, 'admin', '29012003Ab', '617ef370583e3.jpg', 'allysom', 2),
+(29, 'Victor_Moderador', '123456', 'Array', 'Victor', 1);
 
 -- --------------------------------------------------------
 
@@ -157,7 +147,10 @@ CREATE TABLE `tb_admin.visitas` (
 INSERT INTO `tb_admin.visitas` (`id`, `ip`, `dia`) VALUES
 (1, '::1', '2021-09-26'),
 (2, '::1', '2021-09-26'),
-(3, '::1', '2021-10-06');
+(3, '::1', '2021-10-06'),
+(4, '::1', '2021-10-18'),
+(5, '::1', '2021-10-28'),
+(6, '::1', '2021-10-31');
 
 -- --------------------------------------------------------
 
@@ -207,12 +200,6 @@ ALTER TABLE `pagamento`
 --
 ALTER TABLE `produto`
   ADD PRIMARY KEY (`id_produto`);
-
---
--- Índices para tabela `promocoes`
---
-ALTER TABLE `promocoes`
-  ADD PRIMARY KEY (`id_promocoes`);
 
 --
 -- Índices para tabela `tb_admin.online`
@@ -268,28 +255,22 @@ ALTER TABLE `produto`
   MODIFY `id_produto` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT de tabela `promocoes`
---
-ALTER TABLE `promocoes`
-  MODIFY `id_promocoes` int(11) NOT NULL AUTO_INCREMENT;
-
---
 -- AUTO_INCREMENT de tabela `tb_admin.online`
 --
 ALTER TABLE `tb_admin.online`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
 
 --
 -- AUTO_INCREMENT de tabela `tb_admin.usuarios`
 --
 ALTER TABLE `tb_admin.usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
 -- AUTO_INCREMENT de tabela `tb_admin.visitas`
 --
 ALTER TABLE `tb_admin.visitas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de tabela `venda`
