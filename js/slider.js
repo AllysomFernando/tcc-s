@@ -1,3 +1,4 @@
+/** 
 $(function(){
         var curSlide = 0;
         var maxSlide = $('.content').length -1;
@@ -39,4 +40,4 @@ $(function(){
            currentBullet.addClass('active-sliders');      
         });
          
-})
+})**/
