@@ -126,15 +126,6 @@ section.erro-404 a {
   height: 400px;
 }
 
-/*imagens **/
-@media screen and (max-width: 768px) {
-  img {
-    float: none !important;
-    display: block;
-    margin: 0 auto;
-    max-width: 500px;
-  }
-}
 /**nagavegação**/
 nav.desktop ul {
   list-style-type: none;
@@ -198,9 +189,9 @@ nav.search .fa-search {
 .destaque {
   color: white;
   margin-top: 160px;
-  text-align: left;
+  text-align: auto;
   padding-left: 15%;
-  font-size: 25px;
+  font-size: 30px;
   font-family: 'Roboto Condensed', sans-serif;
 }
 /**corpo do site**/
@@ -208,100 +199,94 @@ body {
   background-image: url(../imagens/background.jpg);
 }
 
-section.freewnkd {
-  padding: 10px;
-}
-.content {
-  padding-right: 10%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  display: none;
-  width: 100%;
-  height: 100%;
-  padding: 200px 100px 100px;
-  min-height: 100vh;
-  max-height: 750px;
-  margin-left: -120px;
-  margin-top: -140px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.sales1 {
-  padding-left: 60%;
-  padding-top: 2%;
-}
-
 /**freeweeknd**/
 
+.cyberpunkdiv{
+    margin: auto;
+    margin-top: 25px;
+    max-height: 750px;
+    min-height: 250px;
+    max-width: 1350px;
+    margin-left: 30px;
+    margin-right: 30px;
+    min-width: 300px;
+    padding: 0px;
+}
 .cyber {
-  width: 80%;
-  height: 20%;
-  max-height: 600px;
-  max-width: 1600px;
-  object-fit: cover;
-  object-position: bottom;
+  
+  width: 100%;
   border-color: #ec268f;
   border-style: double;
   border-radius: 25px;
   border-width: 12px;
-  margin-left: 230px;
-  margin-top: 450px;
-}
-.sales1 {
-  margin-right: 50px;
+
 }
 
 /**jogos de baixo**/
 
 .revi {
-  max-height: 600px;
-  width: 100%;
-  max-width: 800px;
-  border-color: #ec268f;
-  border-style: double;
-  border-radius: 20px;
-  border-width: 12px;
-  margin-top: 1%;
-  margin-left: 4%;
-  margin-bottom: 5%;
+
+    margin: auto;
+    margin-bottom: 200px;
+    margin-top: 25px;
+    max-height: 750px;
+    min-height: 250px;
+    max-width: 750px;
+    margin-left: 25px;
+    margin-right: 30px;
+    min-width: 270px;
+    padding: 0px;
+    width: 100%;
+    border-color: #ec268f;
+    border-style: double;
+    border-radius: 25px;
+    border-width: 12px;
+    display: inline-block;
+}
+.descri{
+
 }
 .linha_vertical {
-  height: 350px;
-  padding-right: 60px;
-  margin-top: 5%;
-  border-right: 3px solid #ec268f;
+    height: 200px;
+    padding-right: 80px;
+    margin-top: 11%;
+    margin-left: -5%;
+ 
+    border-right: 12px double #ec268f;
+  }
+  .valorvillage {
+    margin-top: 13%;
+    margin-left: 25%;
+    font-size: 25px;
+    color: white;
+  }
+  /**descricao do resident village**/
+  .revi_desc {
+    color: #ec268f;
+    margin-left: -2%;
+    font-size: 54px;
+    padding-top: 20%;
+    padding-left: 15%;
+  }
+.revidiv {
+    margin: auto;
+    margin-top: 25px;
+    max-height: 550px;
+    min-height: 300px;
+    max-width: 1250px;
+    margin-left: 50px;
+    margin-right: 30px;
+    min-width: 300px;
+    padding: 0px;
+    display: flex;
 }
-.valorvillage {
-  margin-top: 20%;
-  margin-left: -20%;
-  font-size: 25px;
-  color: white;
+.descricao{
+    font-size: 20px;
+    margin-left: 100px;
+    max-width: 400px;
 }
-/**descricao do resident village**/
-.revi_desc {
-  color: #ec268f;
-  margin-left: -42px;
-  font-size: 46px;
-  padding-top: 12%;
 
-  padding-left: 5%;
-}
-.game1 {
-  display: flex;
-}
-.sky {
-  height: 750px;
-  object-fit: cover;
-  object-position: bottom;
-  border-color: #ec268f;
-  border-style: double;
-  border-radius: 20px;
-  border-width: 12px;
-  margin-top: 10px;
-}
+
 /**footer**/
 footer.fixed {
   position: fixed;
@@ -312,7 +297,7 @@ footer {
   position: relative;
   width: 100%;
   height: auto;
-  padding: 10px 0px 0px 30px;
+  padding: 10px 0px 0px 50px;
   background-color: #ec268f;
   display: flex;
   justify-content: space-between;
@@ -462,13 +447,11 @@ d .contact .info li {
   text-align: center;
   width: 85%;
   margin-left: 6%;
-  margin-top: 43%;
+  margin-top: 5%;
 }
 
 /**vitu: update do re village **/
-.game1 {
-  margin-top: 40px;
-}
+
 
 /**estilização do contato **/
 .contato-container {
@@ -527,7 +510,7 @@ d .contact .info li {
   color: white;
   font-size: 15px;
 }
-/*bullets**/
+/*bullets
 .bullets {
   position: absolute;
   bottom: 0%;
@@ -543,7 +526,7 @@ d .contact .info li {
   cursor: pointer;
   background-color: #ec268f;
 }
-
+**/
 .bullets span.active-sliders {
   background: white;
 }
