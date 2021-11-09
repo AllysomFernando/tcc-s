@@ -4,44 +4,26 @@
 <hr class="hr7">
 <p class="destaque">DESTAQUES</p>
 <hr class="hr6">
+<body>
 
-
-<section class="freewnkd">
-  <div class="container">
-    <div class="content">
-      <a href="#"> <img src="<?php echo INCLUDE_PATH; ?>imagens/cyberpunk.jpg" class="cyber" width="400px"></a>
-    </div>
-
-    <div class="content">
-      <a href="#"> <img src="<?php echo INCLUDE_PATH; ?>imagens/skyrim.jpg" class="cyber" width="400px"></a>
-    </div>
-
-    <div class="content">
-      <a href="#"> <img src="<?php echo INCLUDE_PATH; ?>imagens/farcry5.jpg" class="cyber" width="400px"></a>
-    </div>
-
+    <div class="cyberpunkdiv">
+       <a href="#"> <img src="<?php echo INCLUDE_PATH; ?>imagens/cyberpunk.jpg" class="cyber" ></a>
   </div>
 
-  <div class="bullets">
-
-  </div>
-</section>
-<!-- free wknd-->
+  </style>
 <!-- linha horizontal-->
 
 <hr class="hr5">
 
 
 
-<section class="allgames"><!--outros games-->
-  
-
-
-<div class="game1 ">
-  <a href="#"><img src="<?php echo INCLUDE_PATH; ?>imagens/revilage.jpg" class="revi" width="800px"></a>
+<div class="revidiv ">
+  <a href="#"><img src="<?php echo INCLUDE_PATH; ?>imagens/revilage.jpg"  class="revi" ></a>
   <div class="linha_vertical"></div>
+  <div class="descri">
   <p class="revi_desc">Resident Evil Village </p><br>
   <p class="valorvillage"> Agora para PC por apenas R$20.00 REAIS </p>
 </div>
-
+</div>
+</body>
 </html>
