@@ -6,14 +6,19 @@
 </head>
 
 <br><br><br><br>
+<hr class="hr10">
 <body>
   <div class="estoque">
 <a href="#"> <img src="<?php echo INCLUDE_PATH; ?>imagens/cyberpunk.jpg" class="jog1" ></a>
-<p class="leg1">CYBERPUNK </p>
 </div>
 <div class="estoque2">
 <a href="#"><img src="<?php echo INCLUDE_PATH; ?>imagens/revilage.jpg"  class="jog2" ></a>
-<P class="leg2">VILLAGE</P>
 <br><br><br>
+</div>
+<div class="botaoc">
+<button  class = "botao1"type="button" onclick="alert('Voce será redirecionado para a compra')">Comprar</button>
+</div>
+<div class="botaor">
+<button  class = "botao1"type="button" onclick="alert('Voce será redirecionado para a compra')">Comprar</button>
 </div>
 </body>
