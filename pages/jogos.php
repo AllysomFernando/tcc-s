@@ -5,14 +5,15 @@
   <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
 </head>
 
+<br><br><br><br>
 <body>
-  <br><br><br><br><br><br><br><br><br><br>
-  <br><br><br><br><br><br><br><br><br><br>
-  <br><br><br><br><br><br><br><br><br><br>
-  <br><br><br><br><br><br><br><br><br><br>
-      <div class="jogo1">
-      <p class="destaques">JOGOS</p>
-<hr class="hr0">
-      </div>
-  </div>
+  <div class="estoque">
+<a href="#"> <img src="<?php echo INCLUDE_PATH; ?>imagens/cyberpunk.jpg" class="jog1" ></a>
+<p class="leg1">CYBERPUNK </p>
+</div>
+<div class="estoque2">
+<a href="#"><img src="<?php echo INCLUDE_PATH; ?>imagens/revilage.jpg"  class="jog2" ></a>
+<P class="leg2">VILLAGE</P>
+<br><br><br>
+</div>
 </body>
