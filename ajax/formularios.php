@@ -1,4 +1,4 @@
-<?php/*
+<?php
 include('../config.php');
 $data = array();
 $assunto = 'novo acesso!';
@@ -17,5 +17,5 @@ if ($mail->enviarEmail()) {
   $data['erro'] = true;
 }
 die(json_encode($data));
-*/
+
 ?>

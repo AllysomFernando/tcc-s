@@ -59,9 +59,7 @@ if (isset($_GET['loggout'])) {
                     ('seu-perfil') ?>>Seu Perfil</h2>
         <!--usuarios-->
 
-        <a <?php selecionadoMenu('historico-de-compra'); ?> <?php verificarPermissaoPagina(0);
-                                                                    ('historico-de-compra') ?> href="">Históricos
-          de Compra</a>
+
         <a <?php selecionadoMenu('cadastrar-jogos'); ?>
           <?php verificaPermissaoMenu(1);
                                                                 ('cadastar-jogos') ?>href="<?php echo INCLUDE_PATH_PAINEL ?>cadastrar-jogos">Cadastrar Jogos</a>
@@ -77,13 +75,13 @@ if (isset($_GET['loggout'])) {
                     ('') ?>>Gestão</h2>
 
         <a <?php selecionadoMenu('listar-jogos'); ?> <?php verificaPermissaoMenu(1);
-                                                                ('') ?>href="">Listar Jogos</a>
+                                                                ('listar-jogos') ?>href="listar-jogos">Listar Jogos</a>
         <a <?php selecionadoMenu('listar-promocoes'); ?>
           <?php verificaPermissaoMenu(1);
                                                                     ('listar-promocoes') ?>href="<?php echo INCLUDE_PATH_PAINEL ?>listar-promocoes">Listar destaques</a>
         <a <?php selecionadoMenu('listar-generos'); ?> <?php verificaPermissaoMenu(1);
                                                                 ('listar-generos') ?>
-          href="<?php echo INCLUDE_PATH_PAINEL ?>ligar-generos">Listar Generos</a>
+          href="<?php echo INCLUDE_PATH_PAINEL ?>listar-generos">Listar Generos</a>
 
         <h2 <?php verificaPermissaoMenu(2);
                     ('') ?>>Administração do Painel</h2>
@@ -95,6 +93,12 @@ if (isset($_GET['loggout'])) {
           <a
           <?php selecionadoMenu('editar-cliente') ?><?php verificaPermissaoMenu(2);
                                                                 ('editar-cliente') ?>href="<?php echo INCLUDE_PATH_PAINEL ?>editar-cliente">Editar Cliente</a>
+                                                                <a
+          <?php selecionadoMenu('editar-cliente') ?><?php verificaPermissaoMenu(2);
+                                                                ('editar-jogos') ?>href="<?php echo INCLUDE_PATH_PAINEL ?>editar-jogos">Editar Jogos</a>
+                                                                   <a
+          <?php selecionadoMenu('editar-genero') ?><?php verificaPermissaoMenu(2);
+                                                                ('editar-genero') ?>href="<?php echo INCLUDE_PATH_PAINEL ?>editar-genero">Editar Generos</a>
         <a
           <?php selecionadoMenu('adicionar-usuario') ?><?php verificaPermissaoMenu(2);
                                                                 ('adicionar-usuario') ?>href="<?php echo INCLUDE_PATH_PAINEL ?>adicionar-usuario">Adicionar

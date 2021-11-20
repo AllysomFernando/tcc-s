@@ -566,10 +566,11 @@ table a.btn {
 
 a.btn {
   font-weight: normal;
-  font-size: 13px;
+  font-size: 18px;
+
   color: white;
   text-decoration: none;
-  padding: 4px 6px;
+  padding: 10px 10px;
 }
 
 a.btn.edit {
@@ -713,4 +714,22 @@ a.btn.order {
 form .form-group-login:nth-of-type(2) {
   position: relative;
   top: 10px;
+}
+.paginacao {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.paginacao a {
+  font-size: 14px;
+  margin: 0 8px;
+  display: inline-block;
+  padding: 3px 4px;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  color: #666;
+}
+
+.paginacao a.page-selected {
+  background: rgb(220, 220, 220);
 }

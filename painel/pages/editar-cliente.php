@@ -6,11 +6,11 @@
         if (isset($_POST['acao'])) {
             //enviei o meu formulario
             $usuario = new Usuario();
+            $cpf = $_POST['cpf'];
             $nome = $_POST['nome'];
             $senha = $_POST['senha'];
-            $cpf = $_POST['cpf'];
-           
-                if ($usuario->atualizarUsuarios($nome, $senha, $cpf)) {
+        
+                if ($usuario->atualizarUsuarios($cpf, $nome, $senha)) {
                     Painel::alert('sucesso', 'Atualizado com sucesso!');
                 } else {
                     Painel::alert('erro', 'Ocorreu um erro ao atualizar');
@@ -34,11 +34,7 @@
     </div>
     <!--form-group-->
 
-    <div class="form-group">
-      <label>Imagem </label>
-      <input type="file" name="img"></input>
-      <input type="hidden" name="img_atual" value="<?php echo $_SESSION['img']; ?>">
-    </div>
+ 
     <!--form-group-->
     <div class="form-group">
       <input type="submit" name="acao" value="Editar"></input>

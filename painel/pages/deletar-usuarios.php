@@ -1,4 +1,11 @@
-
+<?php
+	if(isset($_GET['excluir'])){
+		$idExcluir = intval($_GET['excluir']);
+		Painel::deletar('cliente',$idExcluir);
+		Painel::redirect(INCLUDE_PATH_PAINEL.'deletar-usuarios');
+		echo "<pre>"; print_r($_GET); echo "</pre>";
+	}
+?>
 <div class="box-content">
 	<h2><i class="fa fa-id-card-o" aria-hidden="true"></i> Clientes Cadastrados</h2>
 	<div class="busca">
@@ -33,8 +40,8 @@
 					<p><b><i class="fas fa-pencil"></i> cpf:</b> <?php echo $value['cpf']; ?></p>
 			
 					<div class="group-btn">
-						<a class="btn delete" item_id="<?php echo $value['cpf']; ?>" href="<?php echo INCLUDE_PATH_PAINEL ?>"><i class="fas fa-times"></i> Excluir</a>
-						<a class="btn edit" href="<?php echo INCLUDE_PATH_PAINEL ?>editar-cliente?id=<?php echo $value['cpf']; ?>"><i class="fas fa-pencil"></i> Editar</a>
+						<a actionBtn="delete" class="btn delete" item_id="<?php echo $value['cpf']; ?>" href="<?php echo INCLUDE_PATH_PAINEL ?>deletar-usuarios?excluir=<?php echo $value['cpf']?>"><i class="fas fa-times"></i> Excluir</a>
+				
 					</div><!--group-btn-->
 				</div><!--body-box-->
 			</div><!--box-single-->

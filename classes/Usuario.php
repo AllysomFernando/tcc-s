@@ -12,10 +12,10 @@ class Usuario
             return false;
         }
     }
-    public function atualizarUsuarios($nome, $senha, $cpf )
+    public function atualizarUsuarios($cpf, $nome, $senha)
     {
-        $sql = MySql::conectar()->prepare("UPDATE `cliente` SET nome_cliente = ?, senha = ?, cpf = ? WHERE cpf = ?");
-        if ($sql->execute(array($nome, $senha, $cpf, $_SESSION['cpf']))) {
+        $sql = MySql::conectar()->prepare("UPDATE `cliente` SET cpf = ?, nome_cliente = ?, senha = ? WHERE cpf = ?");
+        if ($sql->execute(array($cpf, $nome, $senha,  $_SESSION['cpf']))) {
             return true;
         } else {
             return false;
