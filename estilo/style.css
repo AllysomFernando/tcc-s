@@ -420,6 +420,18 @@ d .contact .info li {
   text-align: center;
   color: #fff;
 }
+.hr0{
+  border: 0;
+  border-top: solid #ec268f;
+  height: 23%;
+  overflow: visible;
+  padding: 0;
+  color: black;
+  text-align: center;
+  width: 85%;
+  margin-left: 6%;
+  margin-top: -0, 5%;
+}
 
 /**vitu: linha divisoria (adicionar a cor certa depois que o fundo estiver pronto color: ;) **/
 .hr6 {
@@ -931,4 +943,46 @@ d .contact .info li {
 .form-group-login {
   padding-left: 50%;
   color: white;
+}
+
+/* pagina jogos*/
+.estoque{
+  width: 20px;
+  margin-top: 100px;
+  padding-right: 200px;
+}
+.estoque2{
+  width: 20px;
+  margin-top: -400px;
+ margin-left: 180px;
+}
+.jog1{
+  
+  width: 100%;
+  border-color: #ec268f;
+  border-style: double;
+  border-radius: 25px;
+  border-width: 12px;
+  margin-left: 100px;
+  min-width: 300px;
+  width: 560px;
+
+}
+.jog2{
+  width: 100%;
+  border-color: #ec268f;
+  border-style: double;
+  border-radius: 25px;
+  border-width: 12px;
+  width: 560px;
+  margin-top: 50px;
+  min-width: 300px;
+  margin-left : 550px ;
+}
+.leg1   {
+  margin-left: 300px;
+}
+.leg2{
+  margin-left: 790px;
+  font-size: 30px;
 }
