@@ -946,6 +946,18 @@ d .contact .info li {
 }
 
 /* pagina jogos*/
+.hr10{
+  border: 12px;
+  border-top: 12px double #ec268f;
+  height: 23%;
+  overflow: visible;
+  padding: 0;
+  color: black;
+  text-align: center;
+  width: 85%;
+  margin-left: 7%;
+  margin-top: 150px
+}
 .estoque{
   width: 20px;
   margin-top: 100px;
@@ -953,7 +965,7 @@ d .contact .info li {
 }
 .estoque2{
   width: 20px;
-  margin-top: -400px;
+  margin-top: -380px;
  margin-left: 180px;
 }
 .jog1{
@@ -979,10 +991,56 @@ d .contact .info li {
   min-width: 300px;
   margin-left : 550px ;
 }
-.leg1   {
-  margin-left: 300px;
+.botao1 {
+  background-color:   yellow; 
+  border: solid black 2px;
+  color: white;
+  padding: 5px 9px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.7s;
+  cursor: pointer;
 }
-.leg2{
-  margin-left: 790px;
-  font-size: 30px;
+.botao1 {
+  background-color: yellow; 
+  color: black;  
+}
+.botao1:hover {
+  background-color: #ec268f;
+  color: black;
+}
+
+.botao2 {
+  background-color:   yellow; 
+  border: solid black 2px;
+  color: white;
+  padding: 8px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.7s;
+  cursor: pointer;
+}
+.botao2 {
+  background-color: yellow; 
+  color: black; 
+  
+}
+
+.botao2:hover {
+  background-color: #ec268f;
+  color: black;
+}
+.botaoc{
+  margin-left: 340px;
+  padding-top: -40px;
+}
+.botaor{
+  margin-left: 965px;
+ padding-bottom: -60px;
 }
