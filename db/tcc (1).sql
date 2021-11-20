@@ -62,7 +62,7 @@ CREATE TABLE `itens_pedido` (
   `id_itens_pedido` int(11) NOT NULL,
   `id_produto` varchar(45) DEFAULT NULL,
   `valor_produto` varchar(45) DEFAULT NULL,
-  `cpf` int(11) DEFAULT NULL,
+  `cpf` bigint(13) DEFAULT NULL,
   `id_venda` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 

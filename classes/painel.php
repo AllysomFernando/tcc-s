@@ -84,5 +84,96 @@ class Painel
     {
         @unlink('uploads/' . $file);
     }
-  
+    public static function formatarMoedaBd($valor){
+        $valor = str_replace('.', '', $valor);
+        $valor = str_replace(',', '.', $valor);
+        return $valor;
+    }
+    
+		public static function insert($arr){
+			$certo = true;
+			$nome_tabela = $arr['nome_tabela'];
+			$query = "INSERT INTO `$nome_tabela` VALUES (null";
+			foreach ($arr as $key => $value) {
+				$nome = $key;
+				$valor = $value;
+				if($nome == 'acao' || $nome == 'nome_tabela')
+					continue;   
+				if($value == ''){
+					$certo = false;
+					break;
+				}
+				$query.=",?";
+				$parametros[] = $value;
+			}
+
+			$query.=")";
+			if($certo == true){
+				$sql = MySql::conectar()->prepare($query);
+				$sql->execute($parametros);
+				$lastId = MySql::conectar()->lastInsertId();
+				$sql = MySql::conectar()->prepare("UPDATE `$nome_tabela` SET order_id = ? WHERE id = $lastId");
+				$sql->execute(array($lastId));
+			}
+			return $certo;
+		}
+        public static function select($table,$query = '',$arr = ''){
+			if($query != false){
+				$sql = MySql::conectar()->prepare("SELECT * FROM `$table` WHERE $query");
+				$sql->execute($arr);
+			}else{
+				$sql = MySql::conectar()->prepare("SELECT * FROM `$table`");
+				$sql->execute();
+			}
+			return $sql->fetch();
+		}
+
+		/*
+			Metodo especifico para selecionar multiplos registros com base na query.
+		*/
+
+		public static function selectQuery($table,$query = '',$arr = ''){
+			if($query != false){
+				$sql = MySql::conectar()->prepare("SELECT * FROM `$table` WHERE $query");
+				$sql->execute($arr);
+			}else{
+				$sql = MySql::conectar()->prepare("SELECT * FROM `$table`");
+				$sql->execute();
+			}
+			return $sql->fetchAll();
+		}
+
+		public static function orderItem($tabela,$orderType,$idItem){
+			if($orderType == 'up'){
+				$infoItemAtual = Painel::select($tabela,'id=?',array($idItem));
+				$order_id = $infoItemAtual['order_id'];
+				$itemBefore = MySql::conectar()->prepare("SELECT * FROM `$tabela` WHERE order_id < $order_id ORDER BY order_id DESC LIMIT 1");
+				$itemBefore->execute();
+				if($itemBefore->rowCount() == 0)
+					return;
+				$itemBefore = $itemBefore->fetch();
+				Painel::update(array('nome_tabela'=>$tabela,'id'=>$itemBefore['id'],'order_id'=>$infoItemAtual['order_id']));
+				Painel::update(array('nome_tabela'=>$tabela,'id'=>$infoItemAtual['id'],'order_id'=>$itemBefore['order_id']));
+			}else if($orderType == 'down'){
+				$infoItemAtual = Painel::select($tabela,'id=?',array($idItem));
+				$order_id = $infoItemAtual['order_id'];
+				$itemBefore = MySql::conectar()->prepare("SELECT * FROM `$tabela` WHERE order_id > $order_id ORDER BY order_id ASC LIMIT 1");
+				$itemBefore->execute();
+				if($itemBefore->rowCount() == 0)
+					return;
+				$itemBefore = $itemBefore->fetch();
+				Painel::update(array('nome_tabela'=>$tabela,'id'=>$itemBefore['id'],'order_id'=>$infoItemAtual['order_id']));
+				Painel::update(array('nome_tabela'=>$tabela,'id'=>$infoItemAtual['id'],'order_id'=>$itemBefore['order_id']));
+			}
+		}
+        
+		public static function deletar($tabela,$id=false){
+			if($id == false){
+				$sql = MySql::conectar()->prepare("DELETE FROM `$tabela`");
+			}else{
+				$sql = MySql::conectar()->prepare("DELETE FROM `$tabela` WHERE cpf = $id");
+			}
+			$sql->execute();
+		}
+
 }

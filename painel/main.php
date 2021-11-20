@@ -92,14 +92,17 @@ if (isset($_GET['loggout'])) {
           <?php selecionadoMenu('editar-usuario') ?><?php verificaPermissaoMenu(2);
                                                                 ('editar-usuario') ?>href="<?php echo INCLUDE_PATH_PAINEL ?>editar-usuario">Editar
           Usuário</a>
+          <a
+          <?php selecionadoMenu('editar-cliente') ?><?php verificaPermissaoMenu(2);
+                                                                ('editar-cliente') ?>href="<?php echo INCLUDE_PATH_PAINEL ?>editar-cliente">Editar Cliente</a>
         <a
           <?php selecionadoMenu('adicionar-usuario') ?><?php verificaPermissaoMenu(2);
                                                                 ('adicionar-usuario') ?>href="<?php echo INCLUDE_PATH_PAINEL ?>adicionar-usuario">Adicionar
           Usuário</a>
 
           <a
-          <?php selecionadoMenu('deletar-usuario') ?><?php verificaPermissaoMenu(2);
-                                                                ('deletar-usuari') ?>href="<?php echo INCLUDE_PATH_PAINEL ?>deletar-usuari">Deletar usuario</a>
+          <?php selecionadoMenu('deletar-usuarios') ?><?php verificaPermissaoMenu(2);
+                                                                ('deletar-usuarios') ?>href="<?php echo INCLUDE_PATH_PAINEL ?>deletar-usuarios">Gerenciar Clientes</a>
 
         <h2 <?php verificaPermissaoMenu(2);
                     ('') ?>>Configuração Geral</h2>

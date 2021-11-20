@@ -12,6 +12,15 @@ class Usuario
             return false;
         }
     }
+    public function atualizarUsuarios($nome, $senha, $cpf )
+    {
+        $sql = MySql::conectar()->prepare("UPDATE `cliente` SET nome_cliente = ?, senha = ?, cpf = ? WHERE cpf = ?");
+        if ($sql->execute(array($nome, $senha, $cpf, $_SESSION['cpf']))) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 
     public static function userExist($user)
     {

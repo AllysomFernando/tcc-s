@@ -55,7 +55,7 @@
       <ul>
         <li><a href="<?php echo INCLUDE_PATH; ?>home">HOME</a></li>
         <li><a href="<?php echo INCLUDE_PATH; ?>generos">GENEROS</a></li>
-        <li><a realtime="jogos" href="<?php echo INCLUDE_PATH; ?>jogos">JOGOS</a></li>
+        <li><a href="<?php echo INCLUDE_PATH; ?>jogos">JOGOS</a></li>
         <li><a href="<?php echo INCLUDE_PATH; ?>sobre">SOBRE</a></li>
         <li><a realtime="contato" href=" <?php echo INCLUDE_PATH; ?>contato">CONTATOS</a></li>
         <li><a href="<?php echo INCLUDE_PATH; ?>login">LOGIN</a></li>
@@ -76,7 +76,7 @@
       <ul>
         <li><a href="<?php echo INCLUDE_PATH; ?>home">HOME</a></li>
         <li><a href="<?php echo INCLUDE_PATH; ?>home">GENEROS</a></li>
-        <li><a realtime="jogos" href="<?php echo INCLUDE_PATH; ?>jogos">JOGOS</a></li>
+        <li><a  href="<?php echo INCLUDE_PATH; ?>jogos">JOGOS</a></li>
         <li><a href="<?php echo INCLUDE_PATH; ?>sobre">SOBRE</a></li>
         <li><a realtime="contato" href="<?php echo INCLUDE_PATH; ?>contato">CONTATOS</a></li>
         <li><a realtime="login" href="<?php echo INCLUDE_PATH; ?>login">LOGIN</a></li>
