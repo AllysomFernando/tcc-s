@@ -76,9 +76,9 @@ if (isset($_GET['loggout'])) {
 
         <a <?php selecionadoMenu('listar-jogos'); ?> <?php verificaPermissaoMenu(1);
                                                                 ('listar-jogos') ?>href="listar-jogos">Listar Jogos</a>
-        <a <?php selecionadoMenu('listar-promocoes'); ?>
+        <a <?php selecionadoMenu('listar-destaques'); ?>
           <?php verificaPermissaoMenu(1);
-                                                                    ('listar-promocoes') ?>href="<?php echo INCLUDE_PATH_PAINEL ?>listar-promocoes">Listar destaques</a>
+                                                                    ('listar-destaques') ?>href="<?php echo INCLUDE_PATH_PAINEL ?>listar-destaques">Listar destaques</a>
         <a <?php selecionadoMenu('listar-generos'); ?> <?php verificaPermissaoMenu(1);
                                                                 ('listar-generos') ?>
           href="<?php echo INCLUDE_PATH_PAINEL ?>listar-generos">Listar Generos</a>

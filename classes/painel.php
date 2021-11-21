@@ -91,7 +91,7 @@ class Painel
     }
   
 	public static function insert($arr){
-	        $certo = true;
+	    $certo = true;
 			$nome_tabela = $arr['nome_tabela'];
 			$query = "INSERT INTO `$nome_tabela`VALUES (null";
 			foreach ($arr as $key => $value) {
@@ -130,7 +130,7 @@ class Painel
 			}
 			return $sql->fetch();
 		}
-        
+
         public static function select1($table,$query = '',$arr = ''){
 			if($query != false){
 				$sql = MySql::conectar()->prepare("SELECT * FROM `tb_admin.estoque` WHERE $query");
@@ -194,6 +194,19 @@ class Painel
 			return $sql->fetchAll();
 
 		}
+        public static function selectAll1($tabela,$start = null,$end = null){
+			if($start == null && $end == null)
+				$sql = MySql::conectar()->prepare("SELECT * FROM `$tabela` ORDER BY order_id ASC");
+			else
+				$sql = MySql::conectar()->prepare("SELECT * FROM `$tabela` ORDER BY order_id ASC LIMIT $start,$end");
+	
+			$sql->execute();
+
+			
+			return $sql->fetchAll();
+
+		}
+
 		public static function deletar($tabela,$id=false){
 			if($id == false){
 				$sql = MySql::conectar()->prepare("DELETE FROM `$tabela`");
@@ -277,5 +290,11 @@ class Painel
 				}
 			}
 			return $certo;
+		}
+		public static function convertMoney($valor){
+			return number_format($valor, 2, ',', '.');
+		}
+		public function index(){
+			mainView::render('index.php');
 		}
 }
