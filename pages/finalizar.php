@@ -1,4 +1,3 @@
-
 <div class="chamada-escolher">
 	<div class="container">
 		<h2>Feche o seu pedido</h2>

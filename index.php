@@ -12,7 +12,6 @@ Router::get('/',function() use ($homeController){
 Router::get('/finalizar',function() use ($finalizarController){
 	$finalizarController->index();
 })
-
 ?>
 
 <!DOCTYPE html>
