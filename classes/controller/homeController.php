@@ -1,6 +1,6 @@
 <?php
 	namespace controller;
-	
+	use \views\mainView;
 
 	class homeController
 	{
@@ -20,7 +20,7 @@
 				\Painel::redirect(INCLUDE_PATH);
 				
 			}
-			mainView::render('index.php');
+			mainView::render('home.php');
 		}
 	}
 ?>
