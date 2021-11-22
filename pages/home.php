@@ -2,7 +2,7 @@
 <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
 <!--parte da freewknd-->
 <hr class="hr7">
-<p class="destaque">DESTAQUES</p>
+<p class="destaque"><?php echo $infoSite['titulo'];?></p>
 <hr class="hr6">
 <body>
 

@@ -26,7 +26,7 @@
 
 		<div class="form-group">
 			<label>Genero:</label>
-			<input type ="text" name="nome" > <?php echo $generos['generos']; ?></input>
+			<input type ="text" name="generos" > <?php echo $generos['generos']; ?></input>
 		</div><!--form-group-->
 
 		<div class="form-group">

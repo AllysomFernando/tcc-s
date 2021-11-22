@@ -24,6 +24,7 @@
           $descricao = Painel::select('tb_admin.estoque','id = ?',array($id));
           $quantidade = Painel::select('tb_admin.estoque','id = ?',array($id));
           $preco = Painel::select('tb_admin.estoque','id = ?',array($id));
+					
 				}else{
 					Painel::alert('erro','Campos vázios não são permitidos.');
 				}

@@ -2,6 +2,11 @@
  Site::updateUsuarioOnline();
  Site::contador(); 
 
+$Outros = MySql::conectar()->prepare("SELECT * FROM `tb_admin.estoque`");
+$infoSite = MySql::conectar()->prepare("SELECT * FROM `tb_site.config`");
+$infoSite->execute();
+$infoSite = $infoSite->fetch();
+
 $homeController = new controller\homeController();
 $finalizarController = new controller\finalizarController();
 

@@ -64,6 +64,7 @@
 			<label>Descrição do jogo:</label>
 			<textarea name="descricao"></textarea>
 		</div><!--form-group-->
+		
 		<div class="form-group">
 			<label>Quantidade atual do jogoo:</label>
 			<input type="number" name="quantidade" min="0" max="900" step="5" value="0">

@@ -70,6 +70,10 @@ if (isset($_GET['loggout'])) {
         <a
           <?php selecionadoMenu('cadastrar-destaques'); ?><?php verificaPermissaoMenu(1);
                                                                     ('cadastrar-destaques') ?>href="<?php echo INCLUDE_PATH_PAINEL ?>cadastrar-destaques">Cadastrar-destaques</a>
+        <a                                                            
+          <?php selecionadoMenu('cadastrar-site'); ?><?php verificaPermissaoMenu(1);
+                                                                    ('cadastrar-site') ?>href="<?php echo INCLUDE_PATH_PAINEL ?>cadastrar-site">Cadastrar Site</a>                
+                         
 
         <h2 <?php verificaPermissaoMenu(1);
                     ('') ?>>Gestão</h2>
@@ -111,7 +115,7 @@ if (isset($_GET['loggout'])) {
         <h2 <?php verificaPermissaoMenu(2);
                     ('') ?>>Configuração Geral</h2>
         <a <?php selecionadoMenu('editar-site') ?> <?php verificaPermissaoMenu(2);
-                                                            ('') ?>href="">Editar Site</a>
+                                                            ('editar-site') ?>href="<?php echo INCLUDE_PATH_PAINEL ?>editar-site">Editar Site</a>
         <!--pessoas autorizadas-->
 
         <!--usuarios-->

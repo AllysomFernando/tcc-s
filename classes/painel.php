@@ -119,8 +119,7 @@ class Painel
 			}
 			return $certo;
 		}
-
-        public static function select($table,$query = '',$arr = ''){
+		public static function select($table,$query = '',$arr = ''){
 			if($query != false){
 				$sql = MySql::conectar()->prepare("SELECT * FROM `$table` WHERE $query");
 				$sql->execute($arr);
