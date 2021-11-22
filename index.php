@@ -2,7 +2,7 @@
  Site::updateUsuarioOnline();
  Site::contador(); 
 
-$Outros = MySql::conectar()->prepare("SELECT * FROM `tb_admin.estoque`");
+
 $infoSite = MySql::conectar()->prepare("SELECT * FROM `tb_site.config`");
 $infoSite->execute();
 $infoSite = $infoSite->fetch();
@@ -140,10 +140,8 @@ Router::get('/finalizar',function() use ($finalizarController){
       <div class="sec quickLinks">
         <h2>Quick Links</h2>
         <ul>
-          <li><a href="<?php echo INCLUDE_PATH; ?>#">FAQ</a></li>
-          <li><a href="<?php echo INCLUDE_PATH; ?>#">Politicas de Privacidade</a></li>
-          <li><a href="<?php echo INCLUDE_PATH; ?>#">Ajuda</a></li>
-          <li><a href="<?php echo INCLUDE_PATH; ?>#">Termos de Condições</a></li>
+          <li><a href="<?php echo INCLUDE_PATH; ?>politicas-de-privacidade">Politicas de Privacidade</a></li>
+          <li><a href="<?php echo INCLUDE_PATH; ?>termos">Termos de Condições</a></li>
         </ul>
       </div>
       <div class="sec contact">

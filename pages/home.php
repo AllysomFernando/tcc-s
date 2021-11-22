@@ -1,3 +1,8 @@
+<?php
+$infoSite = MySql::conectar()->prepare("SELECT * FROM `tb_site.config`");
+$infoSite->execute();
+$infoSite = $infoSite->fetch();
+?>
 <html>
 <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
 <!--parte da freewknd-->
@@ -22,7 +27,7 @@
   <div class="linha_vertical"></div>
   <div class="descri">
   <p class="revi_desc">Resident Evil Village </p><br>
-  <p class="valorvillage"> Agora para PC por apenas R$20.00 REAIS </p>
+  <p class="valorvillage"> <?php echo $infoSite['descricao'];?> </p>
 </div>
 </div>
 </body>

@@ -15,10 +15,8 @@
       <div class="sec quickLinks">
         <h2>Quick Links</h2>
         <ul>
-          <li><a href="<?php echo INCLUDE_PATH; ?>#">FAQ</a></li>
-          <li><a href="<?php echo INCLUDE_PATH; ?>#">Politicas de Privacidade</a></li>
-          <li><a href="<?php echo INCLUDE_PATH; ?>#">Ajuda</a></li>
-          <li><a href="<?php echo INCLUDE_PATH; ?>#">Termos de Condições</a></li>
+        <li><a href="<?php echo INCLUDE_PATH; ?>politicas-de-privacidades">Politicas de Privacidade</a></li>
+          <li><a href="<?php echo INCLUDE_PATH; ?>termos">Termos de Condições</a></li>
         </ul>
       </div>
       <div class="sec contact">
