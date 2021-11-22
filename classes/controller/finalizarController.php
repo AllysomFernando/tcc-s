@@ -5,7 +5,7 @@
 	class finalizarController
 	{
 		public function index(){
-			mainView::render('finalizar.php');
+			//mainView::render('finalizar.php');
 		}
 	}
 ?>

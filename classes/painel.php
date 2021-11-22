@@ -258,7 +258,7 @@ class Painel
 			$nome_tabela = $arr['nome_tabela'];
 
 			$query = "UPDATE `$nome_tabela` SET ";
-			foreach ($arr as $key => $value) {
+			foreach ($arr as $key => $value) {	
 				$nome = $key;
 				$valor = $value;
 				if($nome == 'acao' || $nome == 'nome_tabela' || $nome == 'id')
