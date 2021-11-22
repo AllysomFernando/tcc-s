@@ -219,7 +219,52 @@ body {
   border-radius: 25px;
   border-width: 12px;
 }
+.gen{
+  margin: 0 auto;
+}
+.hr11{
+  border: 0;
+  border-top: 10px double #ec268f;
+  height: 33%;
+  overflow: visible;
+  padding: 0;
+  color: black;
+  text-align: center;
+  width: 85%;
+  margin-left: 6%;
+  margin-top: -0, 5%;
+}
+.hr12{
+  border: 0;
+  border-top: 10px double #00FFFF;
+  height: 33%;
+  overflow: visible;
+  padding: 0;
+  color: black;
+  text-align: center;
+  width: 85%;
+  margin-left: 6%;
+  margin-top: -0, 5%;
+}
+.hr13{
+  border: 0;
+  border-top: 10px double  #4B0082;
+  height: 33%;
+  overflow: visible;
+  padding: 0;
+  color: black;
+  text-align: center;
+  width: 85%;
+  margin-left: 6%;
+  margin-top: -0, 5%;
 
+}
+
+.gamesdesc1{
+  font-size: 26px;
+  padding-left: 480px;
+  color: #FFA500;
+}
 /**jogos de baixo**/
 
 .revi {
@@ -473,6 +518,11 @@ d .contact .info li {
   width: 85%;
   margin-left: 6%;
   margin-top: 5%;
+}
+
+.genterror{
+  margin: 0 auto;
+  border: solid white;
 }
 
 /**vitu: update do re village **/
@@ -1148,4 +1198,11 @@ d .contact .info li {
   color: white;
   text-decoration: none;
   float: right;
+}
+
+.ter{
+  font-size: 46px;
+  padding-left: 480px;
+  margin:0 auto;
+  color: #FFA500;
 }
