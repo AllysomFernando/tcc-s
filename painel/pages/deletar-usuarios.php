@@ -6,6 +6,7 @@
 		echo "<pre>"; print_r($_GET); echo "</pre>";
 	}
 ?>
+
 <div class="box-content">
 	<h2><i class="fa fa-id-card-o" aria-hidden="true"></i> Clientes Cadastrados</h2>
 	<div class="busca">

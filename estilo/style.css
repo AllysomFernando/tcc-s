@@ -1140,3 +1140,12 @@ d .contact .info li {
   padding: 3px 6px;
   margin-top: 10px;
 }
+
+.btn-pagamento {
+  display: inline-block;
+  padding: 3px 10px;
+  background: #2196f3;
+  color: white;
+  text-decoration: none;
+  float: right;
+}

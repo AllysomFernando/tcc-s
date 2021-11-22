@@ -5,6 +5,7 @@
     $descricao = Painel::select('tb_admin.estoque','id = ?',array($id));
     $quantidade = Painel::select('tb_admin.estoque','id = ?',array($id));
     $preco  = Painel::select('tb_admin.estoque','id = ?',array($id));
+		$imagem = Painel::select('tb_admin.estoque.imagens'. 'id = ?', array($id));
 	}else{
 		Painel::alert('erro','Você precisa passar o parametro ID.');
 		die();
@@ -48,7 +49,7 @@
 			<label>Preço: </label>
 			<input type ="text" name="preco"><?php echo $preco['preco']; ?></input>
 		</div><!--form-group-->
-
+		
 		<div class="form-group">
 			<input type="hidden" name="id" value="<?php echo $id; ?>">
 			<input type="hidden" name="nome_tabela" value="tb_admin.estoque" />

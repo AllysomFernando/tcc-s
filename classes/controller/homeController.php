@@ -20,7 +20,7 @@
 				\Painel::redirect(INCLUDE_PATH);
 				
 			}
-			mainView::render('home.php');
+			mainView::render('/jogos.php');
 		}
 	}
 ?>
