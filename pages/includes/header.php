@@ -57,7 +57,7 @@
         <li><a  href="<?php echo INCLUDE_PATH; ?>registro">REGISTRO</a></li>
       
 				<li><a href="javascript:void(0);"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Carrinho(<?php echo \models\homeModel::getTotalItemsCarrinho(); ?>)</a></li>
-				<li style="background: #1e88e5;"><a href="<?php echo INCLUDE_PATH ?>finalizar">Finalizar Pedido</a></li>
+				<li style="background: #ec268f;"><a href="<?php echo INCLUDE_PATH ?>finalizar">Finalizar Pedido</a></li>
 		
       </ul>
     </nav>

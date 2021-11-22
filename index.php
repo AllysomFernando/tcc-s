@@ -68,12 +68,12 @@ Router::get('/finalizar',function() use ($finalizarController){
         <li><a href="<?php echo INCLUDE_PATH; ?>generos">GENEROS</a></li>
         <li><a href="<?php echo INCLUDE_PATH; ?>jogos">JOGOS</a></li>
         <li><a href="<?php echo INCLUDE_PATH; ?>sobre">SOBRE</a></li>
-        <li><a realtime="contato" href=" <?php echo INCLUDE_PATH; ?>contato">CONTATOS</a></li>
+        <li><a  href=" <?php echo INCLUDE_PATH; ?>contato">CONTATOS</a></li>
         <li><a href="<?php echo INCLUDE_PATH; ?>login">LOGIN</a></li>
         <li><a  href="<?php echo INCLUDE_PATH; ?>registro">REGISTRO</a></li>
       
 				<li><a href="javascript:void(0);"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Carrinho(<?php echo \models\homeModel::getTotalItemsCarrinho(); ?>)</a></li>
-				<li style="background: #1e88e5;"><a href="<?php echo INCLUDE_PATH ?>finalizar">Finalizar Pedido</a></li>
+				<li style="background: #ec268f;"><a href="<?php echo INCLUDE_PATH ?>finalizar">Finalizar Pedido</a></li>
 		
       </ul>
     </nav>
@@ -83,7 +83,7 @@ Router::get('/finalizar',function() use ($finalizarController){
         <i class="fas fa-search"></i><!-- icone de procura-->
       </div>
     </nav>
-    <nav class="mobile">
+    <nav class="mobile">  
       <div class="botao-menu-mobile">
         <i class="fas fa-bars"></i>
         <!--botao menu quando diminui a tela -->
@@ -93,7 +93,7 @@ Router::get('/finalizar',function() use ($finalizarController){
         <li><a href="<?php echo INCLUDE_PATH; ?>home">GENEROS</a></li>
         <li><a  href="<?php echo INCLUDE_PATH; ?>jogos">JOGOS</a></li>
         <li><a href="<?php echo INCLUDE_PATH; ?>sobre">SOBRE</a></li>
-        <li><a realtime="contato" href="<?php echo INCLUDE_PATH; ?>contato">CONTATOS</a></li>
+        <li><a  href="<?php echo INCLUDE_PATH; ?>contato">CONTATOS</a></li>
         <li><a realtime="login" href="<?php echo INCLUDE_PATH; ?>login">LOGIN</a></li>
         <li><a realtime="registro" href="<?php echo INCLUDE_PATH; ?>registro">REGISTRO</a></li>
       </ul>
