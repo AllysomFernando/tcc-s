@@ -61,12 +61,7 @@
 		
       </ul>
     </nav>
-    <nav class="search">
-      <div>
-        <input type="text" placeholder="O que procuras?">
-        <i class="fas fa-search"></i><!-- icone de procura-->
-      </div>
-    </nav>
+
     <nav class="mobile">
       <div class="botao-menu-mobile">
         <i class="fas fa-bars"></i>
